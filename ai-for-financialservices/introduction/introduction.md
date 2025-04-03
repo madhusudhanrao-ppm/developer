@@ -19,7 +19,49 @@ Estimated Workshop Time: 20 hours
 This lab assumes you have the following:
 
 * An Oracle account
-* Intermediate Developer Knowledge of Oracle APEX and Oracle PL/SQL ( if you plan to build APEX Application)
+* Intermediate developer knowledge of Oracle APEX and Oracle PL/SQL 
+
+---
+
+### Objectives 
+
+**Hands-on Learning Experience: Mastering Cutting-Edge Technologies**
+
+In this comprehensive learning journey, you will gain hands-on experience with the following technologies:
+
+**Oracle APEX and Database Technologies**
+
+* Oracle APEX Custom Authentication and Authorization
+* Role-based access and ORDS
+* Oracle APEX Workflow/Process and Task Definition
+* Transaction Management, Enqueue, and Dequeue
+* Security and Oracle Database 23ai & PL/SQL
+* Real-time Dashboard Oracle APEX
+
+**AI and Machine Learning Services**
+
+* AI Services: Meta Llama Vision Instruct, Speech AI (TTS), and Anomaly Detection AI Service
+* Auto Machine Learning and Oracle Database 23ai
+* Select AI & AI Vector Search
+* RAG with Gen AI (Cohere)
+
+**Data Management and Analytics**
+
+* Converged Database (JSON, Graphs, Maps & Spatial Data)
+* JSON Relational Duality and Data Redaction (Security)
+* Oracle Analytics Cloud and Notifications & Analytics
+
+**Integration and Process Management**
+
+* Oracle Integration Cloud (Gen 3)
+* Oracle Process Management and PL/SQL Scheduler Jobs
+* Property Graphs and Oracle Digital Assistant (FAQs)
+
+**Fraud Detection and Prevention**
+
+* Fraud Detection, Card Blocking, and Push Notifications
+
+By mastering these technologies, you will gain a competitive edge in the industry and be equipped to develop innovative solutions that drive business success.
 
 ---
  
@@ -39,14 +81,14 @@ This lab assumes you have the following:
 ---
 ### AI for Financial Services - Table of Contents
  
-***Common Labs***
+**Common Labs**
 
 * Lab : Introduction
 * Lab : Get Started
 * Lab : Setup OCI Policies
 * Lab : Create an Oracle Autonomous Database
 
-***AI for Financial Services Labs** - Lab 1 to Lab 18*
+**AI for Financial Services Labs** - Lab 1 to Lab 18**
 
 * Lab 1: Initiating a Conversation with a Chatbot
 * Lab 2: User Profile Management: Creation and Updates
@@ -67,49 +109,9 @@ This lab assumes you have the following:
 * Lab 17: Frequently Asked Questions (FAQs)
 * Lab 18: Home Loan Planning: Calculating Equated Monthly Installments (EMIs)
 
-***Infrastructure Related Labs***
+**Infrastructure Related Labs**
  
 * Lab 19: Ensuring Business Continuity: High Availability and Disaster Recovery
-  
----
-
-### Hands-on Learning Experience: Mastering Cutting-Edge Technologies 
-
-In this comprehensive learning journey, you will gain hands-on experience with the following technologies:
-
-***Oracle APEX and Database Technologies***
-
-* Oracle APEX Custom Authentication and Authorization
-* Role-based access and ORDS
-* Oracle APEX Workflow/Process and Task Definition
-* Transaction Management, Enqueue, and Dequeue
-* Security and Oracle Database 23ai & PL/SQL
-* Real-time Dashboard Oracle APEX
-
-***AI and Machine Learning Services***
-
-* AI Services: Meta Llama Vision Instruct, Speech AI (TTS), and Anomaly Detection AI Service
-* Auto Machine Learning and Oracle Database 23ai
-* Select AI & AI Vector Search
-* RAG with Gen AI (Cohere)
-
-***Data Management and Analytics***
-
-* Converged Database (JSON, Graphs, Maps & Spatial Data)
-* JSON Relational Duality and Data Redaction (Security)
-* Oracle Analytics Cloud and Notifications & Analytics
-
-***Integration and Process Management***
-
-* Oracle Integration Cloud (Gen 3)
-* Oracle Process Management and PL/SQL Scheduler Jobs
-* Property Graphs and Oracle Digital Assistant (FAQs)
-
-***Fraud Detection and Prevention***
-
-* Fraud Detection, Card Blocking, and Push Notifications
-
-By mastering these technologies, you will gain a competitive edge in the industry and be equipped to develop innovative solutions that drive business success.
   
 ## Acknowledgements
 
