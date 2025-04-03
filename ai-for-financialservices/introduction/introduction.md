@@ -90,7 +90,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 * Lab 1: Setup OCI Policies
 * Lab 2: Create an Oracle Autonomous Database
 
-**AI for Financial Services Labs** - Lab 3 to Lab 20**
+**AI for Financial Services Labs** - Lab 3 to Lab 20 
 
 * Lab 3: Initiating a Conversation with a Chatbot
 * Lab 4: User Profile Management: Creation and Updates
