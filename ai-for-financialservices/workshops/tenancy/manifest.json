@@ -19,13 +19,18 @@
     },
     {
       "title": "Lab 1: Setup OCI Policies",
-      "filename": "../../ai-vision-setup/ai-vision-setup.md"
+      "filename": "../../ai-fs-setup/ai-fs-setup.md"
     },
     {
       "title": "Lab 2: Create an Oracle Autonomous Database",
       "description": "Provision an Autonomous Database",
-      "filename": "../../ai-vision-provision/ai-vision-provision.md"
-    }, 
+      "filename": "../../ai-fs-provision/ai-fs-provision.md"
+    },
+    {
+      "title": "Lab 3: Initiating a Conversation with a Chatbot",
+      "description": "Initiating a Conversation with a Chatbot",
+      "filename": "../../ai-fs-chat/ai-fs-chat.md"
+    },
     {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
