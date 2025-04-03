@@ -65,12 +65,14 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 ---
  
-### AI for Financial Services - Technology Architecture 
+### AI for Financial Services - Demo
+
 [Demo video on AI for Financial Services](youtube:xCXb7kOWdqo:large)  
 
 ---
 
 ### AI for Financial Services - Technology Architecture
+
 ![AI for Financial](images/AI-for-fc-refarch.png " ")  
 
 ---
