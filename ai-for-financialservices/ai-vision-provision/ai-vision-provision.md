@@ -68,7 +68,7 @@ If you are using an Oracle LiveLabs-provided sandbox, you don't have privileges 
 </if>
 
 ## Task 3: Create the Oracle Autonomous Database instance
-
+   
 1. Click **Create Autonomous Database** to start the instance creation process.
 
     ![Click Create Autonomous Database.](./images/create-autonomous-database.png "Click Create Autonomous Database. ")
@@ -85,9 +85,9 @@ If you are using an Oracle LiveLabs-provided sandbox, you don't have privileges 
     </if>
     - __Workload Type__ - For this lab, choose __Data Warehouse__ as the workload type.
     - __Deployment Type__ - For this lab, choose __Serverless__ as the deployment type.
-    ![Create ADW screen](./images/adb-install-01.png "Create ADW screen ")  
+    ![Create ADW screen](./images/adb-install-01-23ai.png "Create ADW screen ")  
     - __Always Free__ - For this lab, we will leave Always Free **unchecked**.
-    - __Choose database version__ - Select a database version **19c** from the available versions.
+    - __Choose database version__ - Select a database version **23ai** from the available versions.
     - **Choose network access**: For this lab, accept the default, **Secure access from everywhere**.
     ![Create ADW screen](./images/adb-install-04.png "Create ADW screen ")
 
@@ -104,9 +104,7 @@ If you are using an Oracle LiveLabs-provided sandbox, you don't have privileges 
     - __ECPU count__ - Number of ECPU for your service. For this lab, specify __2 ECPU__.  
     - __Storage (TB)__ - Select your storage capacity in terabytes. For this lab, specify __1 TB__ of storage.  
     - __Auto Scaling__ - Auto Scaling - For this lab, keep auto-scaling **unchecked**. If autoscaling is enabled, the system will automatically use up to three times more CPU and IO resources to meet workload demand. learn more about [auto scaling](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/autonomous-auto-scale.html)
- 
-        ![Create workload type](./images/adb-install-02.png "Create ADW screen ")
-  
+   
         Backup retention period, default to 60 days.
 
         Create administrator credentials:
@@ -121,16 +119,15 @@ If you are using an Oracle LiveLabs-provided sandbox, you don't have privileges 
     ![Click Create ADW Button.](images/db-actions-05.png)
  
     Click on __Create Autonomous Database__. button
-
-    
-
-2.   Your instance will begin provisioning. In a few minutes, the State will turn from Provisioning to Available. At this point, your Autonomous Data Warehouse database is ready to use! Have a look at your instance's details here, including its name, database version, OCPU count, and storage size.
-
-    ![Database instance homepage.](./images/adb-install-05.png "Database instance homepage ")
-
-    ![Database instance homepage.](./images/adb-install-06.png "Database instance homepage ")
  
+2.   Your instance will begin provisioning. In a few minutes, the State will turn from Provisioning to Available. At this point, your Autonomous Data Warehouse database is ready to use! Have a look at your instance's details here, including its name, database version, OCPU count, and storage size.
+   
+   ![ADB Available.](images/adb23ai-available.png)
 
+    If you had issues in creating Oracle Autonomous Database 23ai please check this video.
+
+   [Demo video on AI for Financial Services](youtube:-d-DxUJ3DvI:large) 
+ 
 ## Task 4: Access Database Actions run SQL queries 
 
 1. From Database Actions menu we can run common tasks such as running SQL queries, Data Modeler, REST API development etc.  
@@ -319,117 +316,7 @@ Sometimes, you may want to display data in a chart for example Bar Chart or Pie 
 4. Run the page (Pages are Automatically saved when you run them)
 
     ![APEX how tos](images/apex-19.png " ")
-
-## Task 13: How to Create a Page Process
-
-Sometimes, you may want to execute a PL/SQL code block immediately after a page has been submitted and before next page loads, This you can do by adding a process that invokes PL/SQL procedure on a button click or page submit
-
-1. Click on the 3rd Icon in top left navigation of the APEX page, Expand the process tree, Under Processes add a new process. On the right side.
-
-    ![APEX how tos](images/apex-20.png " ")
-
-    Sample PL/SQL Code block
-
-    ```sql
-    <copy>
-    BEGIN
-        IMAGE_AI_PK.process_file 
-            (p_apex_file_name => :P2_RECEIPT_FILE, 
-            v_id => :P2_MODEL_NAME, 
-            x_document_id => :P2_DOCUMENT_ID);
-    END;
-    </copy>
-    ``` 
- 
-2. Apex Button that Submits page.
-
-    ![APEX how tos](images/apex-21.png " ")
-
-## Task 14: How to configuring Oracle APEX Applications to Send Email
-
-1. Before you can send email from an Application Builder application, you must:
-
-    * Log in to Oracle Application Express Administration Services and configure the email settings on the Instance Settings page. See [APEX Mail](https://docs.oracle.com/database/apex-5.1/AEAPI/APEX_MAIL.htm#AEAPI341)
-
-    The most efficient approach to sending email is to create a background job (using the DBMS\_JOB or DBMS\_SCHEDULER package) to periodically send all mail messages stored in the active mail queue. To call the APEX\_MAIL package from outside the context of an Application Express application, you must call apex\_util.set\_security\_group\_id as in the following example
-
-    ```sql
-    <copy>
-     for c1 in (
-            select workspace_id
-            from apex_applications
-            where application_id = p_app_id )
-        loop
-        apex_util.set_security_group_id(p_security_group_id => c1.workspace_id);
-        end loop;
-    </copy>
-    ```
-
-## Task 15: How to send mail in Plain Text format  
-
-1. In the APEX Page add following PL/SQL Dynamic Action on Button click to send mail.
-
-    ```sql
-    <copy>
-        DECLARE
-        l_body      CLOB;
-        BEGIN
-            l_body := 'Thank you for your interest in the APEX_MAIL 
-        package.'||utl_tcp.crlf||utl_tcp.crlf;
-            l_body := l_body ||'  Sincerely,'||utl_tcp.crlf;
-            l_body := l_body ||'  The Application Express Team'||utl_tcp.crlf;
-            apex_mail.send(
-                p_to       => 'some_user@somewhere.com',  
-                 -- change to your email address
-                p_from     => 'some_sender@somewhere.com', 
-                -- change to a real senders email address
-                p_body     => l_body,
-                p_subj     => 'APEX_MAIL Package - Plain Text message');
-        END;
-        / 
-    </copy>
-    ```
-
-## Task 16: How to send mail in Text / HTML message
-
-1. In the APEX Page add following PL/SQL Dynamic Action on Button click to send mail.
-
-    ```sql
-    <copy>
-        DECLARE
-        l_body      CLOB;
-        l_body_html CLOB;
-        BEGIN
-            l_body := 'To view the content of this message, please use an HTML enabled mail client.'||utl_tcp.crlf;
-
-            l_body_html := '<html>
-                <head>
-                    <style type="text/css">
-                        body{font-family: Arial, Helvetica, sans-serif;
-                            font-size:10pt;
-                            margin:30px;
-                            background-color:#ffffff;}
-
-                        span.sig{font-style:italic;
-                            font-weight:bold;
-                            color:#811919;}
-                    </style>
-                </head>
-                <body>'||utl_tcp.crlf;
-            l_body_html := l_body_html ||'<p>Thank you for your interest in the <strong>APEX_MAIL</strong> package.</p>'||utl_tcp.crlf;
-            l_body_html := l_body_html ||'  Sincerely,<br />'||utl_tcp.crlf;
-            l_body_html := l_body_html ||'  <span class="sig">The Application Express Dev Team</span><br />'||utl_tcp.crlf;
-            l_body_html := l_body_html ||'</body></html>'; 
-            apex_mail.send(
-            p_to   => 'some_user@somewhere.com',    
-            p_from => 'some_sender@somewhere.com',  
-            p_body      => l_body,
-            p_body_html => l_body_html,
-            p_subj      => 'APEX_MAIL Package - HTML formatted message');
-        END;
-        /  
-    </copy>
-    ```
+    
   
 You may now **proceed to the next lab**.
 
@@ -440,6 +327,6 @@ You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-- **Author** - Madhusudhan Rao, Oracle Database Product Manager 
-* **Last Updated By/Date** - June 12th, 2024
-* **Updates** - Database Actions
+- **Author** - [Madhusudhan Rao B M](https://www.linkedin.com/in/madhusudhanraobm/), Principal Product Manager, Oracle Database
+* **Last Updated By/Date** - Apr 3rd 2025
+* **Updates** - Database Actions & Oracle Database 23ai version upgraded
