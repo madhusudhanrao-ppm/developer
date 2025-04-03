@@ -1,8 +1,17 @@
-# Setup environment
+# Simplifying OCI Management: A Step-by-Step Guide to Setting Up Buckets, Compartments, and Policies
 
 ## Introduction
 
-In this lab, we will set up the required policies to run through the workshop as non-administrative users. However, you can skip most parts of this lab if you have administrative access.
+This article provides a concise walkthrough of the essential tasks required to set up and manage Oracle Cloud Infrastructure (OCI). Readers will learn how to:
+
+- Log into their OCI account and navigate the console
+- Create an OCI Bucket for secure and scalable object storage
+- Establish a new compartment for organized resource management
+- Configure policies for compartment management, ensuring seamless access control
+- Set up policies for OCI Document Understanding Service, enabling AI-powered document analysis
+- Define policies for OCI Speech, unlocking the potential of speech recognition and transcription
+
+By following these straightforward steps, readers will be able to efficiently set up and manage their OCI environment, streamlining their cloud infrastructure management and unlocking the full potential of OCI services.
 
 ### About OCI Policies
 
@@ -93,7 +102,7 @@ You will use one compartment for all required objects in this workshop, hence yo
 
     ![Define a new Compartment](images/details.png)
     
-## Task 4: Setup policies for Compartment management
+## Task 4: Setup policies for Compartment Management
 
 You need to create a **policy** which grants manage privileges in a new compartment to the new OCI group.
 
@@ -130,125 +139,8 @@ You need to create a **policy** which grants manage privileges in a new compartm
     ```text
      <copy>Allow group AIDEMOGroup to manage all-resources in compartment aidemo</copy>
     ```
-
-## Task 5: Setup policies for OCI Data Labeling
-
-One of the tasks in this workshop will be data labeling. This is a process in which all images from your training image library will be assigned a single label that describe that specific image.  To be able to perform your data labeling process, you must perform the following prerequisite steps to:
-
-> **Note:** Please refer [OCI Data Labeling Policies](https://docs.oracle.com/en-us/iaas/Content/data-labeling/using/policies.htm) for more information related to this policy.
- 
-* Create one new dynamic group and
-* Set required policies for data labeling
- 
-1. To find policy details navigate to **Analytics & AI** > **Machine Learning** > **Data Labeling** Service page
   
-    ![Navigate to Data Labeling](images/navigate-data-labeling.png " ")
-
-2. Open Datasets sub-page
-
-    Click on **Datasets** link under **Data Labeling** on the left side of the page. This will open **Dataset list** page in selected Compartment (you might need to change compartment to the one you have created for this workshop).
-
-    ![Open Datasets page](images/open-datasets-page.png " ")
-
-3. Verify data labeling prerequisites
-
-    Expand **Show more information** to display what prerequisites have to be met before you can start your data labeling exercise. If these are not met, then Data Labeling might not run properly.
-
-    ![Show more information for Data Labeling](images/show-more-for-data-labeling.png " ")
-
-    If you have already created a new OCI group creating a new OCI group is not needed. Continue with creating a new dynamic group.
-
-4. Navigate to Dynamic Groups page
-
-    From **Navigator** menu choose **Identity & Security** and then **Dynamic Groups**.
-
-    ![Navigate to Dynamic Groups](images/navigate-to-dynamic-groups.png " ")
-
-5. Create a new dynamic group
-
-    Click **Create** and define a new **Dynamic Group**.
-
-    Provide **Name**, **Description** and enter the following statement to the **Matching Rules**:
-
-    ```text
-    <copy>ALL { resource.type = 'datalabelingdataset' }</copy>
-    ```
-
-    ![Define dynamic group for data labeling](images/define-dynamic-group-for-data-labeling.png " ")
-
-6. Set policies for data labeling
-
-    From the **Navigator** menu select **Identity & Security** and then choose **Policies**.
-
-    ![Navigate to policies](https://oracle-livelabs.github.io/common/images/console/id-policies.png " ")
-
-7. Create a new policy for non-administrative users
-
-    Make sure that you've selected your *root* compartment first. Then click **Create Policy**.
-
-    The first policy is for non-administrative users. These users are members of previously created OCI Group.
-
-    OCI Group needs the following privileges (assuming OCI Group is called **AIDEMOGroup** and compartment's name is **aidemo**):
-
-    ```text
-    <copy>allow group AIDEMOGroup to read buckets in compartment aidemo
-    allow group AIDEMOGroup to manage objects in compartment aidemo
-    allow group AIDEMOGroup to read objectstorage-namespaces in compartment aidemo
-    allow group AIDEMOGroup to manage data-labeling-family in compartment aidemo</copy>
-    ```
-
-    ![Define data labeling policy for non-administrative users](images/datalabel-policies2.png " ")
- 
-8. Create a new policy for dynamic group
-
-    Repeat **Create Policy** for Dynamic Group you've created in the previous step. 
-
-    Make sure that you've selected your *root* compartment.
-
-    Enter the following statements (assuming Dynamic Group is called **AIDEMODynamicGroup** and compartment's name is **aidemo**):
-
-    ```text
-    <copy>allow dynamic-group AIDEMODynamicGroup to read buckets in compartment aidemo
-    allow dynamic-group AIDEMODynamicGroup to read objects in compartment aidemo
-    allow dynamic-group AIDEMODynamicGroup to manage objects in compartment aidemo where any {request.permission='OBJECT_CREATE'}</copy>
-    ```
- 
-    You are now ready to start using Data Labeling service.
-      
-## Task 6: Setup policies for OCI Vision service
-
-Similarly to Data Labeling service, you will require some privileges to use OCI Vision service. 
-
-> **Note:** Please refer [OCI AI Vision Policies](https://docs.oracle.com/en-us/iaas/vision/vision/using/about_vision_policies.htm) for more information related to this policy.
-
-1. Navigate to **Policies** page. In the **Navigator** to navigate to **Identity & Security** and now choose **Policies**.
-
-    ![Navigate to Policies](images/id-policies.png)
-
-2. Create a new policy
-
-    In the **Policies** page click **Create Policy**.
-
-    ![Create a new policy](images/create-a-new-policy.png =30%x*)
-  
-3. Define policies to access Vision service
-
-    Provide a name of a new policy and description in **Create Policy** dialog page. In the **Policy Builder** section enable **Show manual editor** and enter the following policy, You can provide any name and description for this policy
-
-    Policy statement 
- 
-    ```text
-    <copy>allow group AIDEMOGroup to manage ai-service-vision-family in tenancy
-    allow group AIDEMOGroup to manage object-family in tenancy</copy>
-    ``` 
-
-    ![OCI Create policy](./images/policyeditor.png)
-
-    Click **Create**. 
-
-    You are now ready to start using OCI Vision service.
-  
-## Task 7: Setup policies for OCI Document Understanding Service
+## Task 5: Setup policies for OCI Document Understanding Service
 
 Before you start using OCI Document Understanding, OCI policies should be setup for allowing you to access OCI Document Understanding Service. Follow these steps to configure required policies.
 
@@ -302,7 +194,7 @@ Before you start using OCI Document Understanding, OCI policies should be setup 
     <copy>allow group <group_in_tenancy> to manage object-family in compartment <compartment-ocid></copy>
     ```
    
-## Task 8: Setup policies for OCI Speech
+## Task 6: Setup policies for OCI Speech
 
 Before you start using OCI Speech, your tenancy administrator should set up the following policies by following below steps:
 
@@ -354,29 +246,7 @@ Before you start using OCI Speech, your tenancy administrator should set up the 
         ```
 
     ![Create policy for group information window](./images/group-name-policy.png " ") 
-  
-## Task 9: Setup policies for OCI Anomaly Detection
-
-Policy creation steps for this service is same as all other services defined in above tasks, only the statement would change
-
-> **Note:** Please refer [Anomaly Detection Policies](https://docs.oracle.com/en-us/iaas/Content/anomaly/using/policies.htm) for more information related to this policy.
-
-1. Before you start using Anomaly Detection service, your tenancy administrator should set up the following policies.
-
-    ```
-    <copy>
-    allow any-user to manage ai-service-anomaly-detection-family in tenancy 
-    </copy>
-        ```
-
-2. Policies at a Group level and compartment level (Optional)
-
-    ```
-    <copy>
-    allow group <group-name> to manage ai-service-anomaly-detection-family in compartment <compartment-ocid> 
-    </copy>
-        ```
- 
+   
 
 This concludes this lab. You can **proceed now to the next lab**.
    
