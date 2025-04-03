@@ -1,10 +1,21 @@
-# Create an Oracle Autonomous Database and Oracle APEX How-to's
+# Unlock the Power of Oracle Autonomous Database and Oracle APEX: A Step-by-Step Guide
 
 ## Introduction
 
-Learn how to provision Autonomous Database using the OCI console.
+This article provides a comprehensive walkthrough of creating an Oracle Autonomous Database 23ai instance creation and leveraging Oracle APEX to build low-code, data-driven applications. 
 
-Estimated Time: 5 minutes
+Through a series of hands-on tasks, readers will learn how to:
+
+- Create and configure an Oracle Autonomous Database instance
+- Access Database Actions and run SQL queries
+- Set up an Oracle APEX Workspace and run SQL queries
+- Configure Oracle APEX Web Credentials and login to the platform
+- Build a blank Oracle APEX page and create low-code, data-driven pages with CRUD operations
+- Develop dynamic actions and create interactive APEX charts
+  
+By following these steps, readers will gain the skills and knowledge needed to harness the power of Oracle Autonomous Database and APEX, enabling them to build efficient, scalable, and secure applications with ease.
+
+Estimated Time: 30 minutes
 
 ### Objectives
 
