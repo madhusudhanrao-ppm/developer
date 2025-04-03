@@ -85,33 +85,33 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 * Lab : Introduction
 * Lab : Get Started
-* Lab : Setup OCI Policies
-* Lab : Create an Oracle Autonomous Database
+* Lab 1: Setup OCI Policies
+* Lab 2: Create an Oracle Autonomous Database
 
-**AI for Financial Services Labs** - Lab 1 to Lab 18**
+**AI for Financial Services Labs** - Lab 3 to Lab 20**
 
-* Lab 1: Initiating a Conversation with a Chatbot
-* Lab 2: User Profile Management: Creation and Updates
-* Lab 3: Account Creation: Establishing a New Bank Account
-* Lab 4: External Fund Transfer: Transferring Money to an Internal Bank Account
-* Lab 5: Internal Fund Transfer: Transferring Funds Between Accounts
-* Lab 6: Cash Withdrawal: Withdrawing Cash from an ATM
-* Lab 7: Cheque Deposit: Depositing Cheques at an ATM
-* Lab 8: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards
-* Lab 9: Statement Generation: Accessing Bank Statements
-* Lab 10: Credit Card Applications: Applying for a New Credit Card
-* Lab 11: Credit Card Approval and Review Processes
-* Lab 12: Fraud Detection and Alerts: Identifying Suspicious Credit Card Activity
-* Lab 13: Anti-Money Laundering and Money Mule Detection
-* Lab 14: Suspicious Transaction Alerts and Monitoring
-* Lab 15: Spend Analytics: Categorizing and Analyzing Expenditure
-* Lab 16: Transaction Search and Knowledge Repository
-* Lab 17: Frequently Asked Questions (FAQs)
-* Lab 18: Home Loan Planning: Calculating Equated Monthly Installments (EMIs)
+* Lab 3: Initiating a Conversation with a Chatbot
+* Lab 4: User Profile Management: Creation and Updates
+* Lab 5: Account Creation: Establishing a New Bank Account
+* Lab 6: External Fund Transfer: Transferring Money to an Internal Bank Account
+* Lab 7: Internal Fund Transfer: Transferring Funds Between Accounts
+* Lab 8: Cash Withdrawal: Withdrawing Cash from an ATM
+* Lab 9: Cheque Deposit: Depositing Cheques at an ATM
+* Lab 10: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards
+* Lab 11: Statement Generation: Accessing Bank Statements
+* Lab 12: Credit Card Applications: Applying for a New Credit Card
+* Lab 13: Credit Card Approval and Review Processes
+* Lab 14: Fraud Detection and Alerts: Identifying Suspicious Credit Card Activity
+* Lab 15: Anti-Money Laundering and Money Mule Detection
+* Lab 16: Suspicious Transaction Alerts and Monitoring
+* Lab 17: Spend Analytics: Categorizing and Analyzing Expenditure
+* Lab 18: Transaction Search and Knowledge Repository
+* Lab 19: Frequently Asked Questions (FAQs)
+* Lab 20: Home Loan Planning: Calculating Equated Monthly Installments (EMIs)
 
 **Infrastructure Related Labs**
  
-* Lab 19: Ensuring Business Continuity: High Availability and Disaster Recovery
+* Lab 21: Ensuring Business Continuity: High Availability and Disaster Recovery
   
 ## Acknowledgements
 
