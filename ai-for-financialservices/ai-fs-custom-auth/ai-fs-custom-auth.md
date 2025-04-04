@@ -486,6 +486,47 @@ TBD
             /
         </copy>
     ```
+ 
+## Task 4: Add new Authentication scheme
+
+1. Add new **Authentication Scheme** Under Shared Components > Security > Authentication Scheme
+
+    ![Workspace](images/authscheme-1.png) 
+
+2. Provide **Authentication Scheme Name** and **Authentication Function Name**
+
+    ![Workspace](images/authscheme-2.png) 
+
+3. Provide **Session Not Valid URL** and **Post Logout URL**
+
+    ![Workspace](images/authscheme-3.png) 
+
+    Optionally session sharing can be set to **Application** or **Workspace Sharing**
+
+## Task 5: Create self service registration page
+
+1. Create self service registration page
+
+    ![Workspace](images/user-profile-1.png) 
+
+## Task 6: Login to the application
+
+1. Login to the application
+
+  ![Workspace](images/user-profile-3.png) 
+
+## Task 7: View Home page
+
+1. If login is success, then we can view the application Home page
+2. Design of Home Page is not covered in this guide, please import it from the application or create your own home page
+
+  ![Workspace](images/user-profile-4.png) 
+
+## Task 8: Create update profile page
+
+1. Create update profile page
+
+  ![Workspace](images/user-profile-5.png) 
    
 ## Acknowledgements
 
