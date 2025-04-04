@@ -17,6 +17,8 @@ By following these steps, readers will gain the skills and knowledge needed to h
 
 Estimated Time: 30 minutes
 
+---
+
 ### Objectives
 
 In this lab, you will:
@@ -24,9 +26,13 @@ In this lab, you will:
 - Learn how to provision a new Oracle Autonomous Database
 - Learn some of the important Oracle APEX How to's (This is Optional)
 
+---
+
 ### Prerequisites
 
 - This lab requires completion of the Get Started section in the Contents menu on the left.
+
+---
 
 ## Task 1: Create or select a compartment
  
@@ -190,7 +196,7 @@ There are several ways to run SQL queries, few most frequently used techniques a
 
     ![SQL Commands](./images/apex-sendmail-5.png)
 
-## Task 7: How to setup Oracle APEX Web Credentials
+## Task 7: How to setup Oracle APEX web credentials
 
 Oracle APEX Web Credentials provides a convenient and secure mechanism for storing the following types of credentials:
 
@@ -244,7 +250,7 @@ We will see how to login to Oracle APEX environment
 
     ![APEX how tos](images/apex-12.png " ")
 
-## Task 9: How to create Blank Oracle APEX page
+## Task 9: How to create blank Oracle APEX page
 
 1. First you need to create Blank Application or Application that uses sample Apps, from there you can create APEX pages
 2. Click on the Application that has been created.
@@ -260,7 +266,7 @@ We will see how to login to Oracle APEX environment
 
     ![APEX how tos](images/apex-03.png " ")
 
-## Task 10: How to Create Low-Code Data Driven APEX page with CRUD Operations
+## Task 10: How to create low-code data driven APEX page with CRUD operations
 
 Similarly, if you want to create a no-code data driven page that allows you to perform CRUD operations on a table, 
 
@@ -292,7 +298,7 @@ Similarly, if you want to create a no-code data driven page that allows you to p
 
     ![APEX how tos](images/apex-14.png " ")
 
-## Task 11: How to Create Dynamic Actions 
+## Task 11: How to create dynamic actions 
 
 Sometimes, you may want to create Dynamic Actions on a table data or on a button click, such as executing a server side code that invokes a PL/SQL procedure or runs a Javascript code or just submits a page.
 
@@ -305,7 +311,7 @@ Sometimes, you may want to create Dynamic Actions on a table data or on a button
 
     ![APEX how tos](images/apex-15.png " ")
 
-## Task 12: How to Create APEX Chart
+## Task 12: How to create Oracle APEX Chart
 
 Sometimes, you may want to display data in a chart for example Bar Chart or Pie Chart or Stacked Bar chart etc. for this the SQL Query should contain a Label and a Numeric Value 
 

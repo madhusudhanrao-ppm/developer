@@ -85,8 +85,8 @@ By mastering these technologies, you will gain a competitive edge in the industr
  
 **Common Labs**
 
-* Lab : Introduction
-* Lab : Get Started
+* Introduction
+* Get Started
 * Lab 1: Setup OCI Policies
 * Lab 2: Create an Oracle Autonomous Database
 
