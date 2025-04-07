@@ -19,6 +19,12 @@ TBD
 * A user with access to provision & manage core OCI services  
 * Having completed common labs
 
+--- 
+ 
+### Introduction to this Lab
+
+[Demo video on AI for Financial Services](youtube:ELvtAU-dOMw:large) 
+
 ---
  
 ## Task 1: Task 1

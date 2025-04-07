@@ -21,6 +21,12 @@ TBD
 
 ---
  
+### Introduction to this Lab
+
+[Demo video on AI for Financial Services](youtube:svyaoQpZSnY:large)  
+
+---
+ 
 ## Task 1: Task 1
 
 1. Login into OCI

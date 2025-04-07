@@ -63,6 +63,12 @@ To set up the Oracle Digital Assistant on the OCI tenancy, you will:
 
 * A user with access to provision & manage Core OCI services like Oracle Digital Assistant
 * Having completed common labs
+ 
+---
+ 
+### Demo
+
+[Demo video on AI for Financial Services](youtube:aOyV_QGQROQ:large)  
 
 ---
  

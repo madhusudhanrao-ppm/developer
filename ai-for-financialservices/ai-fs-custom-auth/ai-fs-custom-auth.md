@@ -21,6 +21,12 @@ TBD
 
 ---
  
+### Introduction to this Lab
+
+[Demo video on AI for Financial Services](youtube:h6OQ7jQvnfA:large)  
+
+---
+ 
 ## Task 1: Create tables and authentication packages
 
 1. Login into Oracle APEX SQL Worksheet. Lets start with creating a sequence **COMMON\_USER\_SEQ**
