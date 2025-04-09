@@ -1,8 +1,50 @@
-# User Profile Management: Creation and Updates
+# Building a Secure User Authentication System with Oracle APEX
 
+In this hands-on workshop, participants will learn how to design and implement a secure user authentication system using Oracle APEX. Through a series of guided tasks, attendees will gain practical experience in creating tables, authentication packages, and user interfaces.
+  
 ## About this workshop
+ 
+**Create tables and authentication packages**
 
-TBD
+- Design and create tables to support user authentication
+- Develop an authentication package to manage user credentials
+
+**Create users table and roles table**
+
+- Create tables to store user and role information
+- Define relationships between users and roles
+  
+**Insert demo user records and application roles**
+
+- Populate tables with demo user data
+- Define application roles and assign users to roles
+  
+**Create Authentication package**
+
+- Develop a package to manage user authentication
+- Implement authentication logic and validation
+  
+**Add new Authentication scheme**
+
+- Create a new authentication scheme to support user login
+- Configure scheme settings and options
+  
+**Create self service registration page**
+
+- Design and build a self-service registration page
+- Implement validation and error handling
+  
+**Login to the application**
+
+- Test login functionality and authentication scheme
+- Verify user access and authorization
+  
+**Create update profile page**
+
+- Design and build an update profile page
+- Implement validation and error handling
+
+By the end of this workshop, participants will have gained hands-on experience in building a secure user authentication system using Oracle APEX. Attendees will be able to apply these skills to their own projects and develop robust user authentication systems.
 
 Estimated Time: 30 minutes
 
@@ -10,7 +52,10 @@ Estimated Time: 30 minutes
 
 ### Objectives
 
-TBD
+- Create tables and authentication packages to support user authentication
+- Design and implement user and role management systems
+- Develop a self-service registration page and login functionality
+- Build a user profile management system with update capabilities
 
 ---
 
@@ -18,6 +63,14 @@ TBD
 
 * A user with access to provision & manage core OCI services  
 * Having completed common labs
+* Users should have basic knowledge of Oracle APEX for example creating pages, page items and/or dynamic actions
+* (Optional) Basic knowledge of HTML, CSS, JS for Web page design
+
+---
+
+### Note
+
+* Please replace page numbers to match your page numbers, for example **:P86\_password** will be **:P10\_password** if you have created page item in page number **10**.
 
 ---
  
@@ -87,11 +140,11 @@ TBD
           CREATE OR REPLACE EDITIONABLE TRIGGER "BI_COMMON_USERS" 
           before insert on "COMMON_USERS"                
             for each row   
-            begin    
-                if :NEW."USER_ID" is null then  
+            BEGIN    
+                IF :NEW."USER_ID" is null then  
                     select "COMMON_USER_SEQ".nextval into :NEW."USER_ID" from sys.dual;  
-                end if;  
-            end;  
+                END IF;  
+            END;  
           
         ALTER TRIGGER "BI_COMMON_USERS" ENABLE;
         </copy>
@@ -182,7 +235,7 @@ TBD
         function authz_user(  
             p_username in varchar2)  
           return boolean ; 
-        end;
+        END;
         /
         </copy>
     ```
@@ -207,7 +260,7 @@ TBD
               l_password        varchar2(100) ;  
               l_stored_password varchar2(100) ;  
               l_boolean         boolean;  
-            begin  
+            BEGIN  
               -- First, check to see if the user is in the user table and look up their password  
               select password  
                 into l_stored_password  
@@ -217,15 +270,15 @@ TBD
               select standard_hash(p_password, 'MD5') into l_password from dual; 
                
               -- Finally, we compare them to see if they are the same and return either TRUE or FALSE  
-            if l_password = l_stored_password then  
+            IF l_password = l_stored_password then  
                 return true;  
               else  
                 return false;  
-              end if;  
-            exception  
-            when no_data_found then  
-              return false;  
-            end custom_authenticate;   
+            END IF;  
+              exception  
+              when no_data_found then  
+                return false;  
+            END custom_authenticate;   
             
             
             /**  Register   */  
@@ -238,7 +291,7 @@ TBD
               l_password raw(64) ;  
               l_user_id number;  
               l_url  varchar2(1000) ;  
-            begin  
+            BEGIN  
               apex_debug.message(p_message => 'Begin create_site_account', p_level => 3);  
               
             -- l_password := utl_raw.cast_to_raw(DBMS_RANDOM.string('x',10));  
@@ -246,7 +299,7 @@ TBD
               
               apex_debug.message(p_message => 'verify email exists', p_level => 3) ;  
               
-              begin  
+              BEGIN  
                 select password  
                   into l_password  
                   from common_users  
@@ -256,9 +309,9 @@ TBD
               exception  
               when no_data_found then  
                 apex_debug.message(p_message => 'email doesn''t exist yet - good to go', p_level => 3) ;  
-              end;  
+              END;  
               
-              if l_message is null then  
+              IF l_message is null then  
                 apex_debug.message(p_message => 'password ok', p_level => 3) ;  
               
                 apex_debug.message(p_message => 'insert record', p_level => 3) ;  
@@ -278,10 +331,10 @@ TBD
             
               else  
                 raise_application_error( -20001, l_message) ;  
-              end if;  
+              END IF;  
                   
               apex_debug.message(p_message => 'End create_site_account', p_level => 3) ;  
-            end create_account;  
+            END create_account;  
               
             /**  Post authentication */  
             procedure post_authenticate(  
@@ -292,14 +345,14 @@ TBD
             is  
               l_id         number;  
               l_first_name varchar2(100) ;  
-            begin  
+            BEGIN  
               select USER_ID  
                 into l_id  
                 from common_users  
               where upper(email)    = upper(p_username);  
               out_user_id        := l_id;  
               
-            end post_authenticate;  
+            END post_authenticate;  
               
               
             /** Reset password  */  
@@ -309,7 +362,7 @@ TBD
               l_id                number;  
               l_verification_code varchar2(100);  
               l_url               varchar2(200);  
-            begin  
+            BEGIN  
               -- First, check to see if the user is in the user table  
               select USER_ID  
                 into l_id  
@@ -332,7 +385,7 @@ TBD
             exception  
             when no_data_found then  
               raise_application_error( - 20001, 'Email address not registered.') ;  
-            end request_reset_password ;  
+            END request_reset_password ;  
  
             function forgot_password(
                 p_email IN VARCHAR2,
@@ -385,7 +438,7 @@ TBD
 
             is  
               l_body     clob;    
-            begin  
+            BEGIN  
               apex_debug.message(p_message => 'Reset password demo account', p_level => 3) ;    
               l_body := '<p>Hi,</p>  
                         <p>We received a request to reset your password in the training app.</p>  
@@ -400,7 +453,7 @@ TBD
             when others   
             then  
               raise_application_error( - 20002, 'Issue sending reset password email.') ;  
-            end mail_reset_password;  
+            END mail_reset_password;  
             
             
             /** Reset Password  */  
@@ -410,7 +463,7 @@ TBD
             is  
               l_username        varchar2(100) ;  
               l_hashed_password varchar2(100) ;  
-            begin  
+            BEGIN  
               select email  
                 into l_username  
                 from common_users  
@@ -422,7 +475,7 @@ TBD
                 set password = l_hashed_password,  
                     verification_code = null  
               where USER_ID = p_id;  
-            end reset_password;  
+            END reset_password;  
             
             /** Check the verification code  */  
             function verify_reset_password(  
@@ -431,8 +484,8 @@ TBD
               return number  
             is  
               l_id number;  
-            begin  
-              begin 
+            BEGIN  
+              BEGIN 
               select u.USER_ID  
                 into l_id  
                 from common_users u  
@@ -446,9 +499,9 @@ TBD
                 raise_application_error( - 20001, 'Invalid password request url.') ;  
                 l_id:=0; 
                 return 0;  
-            end; 
+            END; 
             return  l_id; 
-            end verify_reset_password ;  
+            END verify_reset_password ;  
                
             /** check the user is the administrator  */  
             function authz_administrator(  
@@ -456,7 +509,7 @@ TBD
               return boolean  
             is  
               l_is_admin varchar2(1) ;  
-            begin  
+            BEGIN  
               select 'Y'  
                 into l_is_admin  
                 from common_users a  
@@ -467,7 +520,7 @@ TBD
             exception  
             when no_data_found then  
               return false;  
-            end authz_administrator;  
+            END authz_administrator;  
                
             /** check the username is the account username  */  
             function authz_user(  
@@ -475,7 +528,7 @@ TBD
               return boolean  
             is  
               l_is_user varchar2(1) ;  
-            begin  
+            BEGIN  
               select 'Y'  
                 into l_is_user  
                 from common_users a  
@@ -486,7 +539,7 @@ TBD
             exception  
             when no_data_found then  
               return false;  
-            end authz_user;  
+            END authz_user;  
               
             end COM_COMMON_AUTH_PKG;
             /
@@ -515,6 +568,22 @@ TBD
 
     ![Workspace](images/user-profile-1.png) 
 
+2. Security for this page set to be **Authentication = Public**, as this is user registration page
+
+    ![Workspace](images/page-security.png) 
+
+3. Register my profile Dynamic action PL/SQL, this will insert customer record in **common\_users** table
+
+    ```sql 
+        <copy>
+          BEGIN  
+            -- username or email id, password which gets encrypted and stored, answer to forgot password question
+            -- you can also save questions if required, pass it as another parameter
+            COM_COMMON_AUTH_PKG.create_account(:P86_email, :P86_password, :P86_ANSWER); 
+          end;
+        </copy>
+    ```
+
 ## Task 6: Login to the application
 
 1. Login to the application
@@ -533,6 +602,38 @@ TBD
 1. Create update profile page
 
   ![Workspace](images/user-profile-5.png) 
+
+2. Update my profile Dynamic action PL/SQL, this will update customer record in **common\_users** table
+
+    ```sql 
+        <copy>
+        BEGIN 
+
+          update common_users
+          set first_name =:P88_first_name,
+              last_name  =:P88_last_name,
+              address1   = :P88_address1,
+              address2   = :P88_address2,
+              city       =  :P88_city,
+              statezip   =  :P88_statezip,
+              country = :P88_COUNTRY
+          where upper(email) = upper(v('APP_USER')) ;
+          
+          APEX_APPLICATION.G_PRINT_SUCCESS_MESSAGE := 'Profile Updated.'; 
+
+        END;
+        </copy>
+    ```
+
+3. Reset password 
+
+    ```sql 
+      <copy>
+      BEGIN   
+            COM_COMMON_AUTH_PKG.reset_password(:P88_USER_ID,:P88_password); 
+      end;
+      </copy>
+    ```
    
 ## Acknowledgements
 
