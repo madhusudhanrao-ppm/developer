@@ -42,44 +42,44 @@
       "filename": "../../ai-fs-create-account/ai-fs-create-account.md"
     },
     {
-      "title": "Lab 6: External Fund Transfer: Transferring Money to an Internal Bank Account",
+      "title": "Lab 6: Credit Card Approval and Review Processes",
+      "description": "Credit Card Approval and Review Processes",
+      "filename": "../../ai-fs-app-approval/ai-fs-app-approval.md"
+    },
+    {
+      "title": "Lab 7: External Fund Transfer: Transferring Money to an Internal Bank Account",
       "description": "External Fund Transfer: Transferring Money to an Internal Bank Account",
       "filename": "../../ai-fs-ext-fund-transfer/ai-fs-ext-fund-transfer.md"
     },
     {
-      "title": "Lab 7: Internal Fund Transfer: Transferring Funds Between Accounts",
+      "title": "Lab 8: Internal Fund Transfer: Transferring Funds Between Accounts",
       "description": "Internal Fund Transfer: Transferring Funds Between Accounts",
       "filename": "../../ai-fs-int-fund-transfer/ai-fs-int-fund-transfer.md"
     },
     {
-      "title": "Lab 8: Cash Withdrawal: Withdrawing Cash from an ATM",
+      "title": "Lab 9: Cash Withdrawal: Withdrawing Cash from an ATM",
       "description": "Cash Withdrawal: Withdrawing Cash from an ATM",
       "filename": "../../ai-fs-cash-withdrawal/ai-fs-cash-withdrawal.md"
     },
     {
-      "title": "Lab 9: Cheque Deposit: Depositing Cheques at an ATM",
+      "title": "Lab 10: Cheque Deposit: Depositing Cheques at an ATM",
       "description": "Cheque Deposit: Depositing Cheques at an ATM",
       "filename": "../../ai-fs-cash-deposit/ai-fs-cash-deposit.md"
     },
     {
-      "title": "Lab 10: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
+      "title": "Lab 11: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
       "description": "E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
       "filename": "../../ai-fs-retail/ai-fs-retail.md"
     },
     {
-      "title": "Lab 11: Statement Generation: Accessing Bank Statements",
+      "title": "Lab 12: Statement Generation: Accessing Bank Statements",
       "description": "Statement Generation: Accessing Bank Statements",
       "filename": "../../ai-fs-statement/ai-fs-statement.md"
     },
     {
-      "title": "Lab 12: Credit Card Applications: Applying for a New Credit Card",
+      "title": "Lab 13: Credit Card Applications: Applying for a New Credit Card",
       "description": "Credit Card Applications: Applying for a New Credit Card",
       "filename": "../../ai-fs-apply-for-card/ai-fs-apply-for-card.md"
-    },
-    {
-      "title": "Lab 13: Credit Card Approval and Review Processes",
-      "description": "Credit Card Approval and Review Processes",
-      "filename": "../../ai-fs-app-approval/ai-fs-app-approval.md"
     },
     {
       "title": "Lab 14: Fraud Detection and Alerts: Identifying Suspicious Credit Card Activity",
