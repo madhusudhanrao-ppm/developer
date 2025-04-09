@@ -2,15 +2,20 @@
 
 ## About this workshop
 
-TBD
+This workshop is designed to provide hands-on experience with building a blockchain-based application for managing user profiles and bank account applications. Participants will learn how to create and update user profiles, apply for bank accounts, and store signatures on a blockchain table using Oracle APEX.
 
-Estimated Time: 30 minutes
+Estimated Time: 60 minutes
 
 ---
 
 ### Objectives
 
-TBD
+The objective of this workshop is to enable participants to:
+
+- Create and manage user profiles
+- Apply for bank accounts and store signatures on a blockchain table
+- Develop an understanding of blockchain technology and its applications
+- Build a functional application using Oracle APEX and blockchain technology
 
 ---
 
@@ -22,8 +27,15 @@ TBD
 --- 
  
 ### Introduction to this Lab
+ 
+Through a series of guided tasks, participants will learn how to:
 
-<!-- [Demo video on AI for Financial Services](youtube:E17kftPQ7Gg:large)   -->
+- Update and complete user profiles
+- View profile information and apply for bank accounts
+- Create and upload signatures to a blockchain table
+- View and verify signatures stored on the blockchain table
+- Create and manage bank customer tables
+- Complete bank account application forms using Oracle APEX.
 
 ---
  
@@ -131,7 +143,7 @@ TBD
 
 ## Task 7: Create Bank Customers Table
  
-1.  Here we are store applications in the bank customers table, you can also create a table with different name such as bank application table or just applications table, it is your choice. please feel free to add or remove columns as per your application needs.  
+1.  Here we are storing applications in the bank customers table, you can also create a table with different name such as bank application table or just applications table, it is your choice. please feel free to add or remove columns as per your application needs.  
 
     ```sql 
         <copy>
@@ -151,17 +163,14 @@ TBD
                 "CUST_INCOME_LEVEL" VARCHAR2(500), 
                 "CREDIT_LIMIT" NUMBER, 
                 "CUST_VALID" VARCHAR2(1), 
-                "CUSTOMER_NAME" VARCHAR2(100), 
-                "BUYING" VARCHAR2(50), 
-                "PRICE" NUMBER, 
+                "CUSTOMER_NAME" VARCHAR2(100),   
                 "DOB" DATE, 
                 "CUSTOMER_ID" VARCHAR2(20), 
                 "ACCOUNT_NUMBER" NUMBER, 
                 "ACCOUNT_TYPE" VARCHAR2(20), 
                 "REFERENCE_RELATION" VARCHAR2(10), 
                 "REFERENCE_NAME" VARCHAR2(100), 
-                "COUNTRY" VARCHAR2(50), 
-                "CITIZENSHIP" VARCHAR2(100), 
+                "COUNTRY" VARCHAR2(50),  
                 "OCCUPATION_TYPE" VARCHAR2(50), 
                 "INCOME_SOURCE" VARCHAR2(500), 
                 "EDUCATIONAL_QUALIFICATION" VARCHAR2(100), 
