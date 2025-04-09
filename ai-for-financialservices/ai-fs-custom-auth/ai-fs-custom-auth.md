@@ -562,7 +562,7 @@ Estimated Time: 30 minutes
 
     Optionally session sharing can be set to **Application** or **Workspace Sharing**
 
-## Task 5: Create self service registration page
+## Task 5: Create profile with self service registration page
 
 1. Create self service registration page
 
@@ -597,13 +597,13 @@ Estimated Time: 30 minutes
 
   ![Workspace](images/user-profile-4.png) 
 
-## Task 8: Create update profile page
+## Task 8: Update profile page
 
-1. Create update profile page
+1. Update profile page
 
   ![Workspace](images/user-profile-5.png) 
 
-2. Update my profile Dynamic action PL/SQL, this will update customer record in **common\_users** table
+2. Update my profile **Dynamic Action** PL/SQL, this will update customer record in **common\_users** table
 
     ```sql 
         <copy>
