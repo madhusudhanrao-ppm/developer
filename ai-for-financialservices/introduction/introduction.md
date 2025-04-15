@@ -81,6 +81,32 @@ By mastering these technologies, you will gain a competitive edge in the industr
 ![AI for Financial](images/AI-for-fc-usecases.png " ")  
 
 ---
+
+| Roles: Common Users (Public) | Bank Customers | Bankers (Bank Officials) | 
+| -------- |:-------| :-----|
+| Create Profile | Update Profile | - |
+| Apply for Bank Account | - | Business Process - Review Application |
+|   | Deposit cheque in ATM |   |
+|   | Withdrawal of cash in ATM |   |
+|   | Apply for credit card |   |
+|   | Internal Bank fund transfer | Worklist - Review Fund Transfer  |
+|   | External Bank fund transfer |   |
+|   | Retail online purchase |  Fraud Detection |
+|   | Generate Bank statement |  Money Laundering |
+|   | Home Loan EMI Calculator | Money Mules  |
+|   |   | Customer Analysis  |
+|   |   | Spend Analysis |
+|   |   | Manage Customers  |
+|  AI Search - (LLM) |  AI Search - (LLM) | AI Search - (DB+LLM+KM)+  |
+
+***Where + indicates***
+
+* LLM - Large Language Models
+* DB - Database Search with Select AI
+* KM - Knowledge Management Search (AI Vector Search)
+
+---
+
 ### AI for Financial Services - Table of Contents
  
 **Common Labs**

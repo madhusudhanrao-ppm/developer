@@ -23,6 +23,13 @@ The objective of this workshop is to enable participants to:
 
 * A user with access to provision & manage core OCI services  
 * Having completed common labs
+* **Please Note:** We will create **Application Review Business Process** Workflow in the next lab
+
+--- 
+
+### Application Review Business Processes - Demo
+
+[Demo Application Review Business Processes](youtube:iDlTZnCIGh8:large)  
 
 --- 
  
@@ -191,7 +198,7 @@ Through a series of guided tasks, participants will learn how to:
 
     ![SSO Login](images/complete-app-form.png) 
 
-2. Submit the application, this will insert the record in **BANK\_CUSTOMERS** table, the corresponding PL/SQL process to save record is shown below.
+2. **Submit** the application, this will insert the record in **BANK\_CUSTOMERS** table, the corresponding PL/SQL process to save record is shown below.
 
     ![SSO Login](images/save-record.png) 
 
@@ -256,6 +263,22 @@ Through a series of guided tasks, participants will learn how to:
     ```
 
     Since the user has already updated their profile, we can auto populate some of the page items here
+
+    **Please Note:** We will create **Application Review Business Process** Workflow in the next lab
+
+## Task 8: View changes in the Application Status
+
+1. Once the Banker reviews and approves or rejects the Bank Account opening application, status will change from **Pending Review** to **Approved** or **Rejected**, the applicant can see this status change in their application 
+
+    ![SSO Login](images/pending.png) 
+     
+2. Reviewed by Banker, **Approved** in this case
+
+    ![SSO Login](images/review-app.png) 
+    
+3. Application status changes from **Pending Review** to **Approved**
+
+    ![SSO Login](images/approved.png) 
  
 ## Acknowledgements
 
