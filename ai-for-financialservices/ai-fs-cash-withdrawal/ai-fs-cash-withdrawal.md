@@ -85,11 +85,10 @@ By the end of the workshop, attendees gained practical experience in harnessing 
         </copy>
     ```
 
-  Output Response
-  ![ATM Cash withdrawal](images/atm-4.png)
-  ![ATM Cash withdrawal](images/atm-5.png)
-  
+  Partial output response
 
+  ![ATM Cash withdrawal](images/atm-4.png)
+    
 ## Task 3: View Code and Develop Application
  
 1.  You can now view the code both in Java and Python, run it in your own environment, or use REST API invocation with PLSQL or any other technologies that you are familiar with
@@ -161,8 +160,12 @@ By the end of the workshop, attendees gained practical experience in harnessing 
    ![ATM Cash withdrawal](images/atm-12.png)
 
    Now that we know how to get information from an image, we can use this data to query from the Oracle Autonomous Database
+
+## Task 6: How do you set up Oracle APEX OCI Web credentials and call Generative AI services?
+ 
+1.  Please see Lab 2 and Task 7 on How to setup Oracle APEX OCI Web credentials
   
-## Task 6: Leveraging Oracle Database with Meta Llama Models
+## Task 7: Leveraging Oracle Database with Meta Llama Models
  
 1.  Let us take an example of how we can find customer information based on the card number read through the Meta Llama Vision model.
 2.  The Response would be card number, Based on the card number card holder name and card status can be pulled from the Database. 
@@ -237,8 +240,7 @@ By the end of the workshop, attendees gained practical experience in harnessing 
               from dual;
 
         -- Build JSON request body
-        -- what is the number written on this image
-        -- what is the card number
+        -- what is the number written on this image 
         l_request_body := ' 
         {
             "compartmentId": "'||l_compartment_id||'",
@@ -281,6 +283,7 @@ By the end of the workshop, attendees gained practical experience in harnessing 
         apex_web_service.g_request_headers(1).value := 'application/json';
 
         -- Make the API call
+        -- Ind_OCI_WebCred is Oracle APEX Web Credentials
         l_response_text := apex_web_service.make_rest_request(
             p_url => 'https://inference.generativeai.us-chicago-1.oci.oraclecloud.com/20231130/actions/chat',
             p_http_method => 'POST',
@@ -320,10 +323,6 @@ By the end of the workshop, attendees gained practical experience in harnessing 
     end; 
       </copy>
     ```
-
-## Task 7: How do you set up Oracle APEX OCI Web credentials and call Generative AI services?
- 
-1.  Please see Lab 2 and Task 7 on How to setup Oracle APEX OCI Web credentials
  
 ## Task 8: How to Convert Text Input to Audio Output with OCI Speech AI (Text To Speech)
  

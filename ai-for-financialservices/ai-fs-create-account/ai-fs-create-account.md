@@ -10,7 +10,7 @@ Estimated Time: 60 minutes
 
 ### Objectives
 
-The objective of this workshop is to enable participants to:
+The objective of this lab is to enable participants to:
 
 - Create and manage user profiles
 - Apply for bank accounts and store signatures on a blockchain table
