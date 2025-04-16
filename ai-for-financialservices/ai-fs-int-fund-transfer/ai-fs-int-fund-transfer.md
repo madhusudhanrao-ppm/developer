@@ -45,8 +45,50 @@ The objective of this lab is to enable participants to:
 [Demo video on AI for Financial Services](youtube:Y5PziqsPcCI:large) 
 
 ---
+
+## Task 1: Create Queue
  
-## Task 1: Add Beneficiary
+1.  Create Type Object
+    
+    ```sql 
+        <copy>
+         CREATE TYPE banktransfer_q_payload AS OBJECT ( message VARCHAR2(4000) );
+        </copy>
+    ``` 
+
+2. Set up a queue to manage fund transfer transactions.
+
+    ```sql 
+        <copy>
+         ------- Create Single Queue ----------
+          DECLARE
+              v_qn varchar2(100) := 'fundstransfer_queue'; 
+              v_qtab varchar2(100) := 'fundstransfer_queue_table';
+              v_qcomm varchar2(1000) := 'Funds Transfer Queue';  
+              v_payload varchar2(100) := 'banktransfer_q_payload';
+              v_qtype_bool boolean := false;
+              
+          BEGIN 
+          -- Create Queue Table --------------------------
+            DBMS_AQADM.create_queue_table (
+              queue_table          => v_qtab,
+              queue_payload_type   => v_payload,
+              multiple_consumers   => v_qtype_bool,
+              comment              => v_qcomm,
+              secure => false);
+
+          -- Create Queue -----------------------------------
+            DBMS_AQADM.create_queue (queue_name    => v_qn,
+                                    queue_table   => v_qtab); 
+
+          -- Start the Queue  ----------------------------------
+            DBMS_AQADM.start_queue (queue_name => v_qn);  
+
+          END;
+        </copy>
+    ``` 
+ 
+## Task 2: Add Beneficiary
 
 1. Select an account from the available options and add it as a beneficiary.
  
@@ -120,7 +162,7 @@ The objective of this lab is to enable participants to:
 
   ![Internal Transfer](images/bank-form.png)
 
-## Task 2: Select Beneficiary
+## Task 3: Select Beneficiary
  
 1.  Choose a beneficiary from the list of existing beneficiaries. Add beneficiaries from the selected list
 
@@ -131,11 +173,12 @@ The objective of this lab is to enable participants to:
     ```sql 
         <copy>
         select * from BANK_CUSTOMERS_BENEFICIARIES 
-        WHERE BENEFICIARIES_FROM_CUSTID =  (select ID from bank_customers where upper(email) = upper(v('APP_USER')) AND rownum = 1);  
+        WHERE BENEFICIARIES_FROM_CUSTID =  
+        (select ID from bank_customers where upper(email) = upper(v('APP_USER')) AND rownum = 1);  
         </copy>
     ```
 
-3. Click on **Transfer Amount** button, Create a dynamic action on button click as shown below
+3. Click on **Transfer Amount** button, Create a **Dynamic Action** on button click as shown below, page item names and numbers might vary in your setup
 
     ```sql 
         <copy>
@@ -147,6 +190,8 @@ The objective of this lab is to enable participants to:
         l_queue_msg            banktransfer_q_payload; 
         message_id varchar2(200); 
         l_msg varchar2(400);  
+
+        -- DOCUSER is the schema that we are using, this might vary in your setup
         l_q_name varchar2(400) := 'DOCUSER.fundstransfer_queue'; 
         l_from_custid varchar2(50) := :P74_BENEFICIARIES_FROM_CUSTID;
         l_to_custid varchar2(50) := :P74_INT_TO_CUSTID;
@@ -191,19 +236,11 @@ The objective of this lab is to enable participants to:
         end;
         </copy>
     ``` 
-
-## Task 3: Create Queue
  
-1.  Set up a queue to manage fund transfer transactions.
-    
-    
-
 ## Task 4: Initiate Fund Transfer (Enqueue)
  
 1.  Enqueue a fund transfer message to initiate the transaction.
-    
-  
-
+      
 2. View Transfer Status
 
   ![Internal Transfer](images/internal-transfer-03.png)
@@ -213,6 +250,50 @@ The objective of this lab is to enable participants to:
 1.  Simulate banker approval by dequeuing the fund transfer message, thereby completing the transaction.
    
    ![Internal Transfer](images/internal-transfer-04.png) 
+
+2. View list of Pending transactions, we can generate list of ids as shown below.
+
+    ```sql 
+        <copy>
+        select id as d, id as v from FD_TRANSACTIONS_LOG 
+        where MSG_ID is not null and STATUS = 'Pending';
+        </copy>
+    ``` 
+
+3. Based on Message Id, Fund transfer can be Approved by Dequeue operation  by clicking on **Approve Fund Transfer** button **Dynamic Action**
+
+    ```sql 
+        <copy>
+        DECLARE 
+          r_dequeue_options    DBMS_AQ.DEQUEUE_OPTIONS_T;
+          r_message_properties DBMS_AQ.MESSAGE_PROPERTIES_T;
+          v_message_handle     RAW(16) := :P64_SELECTED_MSG_ID;
+          o_payload            banktransfer_q_payload;    
+          -- DOCUSER is the schema that we are using, this might vary in your setup
+          v_qname varchar2(100) := 'DOCUSER.fundstransfer_queue'; 
+      
+        BEGIN 
+          if v_message_handle is not null then 
+            DBMS_AQ.DEQUEUE(
+            queue_name         => v_qname,
+            dequeue_options    => r_dequeue_options,
+            message_properties => r_message_properties,
+            payload            => o_payload, 
+            msgid              => v_message_handle
+            ); 
+         
+            -- lets update the status of this transaction
+            update FD_TRANSACTIONS_LOG set STATUS = 'Success' where MSG = o_payload.message;
+          
+            COMMIT;
+            -- Page Item name and number might vary in your setup
+            :P64_APPROVED_MSG := o_payload.message;
+          end if;
+        
+      
+        END;
+        </copy>
+    ```
  
 ## Acknowledgements
 

@@ -82,22 +82,23 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 ---
 
-| Roles: Common Users (Public) | Bank Customers | Bankers (Bank Officials) | 
-| -------- |:-------| :-----|
-| Create Profile | Update Profile | - |
-| Apply for Bank Account | - | Business Process - Review Application |
-|   | Deposit cheque in ATM |   |
-|   | Withdrawal of cash in ATM |   |
-|   | Apply for credit card |   |
-|   | Internal Bank fund transfer | Worklist - Review Fund Transfer  |
-|   | External Bank fund transfer |   |
-|   | Retail online purchase |  Fraud Detection |
-|   | Generate Bank statement |  Money Laundering |
-|   | Home Loan EMI Calculator | Money Mules  |
-|   |   | Customer Analysis  |
-|   |   | Spend Analysis |
-|   |   | Manage Customers  |
-|  AI Search - (LLM) |  AI Search - (LLM) | AI Search - (DB+LLM+KM)+  |
+| Roles: Bank Customers | Bankers (Bank Officials) | 
+| :-------| :-----|
+| Bank FAQ Chatbot | Bank FAQ Chatbot |
+| Create & Update Profile | - |
+| Apply for Bank Account | Business Process - Review Application |
+| Deposit cheque in ATM | -  |
+| Withdrawal of cash in ATM | -  |
+| Apply for credit card | -  |
+| Internal Bank fund transfer | Worklist - Review Fund Transfer  |
+| External Bank fund transfer | -  |
+| Retail online purchase |  Fraud Detection |
+| Generate Bank statement |  Money Laundering |
+| Home Loan EMI Calculator | Money Mules  |
+| -  | Customer Analysis  |
+| -  | Spend Analysis |
+| -  | Manage Customers  |
+|   AI Search - (LLM) | AI Search - (DB+LLM+KM)+  |
 
 ***Where + indicates***
 
