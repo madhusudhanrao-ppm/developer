@@ -264,4 +264,4 @@ Cheque Processing Workflow
 
 ## Learn more
  
-* [Oracle Digital Assistant Skills](https://docs.oracle.com/en/cloud/paas/digital-assistant/use-chatbot/create-configure-and-version-skills1.html)
+* [Unlocking the Power of Generative AI Meta Llama Instruct and Vision Models with Oracle Database 23ai](https://www.linkedin.com/pulse/unlocking-power-generative-ai-meta-llama-instruct-vision-rao-q0myf)
