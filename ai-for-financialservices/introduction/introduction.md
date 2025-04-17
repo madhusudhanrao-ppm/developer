@@ -1,8 +1,8 @@
-# Introduction
+# Introduction to AI for Financial Services
 
 ## About this workshop
- 
-In today's digital age, the banking and financial services sector has undergone a significant transformation. The rise of online banking, mobile banking apps, and digital payment systems has revolutionized the way customers interact with financial institutions. This workshop provides a comprehensive guide to the digital banking ecosystem, covering various aspects of online banking, from initiating conversations with chatbots to ensuring business continuity through high availability and disaster recovery.
+  
+ In today's digital age, the banking and financial services sector has undergone a significant transformation. The rise of online banking, mobile banking apps, and digital payment systems has revolutionized the way customers interact with financial institutions. This workshop provides a comprehensive guide to the digital banking ecosystem, covering various aspects of online banking, from initiating conversations with chatbots to ensuring business continuity through high availability and disaster recovery.
 
 Through 23 labs, this workshop takes readers on a journey through the digital banking landscape, exploring topics such as user profile management, account creation, fund transfers, e-commerce transactions, credit card applications, fraud detection, and spend analytics. The book also delves into the importance of ensuring business continuity, highlighting the need for high availability and disaster recovery measures.
 
@@ -82,23 +82,24 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 ---
 
-| Roles: Bank Customers | Bankers (Bank Officials) | 
-| :-------| :-----|
-| Bank FAQ Chatbot | Bank FAQ Chatbot |
-| Create & Update Profile | - |
-| Apply for Bank Account | Business Process - Review Application |
-| Deposit cheque in ATM | -  |
-| Withdrawal of cash in ATM | -  |
-| Apply for credit card | -  |
-| Internal Bank fund transfer | Worklist - Review Fund Transfer  |
-| External Bank fund transfer | -  |
-| Retail online purchase |  Fraud Detection |
-| Generate Bank statement |  Money Laundering |
-| Home Loan EMI Calculator | Money Mules  |
-| -  | Customer Analysis  |
-| -  | Spend Analysis |
-| -  | Manage Customers  |
-|   AI Search - (LLM) | AI Search - (DB+LLM+KM)+  |
+| Roles: Bank Customers | Bankers (Bank Officials) | Technologies |
+| :-------| :-----| :-----|
+| Bank FAQ Chatbot | Bank FAQ Chatbot | Oracle Digital Assistant (FAQs)   |
+| Create & Update Profile | - | Oracle APEX Custom Authentication <br/> Application Authorization <br/>  Blockchain |
+| Apply for Bank Account | Business Process - Review Application | Role based access <br/> ORDS <br/> Oracle APEX Workflow/Process <br/> Task Definition <br/> Push Notifications |
+| Deposit cheque in ATM | -  | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) |
+| Withdrawal of cash in ATM | -  | - same as above - |
+| Apply for credit card | -  | Converged Database (JSON) <br/> JSON Relational Duality <br/> Data Redaction (Security) |
+| Internal Bank fund transfer | Worklist - Review Fund Transfer  | Messaging Queue <br/>Security |
+| External Bank fund transfer | -  | Transaction Management  |
+| Retail online purchase |  - | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/> Bulk Data Upload <br/> Meta Llama Vision Instruct <br/> Speech AI (Text to Speech)  |
+| - |  Fraud Detection | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/>Process Automation <br/> Integration Cloud |
+| Generate Bank statement |  Money Laundering | Anomaly Detection AI Service <br/> Graphs |
+| Home Loan EMI Calculator | Money Mules  | Graphs <br/>Maps and Spatial Data |
+| -  | Customer Analysis  | Oracle Document Understanding AI <br/>Sentiment Analysis AI Service |
+| -  | Spend Analysis | Oracle Analytics Cloud <br/>Auto Machine Learning |
+| -  | Manage Customers  | Oracle APEX Data Management |
+|   AI Search - (LLM) | AI Search - (DB+LLM+KM)+  | Oracle Database 23ai <br/>Select AI & AI Vector Search <br/>AI Services <br/>RAG with Gen AI (Cohere)  |
 
 ***Where + indicates***
 
@@ -146,5 +147,9 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 * **Architect, Author and Developer** - [Madhusudhan Rao B M](https://www.linkedin.com/in/madhusudhanraobm/), Principal Product Manager, Oracle Database
 * **Thanks to** - [Bo English-Wiczling](https://www.linkedin.com/in/boenglish/), Senior Direct, Program Management, Oracle Database 
-* **Last Updated By/Date** - April 3rd, 2025
+* **Last Updated By/Date** - April 17th, 2025
 * **Document version** - 1.0 
+
+## Learn more
+ 
+* [Oracle Financial Services](https://www.oracle.com/financial-services/#banking-panel)

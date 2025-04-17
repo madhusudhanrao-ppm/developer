@@ -48,15 +48,26 @@ The objective of this lab is to enable participants to:
 
 ## Task 1: Create Queue
  
-1.  Create Type Object
-    
+1.  Login as Database Admin user and Grant execute to create Queues
+
+    ```sql 
+        <copy> 
+        GRANT EXECUTE ON DBMS_AQADM TO DOCUSER;   
+        GRANT EXECUTE ON DBMS_AQ TO DOCUSER;   
+        GRANT AQ_ADMINISTRATOR_ROLE TO DOCUSER;  
+        EXECUTE dbms_aqadm.grant_system_privilege('ENQUEUE_ANY','DOCUSER',FALSE); 
+        EXECUTE dbms_aqadm.grant_system_privilege('DEQUEUE_ANY','DOCUSER',FALSE); 
+        </copy>
+    ```
+2.  Create Type Object
+   
     ```sql 
         <copy>
          CREATE TYPE banktransfer_q_payload AS OBJECT ( message VARCHAR2(4000) );
         </copy>
     ``` 
 
-2. Set up a queue to manage fund transfer transactions.
+3. Set up a queue to manage fund transfer transactions.
 
     ```sql 
         <copy>
@@ -302,4 +313,4 @@ The objective of this lab is to enable participants to:
 
 ## Learn more
  
-* [Oracle Digital Assistant Skills](https://docs.oracle.com/en/cloud/paas/digital-assistant/use-chatbot/create-configure-and-version-skills1.html)
+* [AI for Aviation - Create Realtime Passenger Dashboard with Transactional Event Queues, Advanced Queuing](https://www.linkedin.com/pulse/ai-aviation-create-realtime-passenger-dashboard-event-rao-6iqaf)

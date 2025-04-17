@@ -43,3 +43,17 @@
         (select ID from bank_customers where upper(email) = upper(v('APP_USER')) AND rownum = 1);  
         </copy>
     ```
+
+    ```sql 
+        <copy>
+        --login as ADMIN user 
+        GRANT EXECUTE ON DBMS_AQADM TO DOCUSER;   
+        GRANT EXECUTE ON DBMS_AQ TO DOCUSER;   
+        GRANT AQ_ADMINISTRATOR_ROLE TO DOCUSER; 
+        
+        EXECUTE dbms_aqadm.grant_system_privilege('ENQUEUE_ANY','DOCUSER',FALSE);
+
+        EXECUTE dbms_aqadm.grant_system_privilege('DEQUEUE_ANY','DOCUSER',FALSE); 
+        </copy>
+    ```
+
