@@ -2,7 +2,7 @@
 
 ## About this workshop
 
-TBD
+Welcome to this workshop on premium bank account and card application! In this session, we'll explore the process of creating a seamless user experience for applying for premium bank accounts and associated card options. You'll learn how to design user interfaces for account applications, retrieve eligible card options, and apply for credit or debit cards.
 
 Estimated Time: 30 minutes
 
@@ -16,33 +16,34 @@ TBD
 
 ### Prerequisites
 
+* Lab related to Opening Bank Account should be completed.
 * A user with access to provision & manage core OCI services  
 * Having completed common labs
 
 ---
  
-## Task 1: Task 1
+## Task 1: Premium Account Application
 
-1. Login into OCI
+1. Develop a user interface to apply for a premium bank account.
+  
+    ![SSO Login](images/credit-card-01.png)  
 
-    To setup environment, you need OCI administrator's privileges. If you've got these privileges, login into OCI at [cloud.oracle.com](https://www.oracle.com/cloud/sign-in.html). the below image indicates SSO Login as an administrative user. If you have administrative privileges and complete access over a tenancy then you need not create any of the policies below steps.
-
-    ![SSO Login](images/sso-login.png)  
-
-## Task 2: Task 2
+## Task 2: Eligible Card Options
  
-1.  On the Oracle Cloud Infrastructure Console Home page, click the Navigation Menu in the upper-left corner, select **Analytics & AI**, and then select **Digital Assistant**.
+1.  Retrieve and display the list of eligible card options for the premium account holder.
+ 
+    ![SSO Login](images/credit-card-02.png)  
 
-  ![In the OCI console, select Analytics & AI, and then Digital Assistant, from right-hand side of the screen](./images/oda-navigation.png" ")
-
-2.  On the OCI Digital Assistants page,  click on the **Create digital assistant instance** button
-
-    ![Click click on the create digital assistant instance button near the center of the screen](./images/create-oda.png " ")
+## Task 2: Card Application
+ 
+1.  Create a process for applying for a credit or debit card, allowing users to select their preferred card option.
+ 
+    ![SSO Login](images/credit-card-02.png)  
  
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao B M, Principal Product Manager, Oracle Database
-* **Last Updated By/Date** - April 4th, 2025
+* **Last Updated By/Date** - April 17th, 2025
 
 ## Learn more
  
