@@ -47,19 +47,19 @@
       "filename": "../../ai-fs-app-approval/ai-fs-app-approval.md"
     },
     {
-      "title": "Lab 7: External Fund Transfer: Transferring Money to an Internal Bank Account",
+      "title": "Lab 7: Credit Card Applications: Applying for a New Credit Card",
+      "description": "Credit Card Applications: Applying for a New Credit Card",
+      "filename": "../../ai-fs-apply-for-card/ai-fs-apply-for-card.md"
+    },
+    {
+      "title": "Lab 8: External Fund Transfer: Transferring Money to an Internal Bank Account",
       "description": "External Fund Transfer: Transferring Money to an Internal Bank Account",
       "filename": "../../ai-fs-ext-fund-transfer/ai-fs-ext-fund-transfer.md"
     },
     {
-      "title": "Lab 8: Internal Fund Transfer: Transferring Funds Between Accounts",
+      "title": "Lab 9: Internal Fund Transfer: Transferring Funds Between Accounts",
       "description": "Internal Fund Transfer: Transferring Funds Between Accounts",
       "filename": "../../ai-fs-int-fund-transfer/ai-fs-int-fund-transfer.md"
-    },
-    {
-      "title": "Lab 9: Cash Withdrawal: Withdrawing Cash from an ATM",
-      "description": "Cash Withdrawal: Withdrawing Cash from an ATM",
-      "filename": "../../ai-fs-cash-withdrawal/ai-fs-cash-withdrawal.md"
     },
     {
       "title": "Lab 10: Cheque Deposit: Depositing Cheques at an ATM",
@@ -67,19 +67,19 @@
       "filename": "../../ai-fs-cheque-deposit/ai-fs-cheque-deposit.md"
     },
     {
-      "title": "Lab 11: Statement Generation: Accessing Bank Statements",
+      "title": "Lab 11: Cash Withdrawal: Withdrawing Cash from an ATM",
+      "description": "Cash Withdrawal: Withdrawing Cash from an ATM",
+      "filename": "../../ai-fs-cash-withdrawal/ai-fs-cash-withdrawal.md"
+    },
+    {
+      "title": "Lab 12: Statement Generation: Accessing Bank Statements",
       "description": "Statement Generation: Accessing Bank Statements",
       "filename": "../../ai-fs-statement/ai-fs-statement.md"
     },
     {
-      "title": "Lab 12: Home Loan Planning: Calculating Equated Monthly Installments (EMIs)",
+      "title": "Lab 13: Home Loan Planning: Calculating Equated Monthly Installments (EMIs)",
       "description": "Home Loan Planning: Calculating Equated Monthly Installments (EMIs)",
       "filename": "../../ai-fs-emi/ai-fs-emi.md"
-    },
-    {
-      "title": "Lab 13: Credit Card Applications: Applying for a New Credit Card",
-      "description": "Credit Card Applications: Applying for a New Credit Card",
-      "filename": "../../ai-fs-apply-for-card/ai-fs-apply-for-card.md"
     },
     {
       "title": "Lab 14: Fraud Detection and Alerts: Identifying Suspicious Credit Card Activity",
@@ -102,19 +102,19 @@
       "filename": "../../ai-fs-spend-analysis/ai-fs-spend-analysis.md"
     },
     {
-      "title": "Lab 18: Transaction Search and Knowledge Repository",
-      "description": "Transaction Search and Knowledge Repository",
-      "filename": "../../ai-fs-search/ai-fs-search.md"
+      "title": "Lab 18: Customer Analysis",
+      "description": "Customer Analysis",
+      "filename": "../../ai-fs-cust-analysis/ai-fs-cust-analysis.md"
     },
     {
-      "title": "Lab 19: Frequently Asked Questions",
-      "description": "Frequently Asked Questions (FAQs)",
-      "filename": "../../ai-fs-faq/ai-fs-faq.md"
-    },
-    {
-      "title": "Lab 20: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
+      "title": "Lab 19: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
       "description": "E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
       "filename": "../../ai-fs-retail/ai-fs-retail.md"
+    },
+    {
+      "title": "Lab 20: Transaction Search and Knowledge Repository",
+      "description": "Transaction Search and Knowledge Repository",
+      "filename": "../../ai-fs-search/ai-fs-search.md"
     },
     {
       "title": "Lab 21: Ensuring Business Continuity: High Availability and Disaster Recovery",
