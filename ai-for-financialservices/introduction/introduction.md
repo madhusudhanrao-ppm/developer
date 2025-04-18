@@ -72,47 +72,48 @@ By mastering these technologies, you will gain a competitive edge in the industr
 ### AI for Financial Services - Demo
 
 [Demo video on AI for Financial Services](youtube:xCXb7kOWdqo:large)  
-
----
-
-### AI for Financial Services - Technology Architecture
-
-![AI for Financial](images/AI-for-fc-refarch.png " ")  
-
+ 
 ---
 
 ### AI for Financial Services - Use Cases
-![AI for Financial](images/AI-for-fc-usecases.png " ")  
-
----
 
 | Roles: Bank Customers | Bankers (Bank Officials) | Technologies | Lab number | Status |
 | :-------| :-----| :-----| :-----| :-----|
-| Bank FAQ Chatbot | Bank FAQ Chatbot | Oracle Digital Assistant (FAQs)   | [Lab 3](../workshops/tenancy/index.html?lab=ai-fs-provision)  | Complete |
-| Create & Update Profile | - | Oracle APEX Custom Authentication <br/> Application Authorization <br/>  Blockchain | [Lab 4](../workshops/tenancy/index.html?lab=ai-fs-provision) & [Lab 5](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| Apply for Bank Account | Business Process - Review Application | Role based access <br/> ORDS <br/> Oracle APEX Workflow/Process <br/> Task Definition <br/> Push Notifications | [Lab 6](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| Apply for credit card | -  | Converged Database (JSON) <br/> JSON Relational Duality <br/> Data Redaction (Security) | [Lab 7](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| External Bank fund transfer | -  | Transaction Management  | [Lab 8](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| Internal Bank fund transfer | Worklist - Review Fund Transfer  | Messaging Queue <br/>Security | [Lab 9](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| Deposit cheque in ATM | -  | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) | [Lab 10](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| Withdrawal of cash in ATM | -  | - same as above - | [Lab 11](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| Generate Bank statement |  - | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX | [Lab 12](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| Home Loan EMI Calculator | -  | Graphs <br/>Maps and Spatial Data | [Lab 13](../workshops/tenancy/index.html?lab=ai-fs-provision) | Complete |
-| - |  Fraud Detection | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/>Process Automation <br/> Integration Cloud | [Lab 14](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
-| - |  Money Laundering | Anomaly Detection AI Service <br/> Graphs | [Lab 15](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
-| - | Money Mules  | Graphs <br/>Maps and Spatial Data | [Lab 16](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
-| -  | Spend Analysis | Oracle Analytics Cloud <br/>Auto Machine Learning | [Lab 17](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
-| -  | Customer Analysis  | Oracle Document Understanding AI <br/>Sentiment Analysis AI Service | [Lab 18](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
+| Bank FAQ Chatbot | Bank FAQ Chatbot | Oracle Digital Assistant (FAQs)   | [Lab 3](../workshops/tenancy/index.html?lab=ai-oda-create)  | Complete |
+| Create & Update Profile | - | Oracle APEX Custom Authentication <br/> Application Authorization <br/>  Blockchain | [Lab 4](../workshops/tenancy/index.html?lab=ai-fs-custom-auth) & [Lab 5](../workshops/tenancy/index.html?lab=ai-fs-create-account) | Complete |
+| Apply for Bank Account | Business Process - Review Application | Role based access <br/> ORDS <br/> Oracle APEX Workflow/Process <br/> Task Definition <br/> Push Notifications | [Lab 6](../workshops/tenancy/index.html?lab=ai-fs-app-approval) | Complete |
+| Apply for credit card | -  | Converged Database (JSON) <br/> JSON Relational Duality <br/> Data Redaction (Security) | [Lab 7](../workshops/tenancy/index.html?lab=ai-fs-apply-for-card) | Complete |
+| External Bank fund transfer | -  | Transaction Management  | [Lab 8](../workshops/tenancy/index.html?lab=ai-fs-ext-fund-transfer) | Complete |
+| Internal Bank fund transfer | Worklist - Review Fund Transfer  | Messaging Queue <br/>Security | [Lab 9](../workshops/tenancy/index.html?lab=ai-fs-int-fund-transfer) | Complete |
+| Deposit cheque in ATM | -  | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) | [Lab 10](../workshops/tenancy/index.html?lab=ai-fs-cheque-deposit) | Complete |
+| Withdrawal of cash in ATM | -  | - same as above - | [Lab 11](../workshops/tenancy/index.html?lab=ai-fs-cash-withdrawal) | Complete |
+| Generate Bank statement |  - | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX | [Lab 12](../workshops/tenancy/index.html?lab=ai-fs-statement) | Complete |
+| Home Loan EMI Calculator | -  | Graphs <br/>Maps and Spatial Data | [Lab 13](../workshops/tenancy/index.html?lab=ai-fs-emi) | Complete |
+| - |  Fraud Detection | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/>Process Automation <br/> Integration Cloud | [Lab 14](../workshops/tenancy/index.html?lab=ai-fs-fraud-detect) | - |
+| - |  Money Laundering | Anomaly Detection AI Service <br/> Graphs | [Lab 15](../workshops/tenancy/index.html?lab=ai-fs-anti-money-laundering) | - |
+| - | Money Mules  | Graphs <br/>Maps and Spatial Data | [Lab 16](../workshops/tenancy/index.html?lab=ai-fs-suspected-transactions) | - |
+| -  | Spend Analysis | Oracle Analytics Cloud <br/>Auto Machine Learning | [Lab 17](../workshops/tenancy/index.html?lab=ai-fs-spend-analysis) | - |
+| -  | Customer Analysis  | Oracle Document Understanding AI <br/>Sentiment Analysis AI Service | [Lab 18](../workshops/tenancy/index.html?lab=ai-fs-cust-analysis) | - |
 | -  | Manage Customers  | Oracle APEX Data Management | - | - |
-| Retail online purchase |  - | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/> Bulk Data Upload <br/> Meta Llama Vision Instruct <br/> Speech AI (Text to Speech)  | [Lab 19](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
-|   AI Search - (LLM) | AI Search - (DB+LLM+KM)+  | Oracle Database 23ai <br/>Select AI & AI Vector Search <br/>AI Services <br/>RAG with Gen AI (Cohere)  | [Lab 20](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
-|   Business Continuity | -  | High Availability & Disaster Recovery  | [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-provision) | - |
+| Retail online purchase |  - | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/> Bulk Data Upload <br/> Meta Llama Vision Instruct <br/> Speech AI (Text to Speech)  | [Lab 19](../workshops/tenancy/index.html?lab=ai-fs-retail) | - |
+|   AI Search - (LLM) | AI Search - (DB+LLM+KM)+  | Oracle Database 23ai <br/>Select AI & AI Vector Search <br/>AI Services <br/>RAG with Gen AI (Cohere)  | [Lab 20](../workshops/tenancy/index.html?lab=ai-fs-search) | - |
+|   Business Continuity | -  | High Availability & Disaster Recovery  | [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) | - |
 
 ***Where + indicates***
 
 * LLM - Large Language Models
 * DB - Database Search with Select AI
 * KM - Knowledge Management Search (AI Vector Search)
+
+---
+
+![AI for Financial](images/AI-for-fc-usecases.png " ")  
+ 
+---
+
+### AI for Financial Services - Technology Architecture
+
+![AI for Financial](images/AI-for-fc-refarch.png " ")  
 
 ---
 
