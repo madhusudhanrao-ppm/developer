@@ -97,13 +97,23 @@ You need to create a **policy** which grants manage privileges in a new compartm
      ![Verify policy for compartment admins to manage the compartment](./images/verify-policy-for-compartment-admins.jpg)
 
      This is not the only required policy that is required for this workshop. You will return to this step to create additional policies later.
+
+## Task 5: Anomaly Detection Policies
+
+1. Anomaly Detection offers both aggregate and individual resource-types for writing policies. You can use aggregate resource types to write fewer policies. For example, instead of allowing a group to manage all individual resource types, you can have a policy that allows the group to manage the aggregate resource type, ai-service-anomaly-detection-family
+
+    ```text
+     <copy>allow any-user to manage ai-service-anomaly-detection-family in tenancy</copy>
+     ```
+
+    
   
 ## Learn More
 
 * [OCI Documentation](https://docs.oracle.com/en-us/iaas/Content/home.htm)
+* [Anomaly Detection Policies](https://docs.oracle.com/en-us/iaas/Content/anomaly/using/policies.htm#policies)
 
 ## Acknowledgements
 
-* **Author** -  
-* **Contributors** -   
-* **Last Updated By/Date** -  
+* **Author** - Madhusudhan Rao B M, Principal Product Manager, Oracle Database
+* **Last Updated By/Date** - April 22nd, 2025

@@ -91,9 +91,10 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | Withdrawal of cash in ATM | -  | - |  - same as above - |[Lab 11](../workshops/tenancy/index.html?lab=ai-fs-cash-withdrawal) | Complete |
 | Generate Bank statement |  - | - | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX | [Lab 12](../workshops/tenancy/index.html?lab=ai-fs-statement) | Complete |
 | Home Loan EMI Calculator | -  | - | Graphs <br/>Maps and Spatial Data | [Lab 13](../workshops/tenancy/index.html?lab=ai-fs-emi) | Complete |
-| - |  Fraud Detection |  - |  Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/>Process Automation <br/> Integration Cloud |[Lab 14](../workshops/tenancy/index.html?lab=ai-fs-fraud-detect) | - |
-| - |  Money Laundering |  - | Anomaly Detection AI Service <br/> Graphs |[Lab 15](../workshops/tenancy/index.html?lab=ai-fs-anti-money-laundering) | 
-| - | Money Mules  | - | Graphs <br/>Maps and Spatial Data | [Lab 16](../workshops/tenancy/index.html?lab=ai-fs-suspected-transactions) | - |
+| - |  Fraud Detection |  - |  Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/>Process Automation <br/> Integration Cloud |[Lab 14](../workshops/tenancy/index.html?lab=ai-fs-fraud-detect) | Complete |
+| - |  Money Laundering |  - | Graphs <br/>Maps and Spatial Data | [Lab 15](../workshops/tenancy/index.html?lab=ai-fs-anti-money-laundering) | Complete  |  
+| - | Money Mules  | - | Graphs <br/>Maps and Spatial Data | [Lab 15](../workshops/tenancy/index.html?lab=ai-fs-anti-money-laundering) | Complete |
+| - |  Transaction Anomalies |  - | Anomaly Detection AI Service <br/> Graphs | [Lab 16](../workshops/tenancy/index.html?lab=ai-fs-anti-money-laundering) | - | 
 | -  | Spend Analysis | - | Oracle Analytics Cloud <br/>Auto Machine Learning | [Lab 17](../workshops/tenancy/index.html?lab=ai-fs-spend-analysis) | - |
 | -  | Customer Analysis  | - | Oracle Document Understanding AI <br/>Sentiment Analysis AI Service | [Lab 18](../workshops/tenancy/index.html?lab=ai-fs-cust-analysis) | - |  
 | -  | Manage Customers  |  - | Oracle APEX Data Management | - |
