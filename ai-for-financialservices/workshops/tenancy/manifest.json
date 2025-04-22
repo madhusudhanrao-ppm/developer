@@ -97,24 +97,24 @@
       "filename": "../../ai-fs-suspected-transactions/ai-fs-suspected-transactions.md"
     },
     {
-      "title": "Lab 17: Spend Analytics: Categorizing and Analyzing Expenditure",
-      "description": "Spend Analytics: Categorizing and Analyzing Expenditure",
-      "filename": "../../ai-fs-spend-analysis/ai-fs-spend-analysis.md"
-    },
-    {
-      "title": "Lab 18: Customer Analysis",
+      "title": "Lab 17: Customer Analysis",
       "description": "Customer Analysis",
       "filename": "../../ai-fs-cust-analysis/ai-fs-cust-analysis.md"
     },
     {
-      "title": "Lab 19: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
+      "title": "Lab 18: E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
       "description": "E-commerce Transactions: Purchasing Items Online with Debit/Credit Cards",
       "filename": "../../ai-fs-retail/ai-fs-retail.md"
     },
     {
-      "title": "Lab 20: Transaction Search and Knowledge Repository",
+      "title": "Lab 19: Transaction Search and Knowledge Repository",
       "description": "Transaction Search and Knowledge Repository",
       "filename": "../../ai-fs-search/ai-fs-search.md"
+    },
+    {
+      "title": "Lab 20: Spend Analytics: Categorizing and Analyzing Expenditure",
+      "description": "Spend Analytics: Categorizing and Analyzing Expenditure",
+      "filename": "../../ai-fs-spend-analysis/ai-fs-spend-analysis.md"
     },
     {
       "title": "Lab 21: Ensuring Business Continuity: High Availability and Disaster Recovery",
