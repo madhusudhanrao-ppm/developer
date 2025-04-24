@@ -98,8 +98,8 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | -  | Customer Analysis  | - | Oracle Document Understanding AI <br/>Sentiment Analysis AI Service | [Lab 17](../workshops/tenancy/index.html?lab=ai-fs-cust-analysis) | Complete |   
 | Retail online purchase |  - | - | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/> JSON Relational Duality <br/> Meta Llama Vision Instruct <br/> Speech AI (Text to Speech)  | [Lab 18](../workshops/tenancy/index.html?lab=ai-fs-retail) | Complete |
 |   AI Search - (LLM) | AI Search - (DB+LLM+KM)+  | - | Oracle Database 23ai <br/>Select AI & AI Vector Search <br/>AI Services <br/>RAG with Gen AI (Cohere)  | [Lab 19](../workshops/tenancy/index.html?lab=ai-fs-search) | Complete |
-| -  | Spend Analysis | - | Oracle Analytics Cloud <br/>Auto Machine Learning | [Lab 20](../workshops/tenancy/index.html?lab=ai-fs-spend-analysis) | - |
-| - | -  | Business Continuity |  High Availability & Disaster Recovery | [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) | - |
+| -  | Build a Robust Suspected Transaction Review <br/> Business Process & Analytics | - | Oracle Analytics Cloud <br/>Auto Machine Learning <br/>Integration Cloud Gen 3 <br/>Process Automation| [Lab 20](../workshops/tenancy/index.html?lab=ai-fs-process) | Complete |
+| - | -  | Business Continuity |  High Availability & Disaster Recovery | [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) | Pending |
 
 ***Where + indicates***
 

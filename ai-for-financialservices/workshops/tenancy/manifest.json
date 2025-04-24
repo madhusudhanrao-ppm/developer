@@ -107,14 +107,14 @@
       "filename": "../../ai-fs-retail/ai-fs-retail.md"
     },
     {
-      "title": "Lab 19: Transaction Search and Knowledge Repository",
-      "description": "Transaction Search and Knowledge Repository",
+      "title": "Lab 19: AI Search and RAG Knowledge Repository",
+      "description": "AI Search and RAG Knowledge Repository",
       "filename": "../../ai-fs-search/ai-fs-search.md"
     },
     {
-      "title": "Lab 20: Spend Analytics: Categorizing and Analyzing Expenditure",
-      "description": "Spend Analytics: Categorizing and Analyzing Expenditure",
-      "filename": "../../ai-fs-spend-analysis/ai-fs-spend-analysis.md"
+      "title": "Lab 20: Build a Robust Suspected Transaction Review Business Process & Analytics",
+      "description": "Build a Robust Suspected Transaction Review Business Process & Analytics",
+      "filename": "../../ai-fs-process/ai-fs-process.md"
     },
     {
       "title": "Lab 21: Ensuring Business Continuity: High Availability and Disaster Recovery",

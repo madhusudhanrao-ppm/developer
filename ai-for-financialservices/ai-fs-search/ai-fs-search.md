@@ -1,4 +1,4 @@
-# Transaction Search and Knowledge Repository
+# AI Search and RAG Knowledge Repository
 
 ## About this workshop
 
@@ -340,6 +340,7 @@ In this workshop, you'll embark on a comprehensive journey to build an intellige
 ## Task 6: Enabling File Uploads for Vector Search
  
 1.  Allow file uploads to enhance AI Vector Search capabilities.
+2.  These PDF files are uploaded internal Knowledge Repository, that is files stored in OCI Object Storage Bucket which are accessible only with in the Organization.
    
     ```sql 
       <copy> 
@@ -376,7 +377,7 @@ In this workshop, you'll embark on a comprehensive journey to build an intellige
  
    ![AI Search](images/ai-search-02.png) 
 
-2. Upload file or Delete uploaded file
+3. Upload file or Delete uploaded file
    
    ![AI Search](images/ai-search-08.png) 
    
