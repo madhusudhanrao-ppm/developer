@@ -77,7 +77,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 ### AI for Financial Services - Use Cases
 
-| Roles: Bank Customers | Bankers (Bank Officials) | System Administrator | Technologies | Lab number | Status |
+| Roles: Bank Customers | Bankers (Bank Employee) | System Administrator | Technologies | Lab number | Status |
 | :-------| :-----| :-----| :-----| :-----| :-----|
 | - | - | Setup OCI Policies |  OCI   | [Lab 1](../workshops/tenancy/index.html?lab=ai-fs-setup)  | Complete |
 | - | - | Create Oracle Autonomous Database 23ai |  OCI & Oracle Database   | [Lab 2](../workshops/tenancy/index.html?lab=ai-fs-provision)  | Complete |
