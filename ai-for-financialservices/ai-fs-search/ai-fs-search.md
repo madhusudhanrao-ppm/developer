@@ -30,10 +30,10 @@ By the end of this lab, participants will be able to:
 --- 
  
 ### Introduction to this Lab
-<!-- 
-[Demo video on AI for Financial Services](youtube:-BHcxAGalqE:large)  -->
+ 
+[Demo video on AI for Financial Services](youtube:-BHcxAGalqE:large)  
 
-In this hands-on lab, you'll explore the integration of Artificial Intelligence (AI) and Natural Language Processing (NLP) with Oracle APEX to build a powerful search application. You'll learn how to create a user-friendly interface, configure search settings, and leverage Generative AI and vector search capabilities to deliver intelligent search results. Additionally, you'll discover how to translate AI responses into multiple languages and utilize file uploads to enhance search functionality. By completing this lab, you'll gain expertise in harnessing the power of AI and NLP to create sophisticated search applications.
+In this workshop, you'll embark on a comprehensive journey to build an intelligent search application using Oracle APEX, Generative AI, and Natural Language Processing (NLP). Through a series of hands-on tasks, you'll design a user-friendly search interface, configure search settings, and leverage cutting-edge AI technologies to deliver precise and multilingual search results. By integrating Generative AI, AI Vector Search, and NLP, you'll create a powerful search application that can understand and respond to complex queries, making it an invaluable tool for users.
  
 ---
  
