@@ -1,4 +1,4 @@
-# AI Search and RAG Knowledge Repository
+# AI Search and Knowledge Repository
 
 ## About this workshop
 

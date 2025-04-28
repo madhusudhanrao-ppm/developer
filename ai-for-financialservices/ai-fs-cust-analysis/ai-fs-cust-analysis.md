@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# Customer Analysis
 
 ## About this workshop
 
