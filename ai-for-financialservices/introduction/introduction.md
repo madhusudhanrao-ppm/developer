@@ -77,17 +77,9 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 ### AI for Financial Services  
 
-**Common Labs**
-
-| Role: Developer | Technologies |    
-| :-------| :-----|  
-| Setup OCI Policies <br/> [Lab 1](../workshops/tenancy/index.html?lab=ai-fs-setup) |  OCI   |  
-| Create Oracle Autonomous Database 23ai <br/> [Lab 2](../workshops/tenancy/index.html?lab=ai-fs-provision) |  Oracle Database & Oracle APEX  |   
-| Business Continuity (Optional Lab) <br/> [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) |  High Availability & Disaster Recovery <br/> Autonomous Data Guard <br/> Database Cloning  | 
-
 **Major Use Cases**
 
-| Application Roles: Bank Customers | Bankers (Bank Employees) |  Technologies |    
+| Application Roles: Bank Customers | Bank Employees |  Technologies |    
 | :-------| :-----|  :-----|   
 | Bank FAQ Chatbot <br/> - | Bank FAQ Chatbot <br/> [Lab 3](../workshops/tenancy/index.html?lab=ai-oda-create)   |   Oracle Digital Assistant (FAQs)  |  
 | Secure User Authentication System <br/> [Lab 4](../workshops/tenancy/index.html?lab=ai-fs-custom-auth) | Secure User Authentication System <br/> [Lab 4](../workshops/tenancy/index.html?lab=ai-fs-custom-auth) | Oracle APEX Custom Authentication <br/>  | Oracle APEX Custom Authentication <br/> Application Authorization <br/>  Blockchain | 
@@ -104,7 +96,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 **Optional: Extended Use Cases**
 
-| Application Roles: Bank Customers | Bankers (Bank Employees) | Technologies |    
+| Application Roles: Bank Customers |  Bank Employees | Technologies |    
 | :-------| :-----| :-----|    
 | Applying for a New Credit Card <br/> [Lab 7](../workshops/tenancy/index.html?lab=ai-fs-apply-for-card) | - | Converged Database (JSON) <br/> Data Redaction (Security)  |    
 | Withdrawal of cash in ATM <br/> [Lab 11](../workshops/tenancy/index.html?lab=ai-fs-cash-withdrawal) | - |  Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) | 
@@ -113,6 +105,13 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | E-commerce Food Ordering System <br/> [Lab 18](../workshops/tenancy/index.html?lab=ai-fs-retail) | - | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/> JSON Relational Duality <br/> Meta Llama Vision Instruct <br/> Speech AI (Text to Speech)  |
 | -  | Build a Robust Suspected Transaction Review <br/> Business Process & Analytics <br/> [Lab 20](../workshops/tenancy/index.html?lab=ai-fs-process) | Oracle Analytics Cloud <br/>Auto Machine Learning <br/>Integration Cloud Gen 3 <br/>Process Automation | 
  
+**Common Labs**
+
+| Role: Developer | Technologies |    
+| :-------| :-----|  
+| Setup OCI Policies <br/> [Lab 1](../workshops/tenancy/index.html?lab=ai-fs-setup) |  OCI   |  
+| Create Oracle Autonomous Database 23ai <br/> [Lab 2](../workshops/tenancy/index.html?lab=ai-fs-provision) |  Oracle Database & Oracle APEX  |   
+| Business Continuity (Optional Lab) <br/> [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) |  High Availability & Disaster Recovery <br/> Autonomous Data Guard <br/> Database Cloning  | 
 
 ***Where ++ indicates***
 
