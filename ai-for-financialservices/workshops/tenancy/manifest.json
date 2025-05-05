@@ -122,6 +122,11 @@
       "filename": "../../ai-fs-cloning/ai-fs-cloning.md"
     },
     {
+      "title": "Lab 22: Scaling, Sizing, and Performance",
+      "description": "Scaling, Sizing, and Performance",
+      "filename": "https://paulparkinson.github.io/converged/microservices-with-converged-db/financial-setup/financial-setup.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-livelabs.md"

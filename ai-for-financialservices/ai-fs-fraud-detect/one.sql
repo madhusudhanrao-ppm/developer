@@ -189,7 +189,7 @@ begin
      start_date         =>  systimestamp, 
      repeat_interval    =>  'freq=SECONDLY; interval = 20;',
      enabled            =>  true,
-     comments           => 'Realtime Txn Job'
+     comments           => 'Realtime Transaction Create Job Data'
   );
 end; 
 
@@ -201,7 +201,7 @@ begin
      start_date         =>  systimestamp, 
      repeat_interval    =>  'freq=minutely; interval = 1;',
      enabled            =>  true,
-     comments           => 'My tx job'
+     comments           => 'Realtime Transaction Create Apply ML'
   );
 end;
 

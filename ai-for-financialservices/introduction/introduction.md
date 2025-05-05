@@ -87,7 +87,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | Application Review Business Processes <br/> [Lab 6](../workshops/tenancy/index.html?lab=ai-fs-app-approval)  | - | Business Process - Review Application <br/> Role based access <br/> ORDS <br/> Oracle APEX Workflow/Process <br/> Task Definition <br/> Push Notifications |    
 | External Bank fund transfer <br/> [Lab 8](../workshops/tenancy/index.html?lab=ai-fs-ext-fund-transfer) | - | Transaction Management  |   
 | Internal Bank fund transfer <br/> [Lab 9](../workshops/tenancy/index.html?lab=ai-fs-int-fund-transfer) | Worklist - Review Fund Transfer  |    Messaging Queue <br/>Security | 
-| Deposit cheque in ATM <br/> [Lab 10](../workshops/tenancy/index.html?lab=ai-fs-cheque-deposit) | - | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) |    
+| Withdrawal of cash in ATM <br/> [Lab 11](../workshops/tenancy/index.html?lab=ai-fs-cash-withdrawal) | - |  Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) | 
 | - |  Fraud Detection and Alerts <br/> [Lab 14](../workshops/tenancy/index.html?lab=ai-fs-fraud-detect) |   Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/>Process Automation <br/> Integration Cloud | 
 | - | Anti Money Laundering & Money Mules Detection <br/> [Lab 15](../workshops/tenancy/index.html?lab=ai-fs-anti-money-laundering) |  Graphs <br/>Maps and Spatial Data |    
 | - |  Transaction Anomalies <br/> [Lab 16](../workshops/tenancy/index.html?lab=ai-fs-anti-money-laundering) |   Anomaly Detection AI Service <br/> Graphs |  
@@ -99,7 +99,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | Application Roles: Bank Customers |  Bank Employees | Technologies |    
 | :-------| :-----| :-----|    
 | Applying for a New Credit Card <br/> [Lab 7](../workshops/tenancy/index.html?lab=ai-fs-apply-for-card) | - | Converged Database (JSON) <br/> Data Redaction (Security)  |    
-| Withdrawal of cash in ATM <br/> [Lab 11](../workshops/tenancy/index.html?lab=ai-fs-cash-withdrawal) | - |  Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) | 
+| Deposit cheque in ATM <br/> [Lab 10](../workshops/tenancy/index.html?lab=ai-fs-cheque-deposit) | - | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX <br/> AI Services <br/> Meta Llama Vision Instruct <br/> Speech AI (TTS) | 
 | Generate Bank statement <br/>  [Lab 12](../workshops/tenancy/index.html?lab=ai-fs-statement)  | - | Oracle Database 23ai & PL/SQL <br/> Realtime Dashboard Oracle APEX |  
 | Home Loan EMI Calculator <br/> [Lab 13](../workshops/tenancy/index.html?lab=ai-fs-emi)  | - | Graphs <br/>Maps and Spatial Data |    
 | E-commerce Food Ordering System <br/> [Lab 18](../workshops/tenancy/index.html?lab=ai-fs-retail) | - | Oracle Database 23ai & PL/SQL <br/>Realtime Dashboard Oracle APEX <br/> JSON Relational Duality <br/> Meta Llama Vision Instruct <br/> Speech AI (Text to Speech)  |
@@ -112,6 +112,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | Setup OCI Policies <br/> [Lab 1](../workshops/tenancy/index.html?lab=ai-fs-setup) |  OCI   |  
 | Create Oracle Autonomous Database 23ai <br/> [Lab 2](../workshops/tenancy/index.html?lab=ai-fs-provision) |  Oracle Database & Oracle APEX  |   
 | Business Continuity (Optional Lab) <br/> [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) |  High Availability & Disaster Recovery <br/> Autonomous Data Guard <br/> Database Cloning  | 
+| Scaling, Sizing, and Performance (Optional Lab) <br/>  Lab 22  |  Load Test and Scale the Database Tier  | 
 
 ***Where ++ indicates***
 
