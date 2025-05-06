@@ -113,6 +113,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | Create Oracle Autonomous Database 23ai <br/> [Lab 2](../workshops/tenancy/index.html?lab=ai-fs-provision) |  Oracle Database & Oracle APEX  |   
 | Business Continuity (Optional Lab) <br/> [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) |  High Availability & Disaster Recovery <br/> Autonomous Data Guard <br/> Database Cloning  | 
 | Scaling, Sizing, and Performance (Optional Lab) <br/>  Lab 22  |  Load Test and Scale the Database Tier  | 
+| Application Deployment Guide <br/>  Lab 23  |  Download and Import Oracle Apex Application  | 
 
 ***Where ++ indicates***
 
@@ -167,7 +168,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 * **Architect, Author and Developer** - [Madhusudhan Rao B M](https://www.linkedin.com/in/madhusudhanraobm/), Principal Product Manager, Oracle Database
 * **Thanks to** - [Bo English-Wiczling](https://www.linkedin.com/in/boenglish/), Senior Director, Database Product Management
-* **Last Updated By/Date** - April 29th, 2025
+* **Last Updated By/Date** - May 6th, 2025
 * **Document version** - 1.0 
 
 ## Learn more
