@@ -168,7 +168,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 * **Architect, Author and Developer** - [Madhusudhan Rao B M](https://www.linkedin.com/in/madhusudhanraobm/), Principal Product Manager, Oracle Database
 * **Thanks to** - [Bo English-Wiczling](https://www.linkedin.com/in/boenglish/), Senior Director, Database Product Management
-* **Last Updated By/Date** - May 6th, 2025
+* **Last Updated By/Date** - May 7th, 2025
 * **Document version** - 1.0 
 
 ## Learn more
