@@ -1,9 +1,7 @@
-# TITLE
+# AI for Financial Services
 
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_test)](https://sonarcloud.io/dashboard?id=oracle-devrel_test)
-
-## THIS IS A NEW, BLANK REPO THAT IS NOT READY FOR USE YET.  PLEASE CHECK BACK SOON!
-
+ 
 ## Introduction
 
 In today's digital age, the banking and financial services sector has undergone a significant transformation. The rise of online banking, mobile banking apps, and digital payment systems has revolutionized the way customers interact with financial institutions. This workshop provides a comprehensive guide to the digital banking ecosystem, covering various aspects of online banking, from initiating conversations with chatbots to ensuring business continuity through high availability and disaster recovery.
@@ -14,19 +12,15 @@ Whether you are a banking professional, a fintech enthusiast, or simply someone 
 
 ## Getting Started
 
-MISSING
+Please sign up for Oracle Cloud Account
 
 ### Prerequisites
 
 This lab assumes you have the following:
 
-* An Oracle account
+* An Oracle cloud account
 * Intermediate developer knowledge of Oracle APEX and Oracle PL/SQL 
-
-## Notes/Issues
-
-MISSING
-
+ 
 ## URLs
 
 * Nothing at this time
