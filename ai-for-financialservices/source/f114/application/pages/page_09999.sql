@@ -115,7 +115,7 @@ wwv_flow_imp_page.create_page_plug(
 '    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" type="text/css" />',
 '<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" /> ',
 '-->',
-'<link href="#APP_FILES#templates/startbootstrap-creative-gh-pages/css/styles.css" rel="stylesheet" />',
+'<link href="#APP_FILES#templates/replace-this/css/styles.css" rel="stylesheet" />',
 '<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />',
 '<link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />',
 '',
@@ -243,7 +243,7 @@ wwv_flow_imp_page.create_page_plug(
 '',
 '        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>',
 '<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>',
-'<script src="#APP_FILES#templates/startbootstrap-creative-gh-pages/js/scripts.js"></script>'))
+'<script src="#APP_FILES#templates/replace-this/js/scripts.js"></script>'))
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'expand_shortcuts', 'N',
   'output_as', 'HTML')).to_clob
