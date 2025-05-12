@@ -8,7 +8,7 @@ In today's digital age, the banking and financial services sector has undergone 
 
 Through 23 labs, this workshop takes readers on a journey through the digital banking landscape, exploring topics such as user profile management, account creation, fund transfers, e-commerce transactions, credit card applications, fraud detection, and spend analytics. The book also delves into the importance of ensuring business continuity, highlighting the need for high availability and disaster recovery measures.
 
-Whether you are a banking professional, a fintech enthusiast, or simply someone interested in understanding the digital banking ecosystem, this book provides valuable insights and knowledge to help you navigate the complex world of digital banking.
+Whether you are a banking professional, a fintech enthusiast, or simply someone interested in understanding the digital banking ecosystem, this workshop and labs provides valuable insights and knowledge to help you navigate the complex world of digital banking.
 
 ## Getting Started
 

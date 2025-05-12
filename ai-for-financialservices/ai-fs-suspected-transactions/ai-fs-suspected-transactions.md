@@ -43,7 +43,7 @@ These objectives clearly outline what participants can expect to learn and achie
 
 ### Introduction to this Lab
 
-[Demo video on AI for Financial Services](youtube:YJMoYDS-D_o:large)  
+[Demo video on AI for Financial Services](youtube:yZLq5UoFMtU:large)  
 
 ---
  
