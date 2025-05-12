@@ -168,9 +168,9 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 <!-- ## Download Source Code
 
-1. Download the [Application source code](https://objectstorage.us-phoenix-1.oraclecloud.com/p/eVbhQYqEjoB1wZEzO70lIocpV0gCd-CPURE6_IMiMQv2Sdj9Y4bU_Fi9-I13WA63/n/oradbclouducm/b/medical_transcripts/o/Source/06-May-2025/f114.sql.zip) 
+1. Download the [Application source code](https://objectstorage.us-phoenix-1.oraclecloud.com/p/eVbhQYqEjoB1wZEzO70lIocpV0gCd-CPURE6_IMiMQv2Sdj9Y4bU_Fi9-I13WA63/n/replace-this/b/medical_transcripts/o/Source/06-May-2025/f114.sql.zip) 
 2. Extract the zip file to get latest f114.sql application file.
-3. Download [Static Application files](https://objectstorage.us-phoenix-1.oraclecloud.com/p/9FGlionG8GVqUcZzQj1_-ysRzc6GIJmkJ9fbKRL0Ez3cMPCKyPSYeu_f7P3ZXIRC/n/oradbclouducm/b/medical_transcripts/o/Source/06-May-2025/f114_static_application_files.zip) -->
+3. Download [Static Application files](https://objectstorage.us-phoenix-1.oraclecloud.com/p/9FGlionG8GVqUcZzQj1_-ysRzc6GIJmkJ9fbKRL0Ez3cMPCKyPSYeu_f7P3ZXIRC/n/replace-this/b/medical_transcripts/o/Source/06-May-2025/f114_static_application_files.zip) -->
   
 ## Acknowledgements
 
