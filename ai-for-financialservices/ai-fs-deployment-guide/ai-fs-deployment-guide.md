@@ -29,7 +29,7 @@ Before deploying your APEX application, ensure you have:
 
 1. Log in to the target environment's APEX instance as an administrator.
 2. Navigate to the **App Builder** page.
-3. Click **Import** and select the zip file downloaded.
+3. Click **Import** and select the zip file downloaded. please see Task 7 of this lab
 4. Follow the import wizard to complete the import process.
    
    ![App Import](images/import-01.png) 
@@ -41,11 +41,10 @@ Before deploying your APEX application, ensure you have:
 
     ![App Import](images/import-02.png) 
 
-## Task 3: Deploy Static Files
+## Task 3: Verify Static Files imported
 
-1. Deploy static files: Upload static files, such as images, CSS, and JavaScript files, to the target environment.
-2. Configure static file storage: Set up static file storage by uploading zip files of static application files, such as Oracle APEX static file storage or a third-party storage solution.
-
+1. Verify static files imported such as images, CSS, and JavaScript files, to the target environment.
+  
     ![App Import](images/import-03.png) 
 
 ## Task 4: Verify the Database Tables and Data
@@ -69,22 +68,17 @@ Before deploying your APEX application, ensure you have:
 2. Application not importing correctly: Check the import log for errors and verify that the deployment package is correct.
 3. Authentication not working: Verify that authentication schemes are configured correctly and that credentials are correct.
 4. Static files not being rendered: Check that static files are uploaded correctly and that static file storage is configured correctly.
+  
+## Task 7: Download Source Code
 
-## Task 7: Troubleshooting
+1. Download the [Application source code](https://github.com/madhusudhanrao-ppm/developer/tree/main/ai-for-financialservices/source/f114) 
+2. Create a zip file f114.zip from the source code files. where 114 is application id
+3. Import the application zip file from Oracle APEX Application Import feature. 
 
-Download link coming soon. 
-
-<!-- ## Task 7: Download Source Code
-
-1. Download the [Application source code](https://objectstorage.us-phoenix-1.oraclecloud.com/p/eVbhQYqEjoB1wZEzO70lIocpV0gCd-CPURE6_IMiMQv2Sdj9Y4bU_Fi9-I13WA63/n/replace-this/b/medical_transcripts/o/Source/06-May-2025/f114.sql.zip) 
-2. Extract the zip file to get latest f114.sql application file.
-3. Download [Static Application files](https://objectstorage.us-phoenix-1.oraclecloud.com/p/9FGlionG8GVqUcZzQj1_-ysRzc6GIJmkJ9fbKRL0Ez3cMPCKyPSYeu_f7P3ZXIRC/n/replace-this/b/medical_transcripts/o/Source/06-May-2025/f114_static_application_files.zip) -->
+Please Note: Some of the source files will need to replaced with your compartment id, image locations, tenancy ocid, model ocid, APEX web credentials, etc to get this working as it would change from one tenancy to another. 
 
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao B M, Principal Product Manager, Oracle Database
-* **Last Updated By/Date** - May 10th, 2025
-
-## Learn more
+* **Last Updated By/Date** - May 12th, 2025
  
-* [Oracle Digital Assistant Skills](https://docs.oracle.com/en/cloud/paas/digital-assistant/use-chatbot/create-configure-and-version-skills1.html)
