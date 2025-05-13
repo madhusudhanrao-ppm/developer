@@ -149,8 +149,8 @@ By mastering these technologies, you will gain a competitive edge in the industr
 * Lab 5: Building a Secure User Authentication System with Oracle APEX
 * Lab 6: Account Creation: Establishing a New Bank Account  
 * Lab 7: Credit Card Applications: Applying for a New Credit Card 
-* Lab 8: External Bank fund transfer 
-* Lab 9: Internal Bank fund transfer 
+* Lab 8: External Bank Fund Transfer 
+* Lab 9: Internal Bank Fund Transfer
 * Lab 10: Cheque Deposit: Depositing Cheques at an ATM     
 * Lab 11: Cash Withdrawal: Withdrawing Cash from an ATM    
 * Lab 12: Statement Generation: Accessing Bank Statements   
