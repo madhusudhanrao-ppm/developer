@@ -113,7 +113,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 | Create Oracle Autonomous Database 23ai <br/> [Lab 2](../workshops/tenancy/index.html?lab=ai-fs-provision) |  Oracle Database & Oracle APEX  |   
 | Business Continuity (Optional Lab) <br/> [Lab 21](../workshops/tenancy/index.html?lab=ai-fs-cloning) |  High Availability & Disaster Recovery <br/> Autonomous Data Guard <br/> Database Cloning  | 
 | Scaling, Sizing, and Performance (Optional Lab) <br/>  Lab 22  |  Load Test and Scale the Database Tier  | 
-| Application Deployment Guide <br/>  Lab 23  |  Download and Import Oracle Apex Application  | 
+| Application Deployment Guide <br/> [Lab 23](../workshops/tenancy/index.html?lab=ai-fs-deployment-guide)  |  Download and Import Oracle Apex Application  | 
 
 ***Where ++ indicates***
 
@@ -165,18 +165,13 @@ By mastering these technologies, you will gain a competitive edge in the industr
 * Lab 21: Ensuring Business Continuity: High Availability and Disaster Recovery
 * Lab 22: Scaling, Sizing, and Performance 
 * Lab 23: Application Deployment Guide and latest source code
-
-<!-- ## Download Source Code
-
-1. Download the [Application source code](https://objectstorage.us-phoenix-1.oraclecloud.com/p/eVbhQYqEjoB1wZEzO70lIocpV0gCd-CPURE6_IMiMQv2Sdj9Y4bU_Fi9-I13WA63/n/replace-this/b/medical_transcripts/o/Source/06-May-2025/f114.sql.zip) 
-2. Extract the zip file to get latest f114.sql application file.
-3. Download [Static Application files](https://objectstorage.us-phoenix-1.oraclecloud.com/p/9FGlionG8GVqUcZzQj1_-ysRzc6GIJmkJ9fbKRL0Ez3cMPCKyPSYeu_f7P3ZXIRC/n/replace-this/b/medical_transcripts/o/Source/06-May-2025/f114_static_application_files.zip) -->
+ 
   
 ## Acknowledgements
 
 * **Architect, Author and Developer** - [Madhusudhan Rao B M](https://www.linkedin.com/in/madhusudhanraobm/), Principal Product Manager, Oracle Database
 * **Thanks to** - [Bo English-Wiczling](https://www.linkedin.com/in/boenglish/), Senior Director, Database Product Management
-* **Last Updated By/Date** - May 10th, 2025
+* **Last Updated By/Date** - May 19th, 2025
 * **Document version** - 1.0 
 
 ## Learn more
