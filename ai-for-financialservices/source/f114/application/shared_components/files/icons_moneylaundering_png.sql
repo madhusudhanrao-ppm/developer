@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000018000000180803000000D7A9CDCA0000009F504C5445000000353535333D3D2F393937373735353E32393930373736363C33373C34383B343B3B333A3A323939343A3A333939343A3A32383A323939333A';
@@ -19,7 +19,7 @@ wwv_flow_imp.g_varchar2_table(4) := '76B162C5DE13C432FFFF6F26443D47DD07BD2F84BDD
 wwv_flow_imp.g_varchar2_table(5) := 'C0A37FBB5C5E42BF095BDDACFD71CA79102C18FB24CFEB96F23E5B5ECC9278D1D655670A13ADE3A24F92A7B101AEB7FAE727F6B8442565F451CE77CF0CB113FFE10892382D43DB278C7A202DF73CE2FECA1DF67A2581D82CF6D80000000049454E44AE42';
 wwv_flow_imp.g_varchar2_table(6) := '6082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(14318854868831661)
+ p_id=>wwv_flow_imp.id(23310963310896115)
 ,p_file_name=>'icons/moneylaundering.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

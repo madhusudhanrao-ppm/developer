@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>102
@@ -23,11 +23,11 @@ wwv_flow_imp_page.create_page(
 ,p_page_component_map=>'11'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(2293551177024951)
+ p_id=>wwv_flow_imp.id(11285659619089405)
 ,p_plug_name=>'Search '
 ,p_title=>'Search Helper'
 ,p_region_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62117175029085013)
+,p_plug_template=>wwv_flow_imp.id(71109283471149467)
 ,p_plug_display_sequence=>10
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(

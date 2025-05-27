@@ -629,6 +629,8 @@ Estimated Time: 30 minutes
       end;
       </copy>
     ```
+
+  > **Congratulations**, you have completed **Building a Secure User Authentication System with Oracle APEX** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Account Creation: Establishing a New Bank Account**. 
    
 ## Acknowledgements
 

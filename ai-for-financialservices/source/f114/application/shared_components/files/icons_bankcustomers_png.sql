@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000000097048597300000B1200000B1201D2DD7EFC000001B8494441544889ED95B14AC3501486BFB42A0A42454570B220084E7D04B550B0937573B3746A27033E80E2';
@@ -19,7 +19,7 @@ wwv_flow_imp.g_varchar2_table(4) := '04CDA7E03196C41B6E033D8855BF6961BE8A2DC070B
 wwv_flow_imp.g_varchar2_table(5) := '71A0420F8B062C96F2E5AA5F5011427CEE81E6169B988D3034AA48B46D982F82C76BCF7DD4B0ABD095E5FC520638714707471426E7423F535D78B86AF1DEECEAC66AC439B907C3B1DE4EDE438E1641DEE37E30F3BD3EFC00FF067F6F20FDE9F78B0FA684';
 wwv_flow_imp.g_varchar2_table(6) := '9AE0E8E639110000000049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(16803109100331755)
+ p_id=>wwv_flow_imp.id(25795217542396209)
 ,p_file_name=>'icons/bankcustomers.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>35
@@ -22,14 +22,14 @@ wwv_flow_imp_page.create_page(
 ,p_page_component_map=>'18'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(93773285846232656)
+ p_id=>wwv_flow_imp.id(102765394288297110)
 ,p_plug_name=>'New'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62174008823085047)
+,p_plug_template=>wwv_flow_imp.id(71166117265149501)
 ,p_plug_display_sequence=>10
 ,p_query_type=>'SQL'
-,p_plug_source=>'SELECT UTL_HTTP.REQUEST(url => ''http://replace-this:8080/ords/graphuser/driver_dv'') AS URL FROM dual;'
+,p_plug_source=>'SELECT UTL_HTTP.REQUEST(url => ''http://158.101.17.2:8080/ords/graphuser/driver_dv'') AS URL FROM dual;'
 ,p_plug_source_type=>'NATIVE_IR'
 ,p_prn_content_disposition=>'ATTACHMENT'
 ,p_prn_units=>'INCHES'
@@ -62,7 +62,7 @@ wwv_flow_imp_page.create_page_plug(
 ,p_prn_border_color=>'#666666'
 );
 wwv_flow_imp_page.create_worksheet(
- p_id=>wwv_flow_imp.id(93773383270232657)
+ p_id=>wwv_flow_imp.id(102765491712297111)
 ,p_max_row_count=>'1000000'
 ,p_pagination_type=>'ROWS_X_TO_Y'
 ,p_pagination_display_pos=>'BOTTOM_RIGHT'
@@ -76,7 +76,7 @@ wwv_flow_imp_page.create_worksheet(
 ,p_internal_uid=>55472745547446807
 );
 wwv_flow_imp_page.create_worksheet_column(
- p_id=>wwv_flow_imp.id(93773454092232658)
+ p_id=>wwv_flow_imp.id(102765562534297112)
 ,p_db_column_name=>'URL'
 ,p_display_order=>10
 ,p_column_identifier=>'A'
@@ -86,7 +86,7 @@ wwv_flow_imp_page.create_worksheet_column(
 ,p_use_as_row_header=>'N'
 );
 wwv_flow_imp_page.create_worksheet_rpt(
- p_id=>wwv_flow_imp.id(93988789674315399)
+ p_id=>wwv_flow_imp.id(102980898116379853)
 ,p_application_user=>'APXWS_DEFAULT'
 ,p_report_seq=>10
 ,p_report_alias=>'556882'

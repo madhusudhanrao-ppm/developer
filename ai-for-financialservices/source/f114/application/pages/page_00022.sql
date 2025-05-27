@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>22
@@ -20,17 +20,17 @@ wwv_flow_imp_page.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_overwrite_navigation_list=>'Y'
 ,p_navigation_list_position=>'TOP'
-,p_navigation_list_id=>wwv_flow_imp.id(62722399245879119)
-,p_navigation_list_template_id=>wwv_flow_imp.id(62250142950085095)
+,p_navigation_list_id=>wwv_flow_imp.id(71714507687943573)
+,p_navigation_list_template_id=>wwv_flow_imp.id(71242251392149549)
 ,p_nav_list_template_options=>'#DEFAULT#'
 ,p_protection_level=>'C'
 ,p_page_component_map=>'10'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(194171725087900341)
+ p_id=>wwv_flow_imp.id(203163833529964795)
 ,p_plug_name=>'Response'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>30
 ,p_include_in_reg_disp_sel_yn=>'Y'
 ,p_location=>null
@@ -92,12 +92,12 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_when_condition=>'P22_INPUT'
 );
 wwv_flow_imp_page.create_page_button(
- p_id=>wwv_flow_imp.id(91390553930846298)
+ p_id=>wwv_flow_imp.id(100382662372910752)
 ,p_button_sequence=>20
 ,p_button_name=>'Ask_AI'
 ,p_button_action=>'SUBMIT'
 ,p_button_template_options=>'#DEFAULT#:t-Button--large:t-Button--iconLeft'
-,p_button_template_id=>wwv_flow_imp.id(62257131305085104)
+,p_button_template_id=>wwv_flow_imp.id(71249239747149558)
 ,p_button_is_hot=>'Y'
 ,p_button_image_alt=>'Ask Cohere'
 ,p_icon_css_classes=>'fa-user-man'
@@ -105,13 +105,13 @@ wwv_flow_imp_page.create_page_button(
 ,p_grid_new_column=>'Y'
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(156947012412548006)
+ p_id=>wwv_flow_imp.id(165939120854612460)
 ,p_name=>'P22_INPUT'
 ,p_item_sequence=>10
 ,p_prompt=>'Ask Cohere AI Input'
 ,p_display_as=>'NATIVE_TEXT_FIELD'
 ,p_cSize=>30
-,p_field_template=>wwv_flow_imp.id(62254495953085100)
+,p_field_template=>wwv_flow_imp.id(71246604395149554)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'disabled', 'N',

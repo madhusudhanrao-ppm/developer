@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000016000000180803000000C960FD7900000177504C54450000000000000000003333332B2B2B2449493939393333332E2E2E2B40403B3B3B3737372D3C3C3939393636363333402E3A3A373737333D3D313B';
@@ -23,7 +23,7 @@ wwv_flow_imp.g_varchar2_table(8) := 'A4600E10502DE49EE92005805985F2A1FFFC47B1403
 wwv_flow_imp.g_varchar2_table(9) := '06A8D6355FCA065CC1B312A8B41E003CFA24220F9072617F320E90A60FEED50750BE6B4AAF932E807C1DB1A2CBC409526261A77CB44A4F031E8093635BD3F6026E989123E68B192804685B7F88FEF1E7A1CF0DBF49C663A3D058FC500000000049454E44';
 wwv_flow_imp.g_varchar2_table(10) := 'AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(14319110285831663)
+ p_id=>wwv_flow_imp.id(23311218727896117)
 ,p_file_name=>'icons/moneymules.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

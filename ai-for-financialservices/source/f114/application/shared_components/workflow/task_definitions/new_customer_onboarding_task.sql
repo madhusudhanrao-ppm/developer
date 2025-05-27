@@ -6,13 +6,13 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_shared.create_task_def(
- p_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(11487462619277977)
 ,p_name=>'New Customer Onboarding Task'
 ,p_static_id=>'NEW_CUSTOMER_ONBOARDING'
 ,p_subject=>'Approval for customer &CUSTOMER_NAME. Account number &ACCOUNT_NUMBER.'
@@ -28,8 +28,8 @@ wwv_flow_imp_shared.create_task_def(
 ,p_initiator_can_complete=>true
 );
 wwv_flow_imp_shared.create_task_def_param(
- p_id=>wwv_flow_imp.id(2550937177251492)
-,p_task_def_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(11543045619315946)
+,p_task_def_id=>wwv_flow_imp.id(11487462619277977)
 ,p_label=>'Account Number'
 ,p_static_id=>'P_ACCOUNT_NUMBER'
 ,p_data_type=>'VARCHAR2'
@@ -37,8 +37,8 @@ wwv_flow_imp_shared.create_task_def_param(
 ,p_is_visible=>true
 );
 wwv_flow_imp_shared.create_task_def_param(
- p_id=>wwv_flow_imp.id(2560480341757734)
-,p_task_def_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(11552588783822188)
+,p_task_def_id=>wwv_flow_imp.id(11487462619277977)
 ,p_label=>'Customer Name'
 ,p_static_id=>'P_CUSTOMER_NAME'
 ,p_data_type=>'VARCHAR2'
@@ -46,8 +46,8 @@ wwv_flow_imp_shared.create_task_def_param(
 ,p_is_visible=>true
 );
 wwv_flow_imp_shared.create_task_def_action(
- p_id=>wwv_flow_imp.id(2551192186281505)
-,p_task_def_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(11543300628345959)
+,p_task_def_id=>wwv_flow_imp.id(11487462619277977)
 ,p_name=>'On Approve'
 ,p_execution_sequence=>10
 ,p_outcome=>'APPROVED'
@@ -60,8 +60,8 @@ wwv_flow_imp_shared.create_task_def_action(
 ,p_stop_execution_on_error=>true
 );
 wwv_flow_imp_shared.create_task_def_action(
- p_id=>wwv_flow_imp.id(2558336682648571)
-,p_task_def_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(11550445124713025)
+,p_task_def_id=>wwv_flow_imp.id(11487462619277977)
 ,p_name=>'On Reject'
 ,p_execution_sequence=>20
 ,p_outcome=>'REJECTED'
@@ -74,24 +74,24 @@ wwv_flow_imp_shared.create_task_def_action(
 ,p_stop_execution_on_error=>true
 );
 wwv_flow_imp_shared.create_task_def_participant(
- p_id=>wwv_flow_imp.id(2549825150251485)
-,p_task_def_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(11541933592315939)
+,p_task_def_id=>wwv_flow_imp.id(11487462619277977)
 ,p_participant_type=>'POTENTIAL_OWNER'
 ,p_identity_type=>'USER'
 ,p_value_type=>'STATIC'
 ,p_value=>'Appsadmin,BANKER,BANKCUSTOMER,MADHU'
 );
 wwv_flow_imp_shared.create_task_def_participant(
- p_id=>wwv_flow_imp.id(2550102266251487)
-,p_task_def_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(11542210708315941)
+,p_task_def_id=>wwv_flow_imp.id(11487462619277977)
 ,p_participant_type=>'BUSINESS_ADMIN'
 ,p_identity_type=>'USER'
 ,p_value_type=>'STATIC'
 ,p_value=>'Appsadmin,BANKER,BANKCUSTOMER,MADHU'
 );
 wwv_flow_imp_shared.create_task_def_participant(
- p_id=>wwv_flow_imp.id(4213296910481465)
-,p_task_def_id=>wwv_flow_imp.id(2495354177213523)
+ p_id=>wwv_flow_imp.id(13205405352545919)
+,p_task_def_id=>wwv_flow_imp.id(11487462619277977)
 ,p_participant_type=>'POTENTIAL_OWNER'
 ,p_identity_type=>'USER'
 ,p_value_type=>'STATIC'

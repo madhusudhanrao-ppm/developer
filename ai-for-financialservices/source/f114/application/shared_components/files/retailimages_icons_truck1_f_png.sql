@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D49484452000000C10000006108060000006F5EC572000019937A5458745261772070726F66696C6520747970652065786966000078DAAD9B69761C397685FF63155E0266E02D07E339DE8197EFEF46903225517D4AED264B';
@@ -202,7 +202,7 @@ wwv_flow_imp.g_varchar2_table(187) := '22988EF17DB1FD1F9B88DFBEFCE5E3E15E483970E
 wwv_flow_imp.g_varchar2_table(188) := '3B7C665AEA7341E7D99EADDC602762DE625BD864902B25986B549AEEA80EA05E456B1C87BA2B9C859DF2D2EE50F8C7E30B5C7FA39CF1CECEF33CAA4465735A7816A4FBB357A1C9420FF9CAE178D239BDB0E1C8257DBA64FBB66B2CCFEF5EA4B0414436AB';
 wwv_flow_imp.g_varchar2_table(189) := '66AD3FE8146850D11AB1F5C87C99DB11DBB76F5AE5E4FF03FDB67F35927A2B260000000049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(647274271483608)
+ p_id=>wwv_flow_imp.id(9639382713548062)
 ,p_file_name=>'retailimages/icons/truck1_f.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

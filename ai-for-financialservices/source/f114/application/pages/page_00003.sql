@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>3
@@ -26,12 +26,12 @@ wwv_flow_imp_page.create_page(
 ,p_page_component_map=>'03'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(105804930784434408)
+ p_id=>wwv_flow_imp.id(114797039226498862)
 ,p_plug_name=>'Debit  Credit Chart'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#'
 ,p_escape_on_http_output=>'Y'
-,p_plug_template=>wwv_flow_imp.id(62118548241085014)
+,p_plug_template=>wwv_flow_imp.id(71110656683149468)
 ,p_plug_display_sequence=>70
 ,p_plug_new_grid_row=>false
 ,p_location=>null
@@ -39,8 +39,8 @@ wwv_flow_imp_page.create_page_plug(
 ,p_ajax_items_to_submit=>'P3_FROMDT,P3_TODT'
 );
 wwv_flow_imp_page.create_jet_chart(
- p_id=>wwv_flow_imp.id(62583299817327007)
-,p_region_id=>wwv_flow_imp.id(105804930784434408)
+ p_id=>wwv_flow_imp.id(71575408259391461)
+,p_region_id=>wwv_flow_imp.id(114797039226498862)
 ,p_chart_type=>'bar'
 ,p_height=>'400'
 ,p_animation_on_display=>'auto'
@@ -78,8 +78,8 @@ wwv_flow_imp_page.create_jet_chart(
 ,p_show_gauge_value=>false
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(62585630507327012)
-,p_chart_id=>wwv_flow_imp.id(62583299817327007)
+ p_id=>wwv_flow_imp.id(71577738949391466)
+,p_chart_id=>wwv_flow_imp.id(71575408259391461)
 ,p_seq=>10
 ,p_name=>'Paid to Bank - Credit'
 ,p_data_source_type=>'SQL'
@@ -127,8 +127,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(62586149086327014)
-,p_chart_id=>wwv_flow_imp.id(62583299817327007)
+ p_id=>wwv_flow_imp.id(71578257528391468)
+,p_chart_id=>wwv_flow_imp.id(71575408259391461)
 ,p_seq=>20
 ,p_name=>'EMI Bank Charges'
 ,p_data_source_type=>'SQL'
@@ -145,8 +145,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_threshold_display=>'onIndicator'
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62585034971327010)
-,p_chart_id=>wwv_flow_imp.id(62583299817327007)
+ p_id=>wwv_flow_imp.id(71577143413391464)
+,p_chart_id=>wwv_flow_imp.id(71575408259391461)
 ,p_axis=>'x'
 ,p_is_rendered=>'on'
 ,p_title=>'Months'
@@ -170,8 +170,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62584396300327010)
-,p_chart_id=>wwv_flow_imp.id(62583299817327007)
+ p_id=>wwv_flow_imp.id(71576504742391464)
+,p_chart_id=>wwv_flow_imp.id(71575408259391461)
 ,p_axis=>'y'
 ,p_is_rendered=>'on'
 ,p_title=>'Debited / Credit Amounts'
@@ -198,8 +198,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62583750134327009)
-,p_chart_id=>wwv_flow_imp.id(62583299817327007)
+ p_id=>wwv_flow_imp.id(71575858576391463)
+,p_chart_id=>wwv_flow_imp.id(71575408259391461)
 ,p_axis=>'y2'
 ,p_is_rendered=>'on'
 ,p_title_font_color=>'#4b51f1'
@@ -221,10 +221,10 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(10913240309858628696)
+ p_id=>wwv_flow_imp.id(10922232418300693150)
 ,p_plug_name=>'Transaction Records'
 ,p_region_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62118548241085014)
+,p_plug_template=>wwv_flow_imp.id(71110656683149468)
 ,p_plug_display_sequence=>50
 ,p_plug_new_grid_row=>false
 ,p_plug_grid_column_span=>2
@@ -288,11 +288,11 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_source_type=>'NATIVE_PLSQL'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(15255477819426655655)
+ p_id=>wwv_flow_imp.id(15264469927868720109)
 ,p_plug_name=>'Transaction Chart'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_escape_on_http_output=>'Y'
-,p_plug_template=>wwv_flow_imp.id(62118548241085014)
+,p_plug_template=>wwv_flow_imp.id(71110656683149468)
 ,p_plug_display_sequence=>60
 ,p_location=>null
 ,p_plug_source_type=>'NATIVE_JET_CHART'
@@ -300,8 +300,8 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_query_num_rows=>15
 );
 wwv_flow_imp_page.create_jet_chart(
- p_id=>wwv_flow_imp.id(62590254499327019)
-,p_region_id=>wwv_flow_imp.id(15255477819426655655)
+ p_id=>wwv_flow_imp.id(71582362941391473)
+,p_region_id=>wwv_flow_imp.id(15264469927868720109)
 ,p_chart_type=>'combo'
 ,p_height=>'400'
 ,p_animation_on_display=>'auto'
@@ -337,8 +337,8 @@ wwv_flow_imp_page.create_jet_chart(
 ,p_show_gauge_value=>true
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(62592549240327020)
-,p_chart_id=>wwv_flow_imp.id(62590254499327019)
+ p_id=>wwv_flow_imp.id(71584657682391474)
+,p_chart_id=>wwv_flow_imp.id(71582362941391473)
 ,p_seq=>10
 ,p_name=>'Debit'
 ,p_data_source_type=>'SQL'
@@ -474,8 +474,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(62593191679327031)
-,p_chart_id=>wwv_flow_imp.id(62590254499327019)
+ p_id=>wwv_flow_imp.id(71585300121391485)
+,p_chart_id=>wwv_flow_imp.id(71582362941391473)
 ,p_seq=>20
 ,p_name=>'Credit'
 ,p_data_source_type=>'SQL'
@@ -611,8 +611,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62591421272327019)
-,p_chart_id=>wwv_flow_imp.id(62590254499327019)
+ p_id=>wwv_flow_imp.id(71583529714391473)
+,p_chart_id=>wwv_flow_imp.id(71582362941391473)
 ,p_axis=>'x'
 ,p_is_rendered=>'on'
 ,p_title=>'Credit Date'
@@ -636,8 +636,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62592021902327020)
-,p_chart_id=>wwv_flow_imp.id(62590254499327019)
+ p_id=>wwv_flow_imp.id(71584130344391474)
+,p_chart_id=>wwv_flow_imp.id(71582362941391473)
 ,p_axis=>'y2'
 ,p_is_rendered=>'on'
 ,p_title=>'y2'
@@ -659,8 +659,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62590769482327019)
-,p_chart_id=>wwv_flow_imp.id(62590254499327019)
+ p_id=>wwv_flow_imp.id(71582877924391473)
+,p_chart_id=>wwv_flow_imp.id(71582362941391473)
 ,p_axis=>'y'
 ,p_is_rendered=>'on'
 ,p_title=>'Credit Amount'
@@ -686,9 +686,9 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_report_region(
- p_id=>wwv_flow_imp.id(15366319991064379918)
+ p_id=>wwv_flow_imp.id(15375312099506444372)
 ,p_name=>'Annual Summary'
-,p_template=>wwv_flow_imp.id(62118548241085014)
+,p_template=>wwv_flow_imp.id(71110656683149468)
 ,p_display_sequence=>10
 ,p_include_in_reg_disp_sel_yn=>'Y'
 ,p_region_template_options=>'#DEFAULT#'
@@ -717,7 +717,7 @@ wwv_flow_imp_page.create_report_region(
 ' ORDER BY Year Desc'))
 ,p_ajax_enabled=>'Y'
 ,p_lazy_loading=>false
-,p_query_row_template=>wwv_flow_imp.id(62221958113085074)
+,p_query_row_template=>wwv_flow_imp.id(71214066555149528)
 ,p_query_num_rows=>8
 ,p_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_query_num_rows_type=>'NEXT_PREVIOUS_LINKS'
@@ -728,7 +728,7 @@ wwv_flow_imp_page.create_report_region(
 ,p_plug_query_strip_html=>'N'
 );
 wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(62580855566326994)
+ p_id=>wwv_flow_imp.id(71572964008391448)
 ,p_query_column_id=>1
 ,p_column_alias=>'YEAR'
 ,p_column_display_sequence=>10
@@ -740,7 +740,7 @@ wwv_flow_imp_page.create_report_columns(
 ,p_include_in_export=>'Y'
 );
 wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(62581244976326995)
+ p_id=>wwv_flow_imp.id(71573353418391449)
 ,p_query_column_id=>2
 ,p_column_alias=>'Total Debit'
 ,p_column_display_sequence=>20
@@ -751,7 +751,7 @@ wwv_flow_imp_page.create_report_columns(
 ,p_include_in_export=>'Y'
 );
 wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(62581667133326996)
+ p_id=>wwv_flow_imp.id(71573775575391450)
 ,p_query_column_id=>3
 ,p_column_alias=>'Total Credit'
 ,p_column_display_sequence=>30
@@ -762,7 +762,7 @@ wwv_flow_imp_page.create_report_columns(
 ,p_include_in_export=>'Y'
 );
 wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(62582119119326996)
+ p_id=>wwv_flow_imp.id(71574227561391450)
 ,p_query_column_id=>4
 ,p_column_alias=>'FDYR'
 ,p_column_display_sequence=>40
@@ -770,7 +770,7 @@ wwv_flow_imp_page.create_report_columns(
 ,p_derived_column=>'N'
 );
 wwv_flow_imp_page.create_report_columns(
- p_id=>wwv_flow_imp.id(62582470492326996)
+ p_id=>wwv_flow_imp.id(71574578934391450)
 ,p_query_column_id=>5
 ,p_column_alias=>'LdYr'
 ,p_column_display_sequence=>50
@@ -778,12 +778,12 @@ wwv_flow_imp_page.create_report_columns(
 ,p_derived_column=>'N'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(19820646210264393911)
+ p_id=>wwv_flow_imp.id(19829638318706458365)
 ,p_plug_name=>'Balance Chart'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#'
 ,p_escape_on_http_output=>'Y'
-,p_plug_template=>wwv_flow_imp.id(62118548241085014)
+,p_plug_template=>wwv_flow_imp.id(71110656683149468)
 ,p_plug_display_sequence=>80
 ,p_location=>null
 ,p_plug_source_type=>'NATIVE_JET_CHART'
@@ -791,8 +791,8 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_condition_type=>'NEVER'
 );
 wwv_flow_imp_page.create_jet_chart(
- p_id=>wwv_flow_imp.id(62587592963327016)
-,p_region_id=>wwv_flow_imp.id(19820646210264393911)
+ p_id=>wwv_flow_imp.id(71579701405391470)
+,p_region_id=>wwv_flow_imp.id(19829638318706458365)
 ,p_chart_type=>'bar'
 ,p_height=>'400'
 ,p_animation_on_display=>'auto'
@@ -830,8 +830,8 @@ wwv_flow_imp_page.create_jet_chart(
 ,p_show_gauge_value=>true
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(62589246406327017)
-,p_chart_id=>wwv_flow_imp.id(62587592963327016)
+ p_id=>wwv_flow_imp.id(71581354848391471)
+,p_chart_id=>wwv_flow_imp.id(71579701405391470)
 ,p_seq=>10
 ,p_name=>'Balance Chart'
 ,p_data_source_type=>'SQL'
@@ -860,8 +860,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62588683532327017)
-,p_chart_id=>wwv_flow_imp.id(62587592963327016)
+ p_id=>wwv_flow_imp.id(71580791974391471)
+,p_chart_id=>wwv_flow_imp.id(71579701405391470)
 ,p_axis=>'y'
 ,p_is_rendered=>'on'
 ,p_title=>'Balance Amount'
@@ -888,8 +888,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(62588089097327016)
-,p_chart_id=>wwv_flow_imp.id(62587592963327016)
+ p_id=>wwv_flow_imp.id(71580197539391470)
+,p_chart_id=>wwv_flow_imp.id(71579701405391470)
 ,p_axis=>'x'
 ,p_is_rendered=>'on'
 ,p_title=>'Balance Date'

@@ -78,6 +78,8 @@ Data, one of any business's most valuable assets, expands rapidly. Companies use
 
 5. Click on Stand by Database and view information 
     ![SSO Login](images/clone-10.png)
+
+    > **Congratulations**, you have completed **Ensuring Business Continuity: High Availability and Disaster Recovery** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Scaling, Sizing, and Performance**.
  
 ## Acknowledgements
 

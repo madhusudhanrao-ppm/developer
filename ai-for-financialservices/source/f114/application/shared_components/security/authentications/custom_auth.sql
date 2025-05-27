@@ -6,13 +6,13 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_shared.create_authentication(
- p_id=>wwv_flow_imp.id(6872457322509919)
+ p_id=>wwv_flow_imp.id(15864565764574373)
 ,p_name=>'custom_auth'
 ,p_scheme_type=>'NATIVE_CUSTOM'
 ,p_attribute_03=>'COM_COMMON_AUTH_PKG.custom_authenticate'

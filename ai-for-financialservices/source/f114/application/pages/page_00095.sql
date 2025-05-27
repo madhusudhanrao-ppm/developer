@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>95
@@ -205,17 +205,17 @@ wwv_flow_imp_page.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_overwrite_navigation_list=>'Y'
 ,p_navigation_list_position=>'SIDE'
-,p_navigation_list_id=>wwv_flow_imp.id(501822730801075)
-,p_navigation_list_template_id=>wwv_flow_imp.id(62244795433085092)
+,p_navigation_list_id=>wwv_flow_imp.id(9493931172865529)
+,p_navigation_list_template_id=>wwv_flow_imp.id(71236903875149546)
 ,p_nav_list_template_options=>'#DEFAULT#:t-TreeNav--styleA:js-navCollapsed--hidden'
 ,p_protection_level=>'C'
 ,p_page_component_map=>'17'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(8471045870056466)
+ p_id=>wwv_flow_imp.id(17463154312120920)
 ,p_plug_name=>'Apply for Card'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>20
 ,p_plug_grid_column_span=>6
 ,p_location=>null
@@ -226,11 +226,11 @@ wwv_flow_imp_page.create_page_plug(
   'output_as', 'HTML')).to_clob
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(14339148044257982)
+ p_id=>wwv_flow_imp.id(23331256486322436)
 ,p_plug_name=>'Apply for Account'
 ,p_title=>'Please Open Premium Bank Account to Apply for Card'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>30
 ,p_location=>null
 ,p_plug_display_condition_type=>'ITEM_IS_NULL'
@@ -240,13 +240,13 @@ wwv_flow_imp_page.create_page_plug(
   'output_as', 'HTML')).to_clob
 );
 wwv_flow_imp_page.create_page_button(
- p_id=>wwv_flow_imp.id(14339200755257983)
+ p_id=>wwv_flow_imp.id(23331309197322437)
 ,p_button_sequence=>10
-,p_button_plug_id=>wwv_flow_imp.id(14339148044257982)
+,p_button_plug_id=>wwv_flow_imp.id(23331256486322436)
 ,p_button_name=>'Apply_for_Acc'
 ,p_button_action=>'REDIRECT_PAGE'
 ,p_button_template_options=>'#DEFAULT#:t-Button--iconLeft'
-,p_button_template_id=>wwv_flow_imp.id(62257131305085104)
+,p_button_template_id=>wwv_flow_imp.id(71249239747149558)
 ,p_button_is_hot=>'Y'
 ,p_button_image_alt=>'Apply For Bank Account'
 ,p_button_redirect_url=>'f?p=&APP_ID.:58:&SESSION.::&DEBUG.:::'
@@ -254,20 +254,20 @@ wwv_flow_imp_page.create_page_button(
 ,p_grid_new_row=>'Y'
 );
 wwv_flow_imp_page.create_page_button(
- p_id=>wwv_flow_imp.id(8471307949056469)
+ p_id=>wwv_flow_imp.id(17463416391120923)
 ,p_button_sequence=>30
-,p_button_plug_id=>wwv_flow_imp.id(8471045870056466)
+,p_button_plug_id=>wwv_flow_imp.id(17463154312120920)
 ,p_button_name=>'Apply'
 ,p_button_action=>'DEFINED_BY_DA'
 ,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_imp.id(62256971437085104)
+,p_button_template_id=>wwv_flow_imp.id(71249079879149558)
 ,p_button_is_hot=>'Y'
 ,p_button_image_alt=>'Apply'
 ,p_warn_on_unsaved_changes=>null
 ,p_grid_new_row=>'Y'
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(8471146095056467)
+ p_id=>wwv_flow_imp.id(17463254537120921)
 ,p_name=>'P95_CUST_ID'
 ,p_item_sequence=>10
 ,p_item_default=>'select  ID  from BANK_CUSTOMERS where upper(email) = upper(v(''APP_USER''));'
@@ -277,28 +277,28 @@ wwv_flow_imp_page.create_page_item(
   'value_protected', 'N')).to_clob
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(8471282311056468)
+ p_id=>wwv_flow_imp.id(17463390753120922)
 ,p_name=>'P95_CARD_TYPE'
 ,p_item_sequence=>20
-,p_item_plug_id=>wwv_flow_imp.id(8471045870056466)
+,p_item_plug_id=>wwv_flow_imp.id(17463154312120920)
 ,p_prompt=>'Card Type'
 ,p_display_as=>'NATIVE_SELECT_LIST'
 ,p_lov=>'STATIC:Debit Card;DC,Credit Card;CC,Gold Credit Card;GCC,Platinum Credit Card;PCC,Traveler''s Card;TCC,Business Class Card;BCC'
 ,p_cHeight=>1
-,p_field_template=>wwv_flow_imp.id(62254495953085100)
+,p_field_template=>wwv_flow_imp.id(71246604395149554)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_lov_display_extra=>'YES'
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'page_action_on_selection', 'NONE')).to_clob
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(8471746667056473)
+ p_id=>wwv_flow_imp.id(17463855109120927)
 ,p_name=>'P95_STATUS'
 ,p_item_sequence=>40
-,p_item_plug_id=>wwv_flow_imp.id(8471045870056466)
+,p_item_plug_id=>wwv_flow_imp.id(17463154312120920)
 ,p_prompt=>'Status'
 ,p_display_as=>'NATIVE_DISPLAY_ONLY'
-,p_field_template=>wwv_flow_imp.id(62254495953085100)
+,p_field_template=>wwv_flow_imp.id(71246604395149554)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'based_on', 'VALUE',
@@ -307,18 +307,18 @@ wwv_flow_imp_page.create_page_item(
   'show_line_breaks', 'Y')).to_clob
 );
 wwv_flow_imp_page.create_page_da_event(
- p_id=>wwv_flow_imp.id(8471454093056470)
+ p_id=>wwv_flow_imp.id(17463562535120924)
 ,p_name=>'onClick'
 ,p_event_sequence=>10
 ,p_triggering_element_type=>'BUTTON'
-,p_triggering_button_id=>wwv_flow_imp.id(8471307949056469)
+,p_triggering_button_id=>wwv_flow_imp.id(17463416391120923)
 ,p_bind_type=>'bind'
 ,p_execution_type=>'IMMEDIATE'
 ,p_bind_event_type=>'click'
 );
 wwv_flow_imp_page.create_page_da_action(
- p_id=>wwv_flow_imp.id(8471521536056471)
-,p_event_id=>wwv_flow_imp.id(8471454093056470)
+ p_id=>wwv_flow_imp.id(17463629978120925)
+,p_event_id=>wwv_flow_imp.id(17463562535120924)
 ,p_event_result=>'TRUE'
 ,p_action_sequence=>10
 ,p_execute_on_page_init=>'N'
@@ -346,15 +346,15 @@ wwv_flow_imp_page.create_page_da_action(
 ,p_wait_for_result=>'Y'
 );
 wwv_flow_imp_page.create_page_da_action(
- p_id=>wwv_flow_imp.id(8471646698056472)
-,p_event_id=>wwv_flow_imp.id(8471454093056470)
+ p_id=>wwv_flow_imp.id(17463755140120926)
+,p_event_id=>wwv_flow_imp.id(17463562535120924)
 ,p_event_result=>'TRUE'
 ,p_action_sequence=>20
 ,p_execute_on_page_init=>'N'
 ,p_action=>'NATIVE_CONFIRM'
 ,p_attribute_01=>'Card Applied'
 ,p_attribute_06=>'Success'
-,p_build_option_id=>wwv_flow_imp.id(62079878348084960)
+,p_build_option_id=>wwv_flow_imp.id(71071986790149414)
 );
 wwv_flow_imp.component_end;
 end;

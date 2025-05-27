@@ -503,7 +503,12 @@ These objectives clearly outline what participants can expect to learn and achie
 
     ```sql 
         <copy>
-        SELECT t.id, t.inv_no, t.total_pay, trans_status, comments, latitude, longitude, customer_fullname, merchant_fullname, merchant_place, merchant_state, merchant_region,CREDIT_CARD_NO this_credit_card, LAG(CREDIT_CARD_NO) OVER (ORDER BY id) AS previous_card, MALL this_mall, LAG(MALL) OVER (ORDER BY id) AS previous_mall, to_char(TX_TIMESTAMP,'dd/mm/yyyy hh24:mi:ss') TX_TIMESTAMP, t.TX_TIMESTAMP - LAG(t.TX_TIMESTAMP) OVER (ORDER BY t.TX_TIMESTAMP) AS time_difference, to_char(TX_TIMESTAMP,'yyyymmddHH24MISS') - LAG(to_char(TX_TIMESTAMP,'yyyymmddHH24MISS')) OVER (ORDER BY to_char(TX_TIMESTAMP,'yyyymmddHH24MISS')) AS time_diff_number 
+        SELECT t.id, t.inv_no, t.total_pay, trans_status, comments, latitude, longitude, customer_fullname, 
+        merchant_fullname, merchant_place, merchant_state, merchant_region,CREDIT_CARD_NO this_credit_card, 
+        LAG(CREDIT_CARD_NO) OVER (ORDER BY id) AS previous_card, MALL this_mall, 
+        LAG(MALL) OVER (ORDER BY id) AS previous_mall, to_char(TX_TIMESTAMP,'dd/mm/yyyy hh24:mi:ss') TX_TIMESTAMP, 
+        t.TX_TIMESTAMP - LAG(t.TX_TIMESTAMP) OVER (ORDER BY t.TX_TIMESTAMP) AS time_difference, 
+        to_char(TX_TIMESTAMP,'yyyymmddHH24MISS') - LAG(to_char(TX_TIMESTAMP,'yyyymmddHH24MISS')) OVER (ORDER BY to_char(TX_TIMESTAMP,'yyyymmddHH24MISS')) AS time_diff_number 
         FROM RETAIL_SHOPPING_FD t 
         WHERE merchant_state != 'United States of America' AND TX_TYPE = 'ML'
         order by id  desc
@@ -515,6 +520,8 @@ These objectives clearly outline what participants can expect to learn and achie
 1. View Grid of transaction locations
    
   ![Money Laundering](images/mule-03.png)
+
+  > **Congratulations**, you have completed **Anti-Money Laundering and Money Mule Detection** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Suspicious Transactions and Anomaly Detection**. 
    
 ## Acknowledgements
 

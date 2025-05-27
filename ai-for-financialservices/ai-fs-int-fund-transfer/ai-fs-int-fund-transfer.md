@@ -305,6 +305,8 @@ The objective of this lab is to enable participants to:
         END;
         </copy>
     ```
+
+    > **Congratulations**, you have completed **Internal Fund Transfer: Transferring Funds Between Accounts in Same Bank** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Cheque Deposit: Depositing Cheques at an ATM**. 
  
 ## Acknowledgements
 

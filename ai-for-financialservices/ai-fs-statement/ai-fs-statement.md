@@ -141,6 +141,8 @@ Bank Statement Generation Workflow
 2. Click on **Actions** Menu of **Interactive Report** and **Download**
    
   ![Generate Statement](images/generate-statement-04.png)
+
+  > **Congratulations**, you have completed **Statement Generation: Accessing Bank Statements** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Home Loan Planning: Calculating Equated Monthly Installments**. 
  
 ## Acknowledgements
 

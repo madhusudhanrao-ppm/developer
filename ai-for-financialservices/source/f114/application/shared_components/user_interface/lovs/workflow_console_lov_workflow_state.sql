@@ -6,13 +6,13 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_shared.create_list_of_values(
- p_id=>wwv_flow_imp.id(2742408070895000)
+ p_id=>wwv_flow_imp.id(11734516512959454)
 ,p_lov_name=>'WORKFLOW_CONSOLE.LOV.WORKFLOW_STATE'
 ,p_lov_query=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'select disp,',

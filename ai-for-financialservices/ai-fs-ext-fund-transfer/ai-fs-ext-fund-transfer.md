@@ -182,6 +182,8 @@ Fund Transfer Process Tasks
         end;
         </copy>
     ```
+
+    > **Congratulations**, you have completed **External Fund Transfer: Transferring Money to an Internal Bank Account** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Internal Fund Transfer: Transferring Funds Between Accounts in Same Bank**. 
   
 ## Acknowledgements
 

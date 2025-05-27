@@ -256,6 +256,8 @@ Cheque Processing Workflow
 ## Task 3: User Confirmation
  
 1.  Display the extracted cheque information on-screen for user review and confirmation.
+    
+    > **Congratulations**, you have completed **Cheque Deposit: Depositing Cheques at an ATM** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Cash Withdrawal: Withdrawing Cash from an ATM**. 
   
 ## Acknowledgements
 

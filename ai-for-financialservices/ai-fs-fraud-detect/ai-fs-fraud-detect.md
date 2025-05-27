@@ -327,7 +327,7 @@ By completing these tasks, you'll gain hands-on experience in building a robust 
               v_CREDIT_CARD_NO,  v_TX_TIMESTAMP,  v_MERCHANT_ID, v_MERCHANT_REGION, 
               v_MERCHANT_STATE, v_MERCHANT_PLACE, v_LONGITUDE, v_LATITUDE, 
               v_MERCHANT_PLACE_ID, v_CUSTOMER_FULLNAME,  v_MERCHANT_FULLNAME, v_GENDER, v_AGE,
-              'FDTX'  --- Non money laundering related transactions 
+              'FDTX'  --- Flag for non money laundering related transactions 
             );
 
           -- 'BEGIN INSERT INTO BANK TRANSFERS  
@@ -614,6 +614,8 @@ By completing these tasks, you'll gain hands-on experience in building a robust 
     ``` 
    
   ![Fraud Detection](images/chart1.png)  
+
+  > **Congratulations**, you have completed **Fraud Detection and Alerts: Identifying Suspicious Credit Card Activity** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Anti-Money Laundering and Money Mule Detection**. 
  
 ## Acknowledgements
 

@@ -440,6 +440,8 @@ In this hands-on lab, you'll design and develop a comprehensive e-commerce food 
 6. View Bulk orders uploaded
    
     ![SSO Login](images/view-bulkorders.png)
+
+    > **Congratulations**, you have completed **E-commerce Food Ordering System** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **AI Search and Knowledge Repository**.
  
 ## Acknowledgements
 

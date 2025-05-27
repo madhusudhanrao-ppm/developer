@@ -279,6 +279,9 @@ Through a series of guided tasks, participants will learn how to:
 3. Application status changes from **Pending Review** to **Approved**
 
     ![SSO Login](images/approved.png) 
+
+
+    > **Congratulations**, you have completed **Account Creation: Establishing a New Bank Account** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Application Review Business Processes**. 
  
 ## Acknowledgements
 

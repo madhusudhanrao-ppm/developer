@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>89
@@ -183,14 +183,14 @@ wwv_flow_imp_page.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_overwrite_navigation_list=>'Y'
 ,p_navigation_list_position=>'SIDE'
-,p_navigation_list_id=>wwv_flow_imp.id(501822730801075)
-,p_navigation_list_template_id=>wwv_flow_imp.id(62244795433085092)
+,p_navigation_list_id=>wwv_flow_imp.id(9493931172865529)
+,p_navigation_list_template_id=>wwv_flow_imp.id(71236903875149546)
 ,p_nav_list_template_options=>'#DEFAULT#:t-TreeNav--styleA:js-navCollapsed--hidden'
 ,p_protection_level=>'C'
 ,p_page_component_map=>'04'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(7672959365758665)
+ p_id=>wwv_flow_imp.id(16665067807823119)
 ,p_plug_name=>'BankerTopIcons'
 ,p_plug_display_sequence=>20
 ,p_location=>null
@@ -279,18 +279,18 @@ wwv_flow_imp_page.create_page_plug(
   'attribute_01', '{ "cardWidth": 1, "refresh": 2 ,"releaveHideIcon":"fa-long-arrow-down"}	')).to_clob
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(7739337758567788)
+ p_id=>wwv_flow_imp.id(16731446200632242)
 ,p_plug_name=>'Banker Chart 2'
 ,p_region_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62117175029085013)
+,p_plug_template=>wwv_flow_imp.id(71109283471149467)
 ,p_plug_display_sequence=>50
 ,p_plug_new_grid_row=>false
 ,p_location=>null
 ,p_plug_source_type=>'NATIVE_JET_CHART'
 );
 wwv_flow_imp_page.create_jet_chart(
- p_id=>wwv_flow_imp.id(7739756820567790)
-,p_region_id=>wwv_flow_imp.id(7739337758567788)
+ p_id=>wwv_flow_imp.id(16731865262632244)
+,p_region_id=>wwv_flow_imp.id(16731446200632242)
 ,p_chart_type=>'pie'
 ,p_title=>'Profit Margins'
 ,p_animation_on_display=>'zoom'
@@ -320,8 +320,8 @@ wwv_flow_imp_page.create_jet_chart(
 ,p_automatic_refresh_interval=>2
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(7740212467567792)
-,p_chart_id=>wwv_flow_imp.id(7739756820567790)
+ p_id=>wwv_flow_imp.id(16732320909632246)
+,p_chart_id=>wwv_flow_imp.id(16731865262632244)
 ,p_seq=>10
 ,p_name=>'Series 1'
 ,p_data_source_type=>'SQL'
@@ -341,14 +341,14 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_items_label_display_as=>'LABEL'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(8469700512056453)
+ p_id=>wwv_flow_imp.id(17461808954120907)
 ,p_plug_name=>'Banker Transaction Pipeline'
 ,p_title=>'Transaction Pipeline'
 ,p_icon_css_classes=>'fa-combo-chart'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#'
 ,p_escape_on_http_output=>'Y'
-,p_plug_template=>wwv_flow_imp.id(62117175029085013)
+,p_plug_template=>wwv_flow_imp.id(71109283471149467)
 ,p_plug_display_sequence=>40
 ,p_plug_new_grid_row=>false
 ,p_location=>null
@@ -356,8 +356,8 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_header=>'Transaction Pipeline'
 );
 wwv_flow_imp_page.create_jet_chart(
- p_id=>wwv_flow_imp.id(8469820075056454)
-,p_region_id=>wwv_flow_imp.id(8469700512056453)
+ p_id=>wwv_flow_imp.id(17461928517120908)
+,p_region_id=>wwv_flow_imp.id(17461808954120907)
 ,p_chart_type=>'bar'
 ,p_height=>'400'
 ,p_animation_on_display=>'auto'
@@ -385,8 +385,8 @@ wwv_flow_imp_page.create_jet_chart(
 ,p_automatic_refresh_interval=>2
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(8469894157056455)
-,p_chart_id=>wwv_flow_imp.id(8469820075056454)
+ p_id=>wwv_flow_imp.id(17462002599120909)
+,p_chart_id=>wwv_flow_imp.id(17461928517120908)
 ,p_seq=>10
 ,p_name=>'Approved'
 ,p_data_source_type=>'SQL'
@@ -407,8 +407,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(8470010891056456)
-,p_chart_id=>wwv_flow_imp.id(8469820075056454)
+ p_id=>wwv_flow_imp.id(17462119333120910)
+,p_chart_id=>wwv_flow_imp.id(17461928517120908)
 ,p_seq=>20
 ,p_name=>'OnHold'
 ,p_data_source_type=>'SQL'
@@ -426,8 +426,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(8470147524056457)
-,p_chart_id=>wwv_flow_imp.id(8469820075056454)
+ p_id=>wwv_flow_imp.id(17462255966120911)
+,p_chart_id=>wwv_flow_imp.id(17461928517120908)
 ,p_seq=>30
 ,p_name=>'Rejected'
 ,p_data_source_type=>'SQL'
@@ -445,8 +445,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(8470408412056460)
-,p_chart_id=>wwv_flow_imp.id(8469820075056454)
+ p_id=>wwv_flow_imp.id(17462516854120914)
+,p_chart_id=>wwv_flow_imp.id(17461928517120908)
 ,p_axis=>'y2'
 ,p_is_rendered=>'on'
 ,p_format_scaling=>'auto'
@@ -459,8 +459,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_split_dual_y=>'auto'
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(8470210544056458)
-,p_chart_id=>wwv_flow_imp.id(8469820075056454)
+ p_id=>wwv_flow_imp.id(17462318986120912)
+,p_chart_id=>wwv_flow_imp.id(17461928517120908)
 ,p_axis=>'x'
 ,p_is_rendered=>'on'
 ,p_format_scaling=>'auto'
@@ -473,8 +473,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_tick_label_position=>'outside'
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(8470331803056459)
-,p_chart_id=>wwv_flow_imp.id(8469820075056454)
+ p_id=>wwv_flow_imp.id(17462440245120913)
+,p_chart_id=>wwv_flow_imp.id(17461928517120908)
 ,p_axis=>'y'
 ,p_is_rendered=>'on'
 ,p_format_type=>'percent'
@@ -488,10 +488,10 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_tick_label_rendered=>'on'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(15846858188767566)
+ p_id=>wwv_flow_imp.id(24838966630832020)
 ,p_plug_name=>'BankerStyle'
 ,p_region_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62117175029085013)
+,p_plug_template=>wwv_flow_imp.id(71109283471149467)
 ,p_plug_display_sequence=>10
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -662,7 +662,7 @@ wwv_flow_imp_page.create_page_plug(
   'output_as', 'HTML')).to_clob
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(220150787797884162)
+ p_id=>wwv_flow_imp.id(229142896239948616)
 ,p_plug_name=>'Banker Total Transaction Value'
 ,p_title=>'Total Transaction Value'
 ,p_region_name=>'static_3naa'
@@ -670,7 +670,7 @@ wwv_flow_imp_page.create_page_plug(
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#'
 ,p_escape_on_http_output=>'Y'
-,p_plug_template=>wwv_flow_imp.id(62117175029085013)
+,p_plug_template=>wwv_flow_imp.id(71109283471149467)
 ,p_plug_display_sequence=>30
 ,p_location=>null
 ,p_plug_source_type=>'NATIVE_JET_CHART'
@@ -678,8 +678,8 @@ wwv_flow_imp_page.create_page_plug(
 ,p_ai_enabled=>false
 );
 wwv_flow_imp_page.create_jet_chart(
- p_id=>wwv_flow_imp.id(7767770464776008)
-,p_region_id=>wwv_flow_imp.id(220150787797884162)
+ p_id=>wwv_flow_imp.id(16759878906840462)
+,p_region_id=>wwv_flow_imp.id(229142896239948616)
 ,p_chart_type=>'combo'
 ,p_height=>'400'
 ,p_animation_on_display=>'auto'
@@ -706,8 +706,8 @@ wwv_flow_imp_page.create_jet_chart(
 ,p_automatic_refresh_interval=>2
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(7770034146776022)
-,p_chart_id=>wwv_flow_imp.id(7767770464776008)
+ p_id=>wwv_flow_imp.id(16762142588840476)
+,p_chart_id=>wwv_flow_imp.id(16759878906840462)
 ,p_seq=>10
 ,p_name=>'Approved'
 ,p_data_source_type=>'SQL'
@@ -730,8 +730,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(7770663040776025)
-,p_chart_id=>wwv_flow_imp.id(7767770464776008)
+ p_id=>wwv_flow_imp.id(16762771482840479)
+,p_chart_id=>wwv_flow_imp.id(16759878906840462)
 ,p_seq=>20
 ,p_name=>'OnHold'
 ,p_data_source_type=>'SQL'
@@ -751,8 +751,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_series(
- p_id=>wwv_flow_imp.id(7771255049776027)
-,p_chart_id=>wwv_flow_imp.id(7767770464776008)
+ p_id=>wwv_flow_imp.id(16763363491840481)
+,p_chart_id=>wwv_flow_imp.id(16759878906840462)
 ,p_seq=>40
 ,p_name=>'Rejected'
 ,p_data_source_type=>'SQL'
@@ -772,8 +772,8 @@ wwv_flow_imp_page.create_jet_chart_series(
 ,p_link_target_type=>'REDIRECT_PAGE'
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(7769397222776018)
-,p_chart_id=>wwv_flow_imp.id(7767770464776008)
+ p_id=>wwv_flow_imp.id(16761505664840472)
+,p_chart_id=>wwv_flow_imp.id(16759878906840462)
 ,p_axis=>'y2'
 ,p_is_rendered=>'on'
 ,p_format_scaling=>'auto'
@@ -794,8 +794,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(7768882455776016)
-,p_chart_id=>wwv_flow_imp.id(7767770464776008)
+ p_id=>wwv_flow_imp.id(16760990897840470)
+,p_chart_id=>wwv_flow_imp.id(16759878906840462)
 ,p_axis=>'x'
 ,p_is_rendered=>'on'
 ,p_format_scaling=>'auto'
@@ -816,8 +816,8 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_jet_chart_axis(
- p_id=>wwv_flow_imp.id(7768275185776013)
-,p_chart_id=>wwv_flow_imp.id(7767770464776008)
+ p_id=>wwv_flow_imp.id(16760383627840467)
+,p_chart_id=>wwv_flow_imp.id(16759878906840462)
 ,p_axis=>'y'
 ,p_is_rendered=>'on'
 ,p_format_type=>'currency'
@@ -839,12 +839,12 @@ wwv_flow_imp_page.create_jet_chart_axis(
 ,p_zoom_order_years=>false
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(253542870629043037)
+ p_id=>wwv_flow_imp.id(262534979071107491)
 ,p_plug_name=>'Banker Transaction Locations'
 ,p_title=>'Transaction Locations'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62117175029085013)
+,p_plug_template=>wwv_flow_imp.id(71109283471149467)
 ,p_plug_display_sequence=>60
 ,p_plug_new_grid_row=>false
 ,p_location=>null
@@ -853,8 +853,8 @@ wwv_flow_imp_page.create_page_plug(
 ,p_ai_enabled=>false
 );
 wwv_flow_imp_page.create_map_region(
- p_id=>wwv_flow_imp.id(7829024259746144)
-,p_region_id=>wwv_flow_imp.id(253542870629043037)
+ p_id=>wwv_flow_imp.id(16821132701810598)
+,p_region_id=>wwv_flow_imp.id(262534979071107491)
 ,p_height=>640
 ,p_tilelayer_type=>'CUSTOM'
 ,p_tilelayer_name_default=>'world-map'
@@ -867,8 +867,8 @@ wwv_flow_imp_page.create_map_region(
 ,p_features=>'MOUSEWHEEL_ZOOM:RECTANGLE_ZOOM:SCALE_BAR:INFINITE_MAP:CIRCLE_TOOL:DISTANCE_TOOL'
 );
 wwv_flow_imp_page.create_map_region_layer(
- p_id=>wwv_flow_imp.id(7829579677746148)
-,p_map_region_id=>wwv_flow_imp.id(7829024259746144)
+ p_id=>wwv_flow_imp.id(16821688119810602)
+,p_map_region_id=>wwv_flow_imp.id(16821132701810598)
 ,p_name=>'Tx Locations'
 ,p_layer_type=>'POINT'
 ,p_display_sequence=>10

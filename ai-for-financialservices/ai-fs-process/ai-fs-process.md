@@ -1,4 +1,4 @@
-# Building a Robust Suspected Transaction Review Business Process & Analytics
+# Build a Robust Suspected Transaction Review Business Process & Analytics
 
 ## About this workshop
 
@@ -403,6 +403,8 @@ Approved: Update the transaction status and unblock the associated credit card.
 3. Location Map, Category Map etc.
    
     ![Process Automation](images/analytics-08.png)
+
+    > **Congratulations**, you have completed **Build a Robust Suspected Transaction Review Business Process & Analytics** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Ensuring Business Continuity: High Availability and Disaster Recovery**.
  
 ## Acknowledgements
 

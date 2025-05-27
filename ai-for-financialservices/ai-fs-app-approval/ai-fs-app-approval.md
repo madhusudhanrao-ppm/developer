@@ -627,6 +627,8 @@ Estimated Time: 60 minutes
 
   ![Business Process](images/process-74.png)  
 
+   > **Congratulations**, you have completed **Application Review Business Processes** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Credit Card Applications: Applying for a New Credit Card**. 
+
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao B M, Principal Product Manager, Oracle Database

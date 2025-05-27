@@ -6,21 +6,21 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_shared.create_data_profile(
- p_id=>wwv_flow_imp.id(3241645831493323)
+ p_id=>wwv_flow_imp.id(12233754273557777)
 ,p_name=>'CCInvoke'
 ,p_format=>'JSON'
 ,p_row_selector=>'items'
 ,p_use_raw_json_selectors=>false
 );
 wwv_flow_imp_shared.create_data_profile_col(
- p_id=>wwv_flow_imp.id(3241877446493336)
-,p_data_profile_id=>wwv_flow_imp.id(3241645831493323)
+ p_id=>wwv_flow_imp.id(12233985888557790)
+,p_data_profile_id=>wwv_flow_imp.id(12233754273557777)
 ,p_name=>'COLUMN_1_ID'
 ,p_sequence=>1
 ,p_column_type=>'DATA'
@@ -29,8 +29,8 @@ wwv_flow_imp_shared.create_data_profile_col(
 ,p_selector=>'id'
 );
 wwv_flow_imp_shared.create_data_profile_col(
- p_id=>wwv_flow_imp.id(3242167258493338)
-,p_data_profile_id=>wwv_flow_imp.id(3241645831493323)
+ p_id=>wwv_flow_imp.id(12234275700557792)
+,p_data_profile_id=>wwv_flow_imp.id(12233754273557777)
 ,p_name=>'COLUMN_2_NAME'
 ,p_sequence=>2
 ,p_column_type=>'DATA'
@@ -40,8 +40,8 @@ wwv_flow_imp_shared.create_data_profile_col(
 ,p_selector=>'name'
 );
 wwv_flow_imp_shared.create_data_profile_col(
- p_id=>wwv_flow_imp.id(3242447144493338)
-,p_data_profile_id=>wwv_flow_imp.id(3241645831493323)
+ p_id=>wwv_flow_imp.id(12234555586557792)
+,p_data_profile_id=>wwv_flow_imp.id(12233754273557777)
 ,p_name=>'COLUMN_3_HIREDATE'
 ,p_sequence=>3
 ,p_column_type=>'DATA'

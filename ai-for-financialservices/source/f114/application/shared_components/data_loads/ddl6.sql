@@ -6,13 +6,13 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_shared.create_data_profile(
- p_id=>wwv_flow_imp.id(88250243746597289)
+ p_id=>wwv_flow_imp.id(97242352188661743)
 ,p_name=>'ddl6'
 ,p_format=>'CSV'
 ,p_encoding=>'iso-8859-1'
@@ -20,8 +20,8 @@ wwv_flow_imp_shared.create_data_profile(
 ,p_has_header_row=>true
 );
 wwv_flow_imp_shared.create_data_profile_col(
- p_id=>wwv_flow_imp.id(88250623504597309)
-,p_data_profile_id=>wwv_flow_imp.id(88250243746597289)
+ p_id=>wwv_flow_imp.id(97242731946661763)
+,p_data_profile_id=>wwv_flow_imp.id(97242352188661743)
 ,p_name=>'TEST_TIMESTAMP'
 ,p_sequence=>1
 ,p_column_type=>'DATA'
@@ -31,12 +31,12 @@ wwv_flow_imp_shared.create_data_profile_col(
 ,p_selector=>'TEST_TIMESTAMPX'
 );
 wwv_flow_imp_shared.create_load_table(
- p_id=>wwv_flow_imp.id(88250786534597309)
+ p_id=>wwv_flow_imp.id(97242894976661763)
 ,p_name=>'ddl6'
 ,p_static_id=>'ddl6'
 ,p_target_type=>'TABLE'
 ,p_table_name=>'TEST_APEX_LOAD_INTO_TIMESTAMP'
-,p_data_profile_id=>wwv_flow_imp.id(88250243746597289)
+,p_data_profile_id=>wwv_flow_imp.id(97242352188661743)
 ,p_loading_method=>'APPEND'
 ,p_commit_interval=>200
 ,p_error_handling=>'ABORT'

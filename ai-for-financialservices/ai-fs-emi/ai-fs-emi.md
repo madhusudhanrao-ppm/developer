@@ -157,12 +157,11 @@ Loan EMI Calculation and Visualization Workflow
 3. Change Loan Inputs, this will also refresh the EMI chart
 
   ![EMI Calculator](images/emi-03.png) 
+
+  > **Congratulations**, you have completed **Home Loan Planning: Calculating Equated Monthly Installments** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Fraud Detection and Alerts: Identifying Suspicious Credit Card Activity**. 
  
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao B M, Principal Product Manager, Oracle Database
 * **Last Updated By/Date** - April 4th, 2025
-
-## Learn more
  
-* [Oracle Digital Assistant Skills](https://docs.oracle.com/en/cloud/paas/digital-assistant/use-chatbot/create-configure-and-version-skills1.html)

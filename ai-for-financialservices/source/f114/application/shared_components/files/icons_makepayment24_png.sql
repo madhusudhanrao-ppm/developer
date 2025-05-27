@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000018000000160806000000DA7D5C8800001D907A5458745261772070726F66696C6520747970652065786966000078DAAD9B69921CB796A5FF6315B504CCC372309AF50E7AF9F51D20822229B2FA99758952';
@@ -141,7 +141,7 @@ wwv_flow_imp.g_varchar2_table(126) := 'A9340949E6BEC10C999840F55813800DDB0BA87D0
 wwv_flow_imp.g_varchar2_table(127) := '057CDFA7DBB6894822C9AC44D3EC108985017EFB370CFE2A9F8584D04A71588100822020F0035A8B06D98114D1B868016FFDA3967921D166F7ED023E6837BAD2EA928EEF052805996C2909B057294F1FF85F0ECEF90CEC076E584BE1E7C0734A79FAC30B';
 wwv_flow_imp.g_varchar2_table(128) := 'EDF90390BE1E3A080D103F0000000049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(16811276684171112)
+ p_id=>wwv_flow_imp.id(25803385126235566)
 ,p_file_name=>'icons/makepayment24.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

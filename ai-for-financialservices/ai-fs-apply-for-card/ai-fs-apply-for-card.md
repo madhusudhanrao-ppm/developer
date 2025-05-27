@@ -72,6 +72,8 @@ These objectives clearly outline what participants can expect to learn and achie
         end;
         </copy>
     ``` 
+
+    > **Congratulations**, you have completed **Credit Card Applications: Applying for a New Credit Card** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **External Fund Transfer: Transferring Money to an Internal Bank Account**. 
  
 ## Acknowledgements
 

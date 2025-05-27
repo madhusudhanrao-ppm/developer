@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000014000000180806000000FA4BDD76000019C57A5458745261772070726F66696C6520747970652065786966000078DAAD9A6792E4B87685FF63155A02BC590E6C8476A0E5EB3B20B34C4FBF782F429A9AAE';
@@ -132,7 +132,7 @@ wwv_flow_imp.g_varchar2_table(117) := '21F8808F9C0DB757076904903F6EBDE3C00B336D7
 wwv_flow_imp.g_varchar2_table(118) := '6EF8A0EC5CE245B9D39D0161D1CCA150EC7551D22B10DC9724FAC0E999914FFA7C0B7D5E72AFA9B7FD6DCDB3DDB900901B969C8F16E2ACA3637B574F0477E9A52C4327CF0479EE294B45AC154406880D23328CC8284A620951CC54D1842C13CA332769EA';
 wwv_flow_imp.g_varchar2_table(119) := '91CE0564A9ABE645B2E3FFC10CB065A24F5DAB0000000049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(16244495134461892)
+ p_id=>wwv_flow_imp.id(25236603576526346)
 ,p_file_name=>'icons/fdpayment.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

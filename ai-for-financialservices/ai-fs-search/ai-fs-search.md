@@ -575,6 +575,8 @@ In this workshop, you'll embark on a comprehensive journey to build an intellige
    
   ![AI Search](images/ai-search-12.png) 
 
+  > **Congratulations**, you have completed **AI Search and RAG Knowledge Repository** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Build a Robust Suspected Transaction Review Business Process & Analytics**.
+
 ## Acknowledgements
 
 * **Author** - Madhusudhan Rao B M, Principal Product Manager, Oracle Database

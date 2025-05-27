@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>50
@@ -30,27 +30,27 @@ wwv_flow_imp_page.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_overwrite_navigation_list=>'Y'
 ,p_navigation_list_position=>'SIDE'
-,p_navigation_list_id=>wwv_flow_imp.id(501822730801075)
-,p_navigation_list_template_id=>wwv_flow_imp.id(62244795433085092)
+,p_navigation_list_id=>wwv_flow_imp.id(9493931172865529)
+,p_navigation_list_template_id=>wwv_flow_imp.id(71236903875149546)
 ,p_nav_list_template_options=>'#DEFAULT#:t-TreeNav--styleA:js-navCollapsed--hidden'
 ,p_protection_level=>'C'
 ,p_page_component_map=>'23'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(1247299391217568)
+ p_id=>wwv_flow_imp.id(10239407833282022)
 ,p_plug_name=>'New'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#:u-colors:t-Cards--basic:t-Cards--displayIcons:t-Cards--4cols:t-Cards--iconsRounded:t-Cards--animRaiseCard'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>20
 ,p_location=>null
-,p_list_id=>wwv_flow_imp.id(501822730801075)
+,p_list_id=>wwv_flow_imp.id(9493931172865529)
 ,p_plug_source_type=>'NATIVE_LIST'
-,p_list_template_id=>wwv_flow_imp.id(62232829340085084)
-,p_required_patch=>wwv_flow_imp.id(62079878348084960)
+,p_list_template_id=>wwv_flow_imp.id(71224937782149538)
+,p_required_patch=>wwv_flow_imp.id(71071986790149414)
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(63669369183150290)
+ p_id=>wwv_flow_imp.id(72661477625214744)
 ,p_plug_name=>'Banker'
 ,p_plug_display_sequence=>10
 ,p_location=>null
@@ -510,11 +510,11 @@ wwv_flow_imp_page.create_page_plug(
   'output_as', 'HTML')).to_clob
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(114795716008958780)
+ p_id=>wwv_flow_imp.id(123787824451023234)
 ,p_plug_name=>'Cards1'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62124331163085017)
+,p_plug_template=>wwv_flow_imp.id(71116439605149471)
 ,p_plug_display_sequence=>30
 ,p_query_type=>'SQL'
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -538,12 +538,12 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_source_type=>'NATIVE_CARDS'
 ,p_plug_query_num_rows_type=>'SCROLL'
 ,p_show_total_row_count=>false
-,p_required_patch=>wwv_flow_imp.id(62079878348084960)
+,p_required_patch=>wwv_flow_imp.id(71071986790149414)
 ,p_ai_enabled=>false
 );
 wwv_flow_imp_page.create_card(
- p_id=>wwv_flow_imp.id(589270225182580)
-,p_region_id=>wwv_flow_imp.id(114795716008958780)
+ p_id=>wwv_flow_imp.id(9581378667247034)
+,p_region_id=>wwv_flow_imp.id(123787824451023234)
 ,p_layout_type=>'GRID'
 ,p_grid_column_count=>3
 ,p_title_adv_formatting=>false
@@ -562,7 +562,7 @@ wwv_flow_imp_page.create_card(
 ,p_media_adv_formatting=>false
 );
 wwv_flow_imp_page.create_page_da_event(
- p_id=>wwv_flow_imp.id(590255175182593)
+ p_id=>wwv_flow_imp.id(9582363617247047)
 ,p_name=>'UpdateComments'
 ,p_event_sequence=>10
 ,p_bind_type=>'bind'
@@ -571,8 +571,8 @@ wwv_flow_imp_page.create_page_da_event(
 ,p_display_when_type=>'NEVER'
 );
 wwv_flow_imp_page.create_page_da_action(
- p_id=>wwv_flow_imp.id(590695353182597)
-,p_event_id=>wwv_flow_imp.id(590255175182593)
+ p_id=>wwv_flow_imp.id(9582803795247051)
+,p_event_id=>wwv_flow_imp.id(9582363617247047)
 ,p_event_result=>'TRUE'
 ,p_action_sequence=>10
 ,p_execute_on_page_init=>'N'
@@ -648,7 +648,7 @@ wwv_flow_imp_page.create_page_da_action(
 ,p_wait_for_result=>'Y'
 );
 wwv_flow_imp_page.create_page_process(
- p_id=>wwv_flow_imp.id(589945501182592)
+ p_id=>wwv_flow_imp.id(9582053943247046)
 ,p_process_sequence=>10
 ,p_process_point=>'ON_DEMAND'
 ,p_process_type=>'NATIVE_PLSQL'

@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>81
@@ -22,10 +22,10 @@ wwv_flow_imp_page.create_page(
 ,p_page_component_map=>'27'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(5284912855900194)
+ p_id=>wwv_flow_imp.id(14277021297964648)
 ,p_plug_name=>'Sample Comments'
 ,p_region_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62118548241085014)
+,p_plug_template=>wwv_flow_imp.id(71110656683149468)
 ,p_plug_display_sequence=>10
 ,p_query_type=>'SQL'
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -73,7 +73,7 @@ wwv_flow_imp_page.create_page_plug(
   'USER_NAME', 'USER_NAME')).to_clob
 );
 wwv_flow_imp_page.create_region_column(
- p_id=>wwv_flow_imp.id(5285408792900212)
+ p_id=>wwv_flow_imp.id(14277517234964666)
 ,p_name=>'ID'
 ,p_source_type=>'DB_COLUMN'
 ,p_source_expression=>'ID'
@@ -87,7 +87,7 @@ wwv_flow_imp_page.create_region_column(
 ,p_include_in_export=>false
 );
 wwv_flow_imp_page.create_region_column(
- p_id=>wwv_flow_imp.id(5285921462900217)
+ p_id=>wwv_flow_imp.id(14278029904964671)
 ,p_name=>'COMMENT_TEXT'
 ,p_source_type=>'DB_COLUMN'
 ,p_source_expression=>'COMMENT_TEXT'
@@ -101,7 +101,7 @@ wwv_flow_imp_page.create_region_column(
 ,p_include_in_export=>false
 );
 wwv_flow_imp_page.create_region_column(
- p_id=>wwv_flow_imp.id(5286399444900219)
+ p_id=>wwv_flow_imp.id(14278507886964673)
 ,p_name=>'USER_NAME'
 ,p_source_type=>'DB_COLUMN'
 ,p_source_expression=>'USER_NAME'
@@ -115,7 +115,7 @@ wwv_flow_imp_page.create_region_column(
 ,p_include_in_export=>false
 );
 wwv_flow_imp_page.create_region_column(
- p_id=>wwv_flow_imp.id(5286945765900221)
+ p_id=>wwv_flow_imp.id(14279054207964675)
 ,p_name=>'COMMENT_DATE'
 ,p_source_type=>'DB_COLUMN'
 ,p_source_expression=>'COMMENT_DATE'
@@ -129,7 +129,7 @@ wwv_flow_imp_page.create_region_column(
 ,p_include_in_export=>false
 );
 wwv_flow_imp_page.create_region_column(
- p_id=>wwv_flow_imp.id(5287460108900223)
+ p_id=>wwv_flow_imp.id(14279568550964677)
 ,p_name=>'AVATAR_INITIALS'
 ,p_source_type=>'DB_COLUMN'
 ,p_source_expression=>'AVATAR_INITIALS'
@@ -143,17 +143,17 @@ wwv_flow_imp_page.create_region_column(
 ,p_include_in_export=>false
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(5287957546900235)
+ p_id=>wwv_flow_imp.id(14280065988964689)
 ,p_name=>'P81_ORDER_BY'
 ,p_is_required=>true
 ,p_item_sequence=>10
-,p_item_plug_id=>wwv_flow_imp.id(5284912855900194)
+,p_item_plug_id=>wwv_flow_imp.id(14277021297964648)
 ,p_item_default=>'COMMENT_TEXT'
 ,p_prompt=>'Order By'
 ,p_display_as=>'NATIVE_SELECT_LIST'
 ,p_lov=>'STATIC2:Comment Text;COMMENT_TEXT,User Name;USER_NAME'
 ,p_cHeight=>1
-,p_field_template=>wwv_flow_imp.id(62254495953085100)
+,p_field_template=>wwv_flow_imp.id(71246604395149554)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_warn_on_unsaved_changes=>'I'
 ,p_lov_display_extra=>'NO'

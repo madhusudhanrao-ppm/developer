@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000000097048597300000B1200000B1201D2DD7EFC000003AD4944415448899D954B4C1B5714863F3CE3F10B7B3CB6B1814078A40DB4410A2D559AD036B46453568D44';
@@ -24,7 +24,7 @@ wwv_flow_imp.g_varchar2_table(9) := '0B511EAE6C01502896207C8EB8EE44101D9892444E7
 wwv_flow_imp.g_varchar2_table(10) := '3F362F0A0EAEBCD94254F19D4A400496B0797B5D92C89DA15E54CDE0C1CF2B6CA7B204FD6EEE7EDC8B4BAA99F83EE6AA33B809FC5ECB53F6B9B97DA387D698CCC5D6C869C847A747269EEDFFD45996B5DFE8EE55BECBF671AF449C72179EAC2607F80F34';
 wwv_flow_imp.g_varchar2_table(11) := 'D75061ED9A1C070000000049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(16804535468331744)
+ p_id=>wwv_flow_imp.id(25796643910396198)
 ,p_file_name=>'icons/loanemi.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000000097048597300000B1200000B1201D2DD7EFC0000041149444154488995954D6C1B551080BFF5B3BDC936EB2476BA89536F7E9AC8E9A16D68D30A412AC1058943';
@@ -25,7 +25,7 @@ wwv_flow_imp.g_varchar2_table(10) := 'E5B02C0BDBB679311C25E457316C13D32CD74F2AF5
 wwv_flow_imp.g_varchar2_table(11) := 'FE307783491445C1711C1445A15B0470EC021DF5CDD42168F6C8E8C1305B7C75E82D3D1BB6EB4D7B5172B940B347AE9C1767A60886B755CE4D5A5B7966549907355B05B0CE399407CD5A715DA7A6BD17F8A65E0D1C5D379D6AC99ADBAF91B7ABA9FF0F6D';
 wwv_flow_imp.g_varchar2_table(12) := 'A0C26DEE56CDB80000000049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(16803452977331753)
+ p_id=>wwv_flow_imp.id(25795561419396207)
 ,p_file_name=>'icons/bankstatement.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

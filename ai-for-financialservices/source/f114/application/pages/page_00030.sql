@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>30
@@ -22,18 +22,18 @@ wwv_flow_imp_page.create_page(
 ,p_page_component_map=>'10'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(93356275733019652)
+ p_id=>wwv_flow_imp.id(102348384175084106)
 ,p_plug_name=>'RG_large_dataset'
 ,p_region_name=>'ofcdetails'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>40
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'declare ',
 '',
-'GC_WC_CREDENTIAL_ID        CONSTANT VARCHAR2(50)   := ''replace-this'';  ',
+'GC_WC_CREDENTIAL_ID        CONSTANT VARCHAR2(50)   := ''Ind_OCI_WebCred'';  ',
 'GC_OCI_DOC_AI_URL          CONSTANT VARCHAR2(500)  := ''https://anomalydetection.aiservice.us-phoenix-1.oci.oraclecloud.com/20210101/detectAnomalyJobs''; ',
 'BASE_URL CONSTANT VARCHAR2(500) := ''https://anomalydetection.aiservice.us-phoenix-1.oci.oraclecloud.com/20210101'';',
 'compartmentId CONSTANT VARCHAR2(500) := ''ocid1.compartment.oc1..replace-this'';',
@@ -252,17 +252,17 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_condition_type=>'NEVER'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(93356345200019653)
+ p_id=>wwv_flow_imp.id(102348453642084107)
 ,p_plug_name=>'RG'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>60
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'declare ',
 '',
-'GC_WC_CREDENTIAL_ID        CONSTANT VARCHAR2(50)   := ''replace-this'';  ',
+'GC_WC_CREDENTIAL_ID        CONSTANT VARCHAR2(50)   := ''Ind_OCI_WebCred'';  ',
 'GC_OCI_DOC_AI_URL          CONSTANT VARCHAR2(500)  := ''https://anomalydetection.aiservice.us-phoenix-1.oci.oraclecloud.com/20210101/detectAnomalyJobs''; ',
 '--models?compartmentId={{compartment_ocid}}&projectId=ocid1.aianomalydetectionproject.oc1.phx.amaaaaaaknuwtjiapvs2awb56mryemubr4qrcfcso55y2ecjpe5cvohzlnlq&limit=10&sortOrder=ASC&sortBy=timeCreated',
 '--https://docs.oracle.com/en-us/iaas/api/#/en/anomalydetection/20210101/datatypes/CreateDetectAnomalyJobDetails',
@@ -385,17 +385,17 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_condition_type=>'NEVER'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(93356454108019654)
+ p_id=>wwv_flow_imp.id(102348562550084108)
 ,p_plug_name=>'RG_small_dataset'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>50
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'declare ',
 '',
-'GC_WC_CREDENTIAL_ID        CONSTANT VARCHAR2(50)   := ''replace-this'';  ',
+'GC_WC_CREDENTIAL_ID        CONSTANT VARCHAR2(50)   := ''Ind_OCI_WebCred'';  ',
 'GC_OCI_DOC_AI_URL          CONSTANT VARCHAR2(500)  := ''https://anomalydetection.aiservice.us-phoenix-1.oci.oraclecloud.com/20210101/detectAnomalyJobs''; ',
 '--models?compartmentId={{compartment_ocid}}&projectId=ocid1.aianomalydetectionproject.oc1.phx.amaaaaaaknuwtjiapvs2awb56mryemubr4qrcfcso55y2ecjpe5cvohzlnlq&limit=10&sortOrder=ASC&sortBy=timeCreated',
 '--https://docs.oracle.com/en-us/iaas/api/#/en/anomalydetection/20210101/datatypes/CreateDetectAnomalyJobDetails',
@@ -529,11 +529,11 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_condition_type=>'NEVER'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(93356618722019655)
+ p_id=>wwv_flow_imp.id(102348727164084109)
 ,p_plug_name=>'Timeseries'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>30
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -624,11 +624,11 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_condition_type=>'NEVER'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(93356690251019656)
+ p_id=>wwv_flow_imp.id(102348798693084110)
 ,p_plug_name=>'Spinner'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>20
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -642,11 +642,11 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_condition_type=>'NEVER'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(93356861126019658)
+ p_id=>wwv_flow_imp.id(102348969568084112)
 ,p_plug_name=>'Timer'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>10
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(

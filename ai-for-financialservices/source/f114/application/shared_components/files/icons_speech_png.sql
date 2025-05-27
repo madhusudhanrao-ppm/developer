@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7AF40000000473424954080808087C0864880000000970485973000000EC000000EC01792871BD0000001974455874536F667477617265007777772E696E6B73636170652E';
@@ -36,7 +36,7 @@ wwv_flow_imp.g_varchar2_table(21) := '2CF715DB7A65F61C38CDE32F55BB222D7A797C6EA2
 wwv_flow_imp.g_varchar2_table(22) := '49D1AB2B0EFE3668BC2A3C073854DFC4863777F43376A8BE09E047E33A848540B27D0A54F9FDDA50A01D40D3444AF9F2ED8F38B287B0A3FE145A8F58A3692C0BC67C7968DD0FBA02280CB69F822DC1168E705D975A07C0FF01832A3046E24B8C71000000';
 wwv_flow_imp.g_varchar2_table(23) := '0049454E44AE426082';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(1181373156691071)
+ p_id=>wwv_flow_imp.id(7810735285373383)
 ,p_file_name=>'icons/speech.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

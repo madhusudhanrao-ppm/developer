@@ -1,4 +1,4 @@
-# Suspicious Transaction Alerts and Monitoring
+# Suspicious Transactions and Anomaly Detection
 
 ## About this workshop
 
@@ -420,6 +420,8 @@ These objectives clearly outline what participants can expect to learn and achie
 4. Anomalous Transactions are shown in red
    
     ![Anomaly Detection](images/anm-detect-01.png)   
+
+    > **Congratulations**, you have completed **Suspicious Transactions and Anomaly Detection** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Customer Analysis**. 
  
 ## Lab Resources
  

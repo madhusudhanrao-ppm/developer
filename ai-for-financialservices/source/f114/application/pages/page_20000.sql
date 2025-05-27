@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>20000
@@ -18,19 +18,19 @@ wwv_flow_imp_page.create_page(
 ,p_page_mode=>'MODAL'
 ,p_step_title=>'Settings'
 ,p_autocomplete_on_off=>'OFF'
-,p_group_id=>wwv_flow_imp.id(62571685369086776)
-,p_step_template=>wwv_flow_imp.id(62081280617084974)
+,p_group_id=>wwv_flow_imp.id(71563793811151230)
+,p_step_template=>wwv_flow_imp.id(71073389059149428)
 ,p_page_template_options=>'#DEFAULT#:t-Dialog--noPadding:js-dialog-class-t-Drawer--pullOutEnd:js-dialog-class-t-Drawer--md'
-,p_required_patch=>wwv_flow_imp.id(62572218039086777)
+,p_required_patch=>wwv_flow_imp.id(71564326481151231)
 ,p_protection_level=>'C'
 ,p_help_text=>'This page contains a list of settings applicable to the current application user.'
 ,p_page_component_map=>'23'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(62576898606086787)
+ p_id=>wwv_flow_imp.id(71569007048151241)
 ,p_plug_name=>'&APP_USER.'
 ,p_region_template_options=>'#DEFAULT#:t-HeroRegion--hideIcon'
-,p_plug_template=>wwv_flow_imp.id(62150487337085034)
+,p_plug_template=>wwv_flow_imp.id(71142595779149488)
 ,p_plug_display_sequence=>10
 ,p_plug_display_condition_type=>'NOT_EXISTS'
 ,p_plug_display_when_condition=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -44,11 +44,11 @@ wwv_flow_imp_page.create_page_plug(
   'output_as', 'HTML')).to_clob
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(62577147594086787)
+ p_id=>wwv_flow_imp.id(71569256036151241)
 ,p_plug_name=>'&APP_USER.'
 ,p_region_template_options=>'#DEFAULT#:t-CardsRegion--styleB'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62124331163085017)
+,p_plug_template=>wwv_flow_imp.id(71116439605149471)
 ,p_plug_display_sequence=>20
 ,p_query_type=>'TABLE'
 ,p_query_table=>'APEX_WORKSPACE_APEX_USERS'
@@ -67,8 +67,8 @@ wwv_flow_imp_page.create_page_plug(
 '   and scheme_type_code          = ''NATIVE_APEX_ACCOUNTS'''))
 );
 wwv_flow_imp_page.create_card(
- p_id=>wwv_flow_imp.id(62577657332086788)
-,p_region_id=>wwv_flow_imp.id(62577147594086787)
+ p_id=>wwv_flow_imp.id(71569765774151242)
+,p_region_id=>wwv_flow_imp.id(71569256036151241)
 ,p_layout_type=>'ROW'
 ,p_card_css_classes=>'a-CardView--noUI'
 ,p_title_adv_formatting=>false
@@ -83,15 +83,15 @@ wwv_flow_imp_page.create_card(
 ,p_media_adv_formatting=>false
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(62578206855086789)
+ p_id=>wwv_flow_imp.id(71570315297151243)
 ,p_plug_name=>'Settings'
 ,p_region_template_options=>'#DEFAULT#'
 ,p_component_template_options=>'#DEFAULT#:t-MediaList--showBadges:u-colors'
-,p_plug_template=>wwv_flow_imp.id(62117175029085013)
+,p_plug_template=>wwv_flow_imp.id(71109283471149467)
 ,p_plug_display_sequence=>30
-,p_list_id=>wwv_flow_imp.id(62575750301086784)
+,p_list_id=>wwv_flow_imp.id(71567858743151238)
 ,p_plug_source_type=>'NATIVE_LIST'
-,p_list_template_id=>wwv_flow_imp.id(62239980963085088)
+,p_list_template_id=>wwv_flow_imp.id(71232089405149542)
 );
 wwv_flow_imp.component_end;
 end;

@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '2F2A204070726573657276650A202A204C6561666C657420312E382E302C2061204A53206C69627261727920666F7220696E746572616374697665206D6170732E2068747470733A2F2F6C6561666C65746A732E636F6D0A202A2028632920323031302D';
@@ -1453,7 +1453,7 @@ wwv_flow_imp.g_varchar2_table(1438) := '456528742C69297D2C742E7472616E73666F726D
 wwv_flow_imp.g_varchar2_table(1439) := '77696E646F772E4C293B742E6E6F436F6E666C6963743D66756E6374696F6E28297B72657475726E2077696E646F772E4C3D71652C746869737D2C77696E646F772E4C3D747D293B0A2F2F2320736F757263654D617070696E6755524C3D6C6561666C65';
 wwv_flow_imp.g_varchar2_table(1440) := '742E6A732E6D6170';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(643736402483513)
+ p_id=>wwv_flow_imp.id(9635844844547967)
 ,p_file_name=>'retailimages/files/leaflet.js'
 ,p_mime_type=>'text/javascript'
 ,p_file_charset=>'utf-8'

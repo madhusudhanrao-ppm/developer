@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
 wwv_flow_imp.g_varchar2_table(1) := '89504E470D0A1A0A0000000D4948445200000018000000180803000000D7A9CDCA0000010B504C54450000000000000000002B2B2B3939393333333B3B3B373737333333304040393939363636313D3D2E3A3A333D3D2F3939313A3A353C3C3339393439';
@@ -21,7 +21,7 @@ wwv_flow_imp.g_varchar2_table(6) := 'AD148D4AE7641456222D234549610D623262343472C
 wwv_flow_imp.g_varchar2_table(7) := '438B3E572F18B5533E97D4675D703691F8A2EB633972C2A5A5C02A8D98B4F10B3F4969FA9575050A1CAB6B1FF6D4754441812A71F5807AE25415F071D403EA89D2540064800C50C0736578AE0CCF95F40F1C654084F9BB95520000000049454E44AE4260';
 wwv_flow_imp.g_varchar2_table(8) := '82';
 wwv_flow_imp_shared.create_app_static_file(
- p_id=>wwv_flow_imp.id(14318236883831657)
+ p_id=>wwv_flow_imp.id(23310345325896111)
 ,p_file_name=>'icons/frauddetection.png'
 ,p_mime_type=>'image/png'
 ,p_file_charset=>'utf-8'

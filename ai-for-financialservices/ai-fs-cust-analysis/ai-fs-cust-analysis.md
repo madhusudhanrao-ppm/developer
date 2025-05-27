@@ -482,6 +482,8 @@ These objectives clearly outline what participants can expect to learn and achie
 7. The same above query can be used to generate Sentiment Chart
    
     ![Customer Analysis](images/cust-analysis-02.png)  
+
+    > **Congratulations**, you have completed **Customer Analysis** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **E-commerce Food Ordering System**. 
   
 ## Acknowledgements
 

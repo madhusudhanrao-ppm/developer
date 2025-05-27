@@ -6,49 +6,49 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_shared.create_web_source_module(
- p_id=>wwv_flow_imp.id(3051847843732652)
+ p_id=>wwv_flow_imp.id(12043956285797106)
 ,p_name=>'IssueCard'
 ,p_static_id=>'issuecard'
 ,p_web_source_type=>'NATIVE_ORDS'
-,p_data_profile_id=>wwv_flow_imp.id(3050766970732625)
-,p_remote_server_id=>wwv_flow_imp.id(3050590055732620)
+,p_data_profile_id=>wwv_flow_imp.id(12042875412797079)
+,p_remote_server_id=>wwv_flow_imp.id(12042698497797074)
 ,p_url_path_prefix=>'/bank/issuecreditcard'
 ,p_attribute_01=>'N'
 ,p_version_scn=>42293960700413
 );
 wwv_flow_imp_shared.create_web_source_param(
- p_id=>wwv_flow_imp.id(3222704782281882)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
+ p_id=>wwv_flow_imp.id(12214813224346336)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
 ,p_name=>'cust_id'
 ,p_param_type=>'BODY'
 ,p_data_type=>'VARCHAR2'
 ,p_is_required=>false
 );
 wwv_flow_imp_shared.create_web_source_param(
- p_id=>wwv_flow_imp.id(3223546175285218)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
+ p_id=>wwv_flow_imp.id(12215654617349672)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
 ,p_name=>'customer_name'
 ,p_param_type=>'BODY'
 ,p_data_type=>'VARCHAR2'
 ,p_is_required=>false
 );
 wwv_flow_imp_shared.create_web_source_operation(
- p_id=>wwv_flow_imp.id(3052015821732667)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
+ p_id=>wwv_flow_imp.id(12044124263797121)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
 ,p_operation=>'DELETE'
 ,p_database_operation=>'DELETE'
 ,p_url_pattern=>'/:id'
 ,p_allow_fetch_all_rows=>false
 );
 wwv_flow_imp_shared.create_web_source_operation(
- p_id=>wwv_flow_imp.id(3052436636732677)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
+ p_id=>wwv_flow_imp.id(12044545078797131)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
 ,p_operation=>'GET'
 ,p_database_operation=>'FETCH_COLLECTION'
 ,p_url_pattern=>'.'
@@ -56,8 +56,8 @@ wwv_flow_imp_shared.create_web_source_operation(
 ,p_allow_fetch_all_rows=>false
 );
 wwv_flow_imp_shared.create_web_source_operation(
- p_id=>wwv_flow_imp.id(3052795157732679)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
+ p_id=>wwv_flow_imp.id(12044903599797133)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
 ,p_name=>'IssueCard'
 ,p_static_id=>'issuecard'
 ,p_operation=>'POST'
@@ -72,9 +72,9 @@ wwv_flow_imp_shared.create_web_source_operation(
 ,p_allow_fetch_all_rows=>false
 );
 wwv_flow_imp_shared.create_web_source_param(
- p_id=>wwv_flow_imp.id(3205027001163045)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
-,p_web_src_operation_id=>wwv_flow_imp.id(3052795157732679)
+ p_id=>wwv_flow_imp.id(12197135443227499)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
+,p_web_src_operation_id=>wwv_flow_imp.id(12044903599797133)
 ,p_name=>'Content-Type'
 ,p_param_type=>'HEADER'
 ,p_data_type=>'VARCHAR2'
@@ -82,26 +82,26 @@ wwv_flow_imp_shared.create_web_source_param(
 ,p_value=>'application/json'
 );
 wwv_flow_imp_shared.create_web_source_param(
- p_id=>wwv_flow_imp.id(3229601649310636)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
-,p_web_src_operation_id=>wwv_flow_imp.id(3052795157732679)
+ p_id=>wwv_flow_imp.id(12221710091375090)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
+,p_web_src_operation_id=>wwv_flow_imp.id(12044903599797133)
 ,p_name=>'cust_id'
 ,p_param_type=>'URL_PATTERN'
 ,p_data_type=>'VARCHAR2'
 ,p_is_required=>false
 );
 wwv_flow_imp_shared.create_web_source_param(
- p_id=>wwv_flow_imp.id(3230031824310638)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
-,p_web_src_operation_id=>wwv_flow_imp.id(3052795157732679)
+ p_id=>wwv_flow_imp.id(12222140266375092)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
+,p_web_src_operation_id=>wwv_flow_imp.id(12044903599797133)
 ,p_name=>'customer_name'
 ,p_param_type=>'URL_PATTERN'
 ,p_data_type=>'VARCHAR2'
 ,p_is_required=>false
 );
 wwv_flow_imp_shared.create_web_source_operation(
- p_id=>wwv_flow_imp.id(3053250323732680)
-,p_web_src_module_id=>wwv_flow_imp.id(3051847843732652)
+ p_id=>wwv_flow_imp.id(12045358765797134)
+,p_web_src_module_id=>wwv_flow_imp.id(12043956285797106)
 ,p_operation=>'PUT'
 ,p_database_operation=>'UPDATE'
 ,p_url_pattern=>'/:id'

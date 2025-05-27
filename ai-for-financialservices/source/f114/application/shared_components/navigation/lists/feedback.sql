@@ -6,20 +6,20 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_shared.create_list(
- p_id=>wwv_flow_imp.id(62559288243086335)
+ p_id=>wwv_flow_imp.id(71551396685150789)
 ,p_name=>'Feedback'
 ,p_list_status=>'PUBLIC'
-,p_required_patch=>wwv_flow_imp.id(62367456516085295)
+,p_required_patch=>wwv_flow_imp.id(71359564958149749)
 ,p_version_scn=>1
 );
 wwv_flow_imp_shared.create_list_item(
- p_id=>wwv_flow_imp.id(62559705476086335)
+ p_id=>wwv_flow_imp.id(71551813918150789)
 ,p_list_item_display_sequence=>10
 ,p_list_item_link_text=>'User Feedback'
 ,p_list_item_link_target=>'f?p=&APP_ID.:10053:&APP_SESSION.::&DEBUG.:10053::'

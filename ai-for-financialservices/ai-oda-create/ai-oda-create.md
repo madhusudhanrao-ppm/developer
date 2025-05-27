@@ -355,7 +355,7 @@ To set up the Oracle Digital Assistant on the OCI tenancy, you will:
 
     *Bye, Have a great day*
    
-  > **Congratulations**, you have completed **Setup Oracle Digital Assistant** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **APEX Integration with Oracle Digital Assistant**. -->
+  > **Congratulations**, you have completed **Building a Conversational Interface with Oracle Digital Assistant and Oracle APEX: A Step-by-Step Guide** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Building a Secure User Authentication System with Oracle APEX**. 
 
 ## Acknowledgements
 

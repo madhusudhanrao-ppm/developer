@@ -6,10 +6,10 @@ begin
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
-,p_default_workspace_id=>7477895910065199
+,p_default_workspace_id=>7687429086004423
 ,p_default_application_id=>114
 ,p_default_id_offset=>8992108442064454
-,p_default_owner=>'DEMOUSER'
+,p_default_owner=>'DOCUSER'
 );
 wwv_flow_imp_page.create_page(
  p_id=>93
@@ -22,11 +22,11 @@ wwv_flow_imp_page.create_page(
 ,p_page_component_map=>'10'
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(8360731323674794)
+ p_id=>wwv_flow_imp.id(17352839765739248)
 ,p_plug_name=>'Debug'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>50
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -108,7 +108,7 @@ wwv_flow_imp_page.create_page_plug(
 '        p_url => ''https://inference.generativeai.us-chicago-1.oci.oraclecloud.com/20231130/actions/chat'',',
 '        p_http_method => ''POST'',',
 '        p_body => l_request_body,',
-'        p_credential_static_id => ''replace-this'' ',
+'        p_credential_static_id => ''Ind_OCI_WebCred'' ',
 '    );',
 '',
 '',
@@ -120,14 +120,14 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_source_type=>'NATIVE_PLSQL'
 ,p_plug_display_condition_type=>'ITEM_IS_NOT_NULL'
 ,p_plug_display_when_condition=>'P93_IMAGE_UPLOAD'
-,p_required_patch=>wwv_flow_imp.id(62079878348084960)
+,p_required_patch=>wwv_flow_imp.id(71071986790149414)
 );
 wwv_flow_imp_page.create_page_plug(
- p_id=>wwv_flow_imp.id(8469317606056449)
+ p_id=>wwv_flow_imp.id(17461426048120903)
 ,p_plug_name=>'DebugOld'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_component_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_imp.id(62183755337085053)
+,p_plug_template=>wwv_flow_imp.id(71175863779149507)
 ,p_plug_display_sequence=>40
 ,p_location=>null
 ,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
@@ -228,7 +228,7 @@ wwv_flow_imp_page.create_page_plug(
 '        p_url => ''https://inference.generativeai.us-chicago-1.oci.oraclecloud.com/20231130/actions/chat'',',
 '        p_http_method => ''POST'',',
 '        p_body => l_request_body,',
-'        p_credential_static_id => ''replace-this'' ',
+'        p_credential_static_id => ''Ind_OCI_WebCred'' ',
 '    );',
 '',
 '   Htp.p (''l_response_text ''||l_response_text );',
@@ -259,23 +259,23 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_display_when_condition=>'P93_IMAGE_UPLOAD'
 );
 wwv_flow_imp_page.create_page_button(
- p_id=>wwv_flow_imp.id(8360872364674795)
+ p_id=>wwv_flow_imp.id(17352980806739249)
 ,p_button_sequence=>30
 ,p_button_name=>'Upload'
 ,p_button_action=>'SUBMIT'
 ,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_imp.id(62256971437085104)
+,p_button_template_id=>wwv_flow_imp.id(71249079879149558)
 ,p_button_image_alt=>'Upload'
 ,p_grid_new_row=>'Y'
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(8360690326674793)
+ p_id=>wwv_flow_imp.id(17352798768739247)
 ,p_name=>'P93_IMAGE_UPLOAD'
 ,p_item_sequence=>10
 ,p_prompt=>'Image Upload'
 ,p_display_as=>'NATIVE_FILE'
 ,p_cSize=>30
-,p_field_template=>wwv_flow_imp.id(62254495953085100)
+,p_field_template=>wwv_flow_imp.id(71246604395149554)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'allow_multiple_files', 'N',
@@ -284,13 +284,13 @@ wwv_flow_imp_page.create_page_item(
   'storage_type', 'APEX_APPLICATION_TEMP_FILES')).to_clob
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(8469177495056447)
+ p_id=>wwv_flow_imp.id(17461285937120901)
 ,p_name=>'P93_FILE_NAME'
 ,p_item_sequence=>20
 ,p_prompt=>'File Name'
 ,p_display_as=>'NATIVE_TEXT_FIELD'
 ,p_cSize=>30
-,p_field_template=>wwv_flow_imp.id(62254495953085100)
+,p_field_template=>wwv_flow_imp.id(71246604395149554)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'disabled', 'N',
@@ -299,13 +299,13 @@ wwv_flow_imp_page.create_page_item(
   'trim_spaces', 'BOTH')).to_clob
 );
 wwv_flow_imp_page.create_page_item(
- p_id=>wwv_flow_imp.id(8469208887056448)
+ p_id=>wwv_flow_imp.id(17461317329120902)
 ,p_name=>'P93_LOG'
 ,p_item_sequence=>70
 ,p_prompt=>'Log'
 ,p_display_as=>'NATIVE_TEXT_FIELD'
 ,p_cSize=>30
-,p_field_template=>wwv_flow_imp.id(62254495953085100)
+,p_field_template=>wwv_flow_imp.id(71246604395149554)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
   'disabled', 'N',
@@ -314,7 +314,7 @@ wwv_flow_imp_page.create_page_item(
   'trim_spaces', 'BOTH')).to_clob
 );
 wwv_flow_imp_page.create_page_process(
- p_id=>wwv_flow_imp.id(8360941909674796)
+ p_id=>wwv_flow_imp.id(17353050351739250)
 ,p_process_sequence=>10
 ,p_process_point=>'AFTER_SUBMIT'
 ,p_process_type=>'NATIVE_PLSQL'
@@ -413,7 +413,7 @@ wwv_flow_imp_page.create_page_process(
 '        p_url => ''https://inference.generativeai.us-chicago-1.oci.oraclecloud.com/20231130/actions/chat'',',
 '        p_http_method => ''POST'',',
 '        p_body => l_request_body,',
-'        p_credential_static_id => ''replace-this'' ',
+'        p_credential_static_id => ''Ind_OCI_WebCred'' ',
 '    );',
 '',
 '  Htp.p (''l_response_text ''||l_response_text );',
@@ -441,8 +441,8 @@ wwv_flow_imp_page.create_page_process(
 'end;'))
 ,p_process_clob_language=>'PLSQL'
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-,p_process_when_button_id=>wwv_flow_imp.id(8360872364674795)
-,p_required_patch=>wwv_flow_imp.id(62079878348084960)
+,p_process_when_button_id=>wwv_flow_imp.id(17352980806739249)
+,p_required_patch=>wwv_flow_imp.id(71071986790149414)
 ,p_internal_uid=>17353050351739250
 );
 wwv_flow_imp.component_end;

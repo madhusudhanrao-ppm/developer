@@ -421,6 +421,8 @@ By the end of the workshop, attendees gained practical experience in harnessing 
 ## Task 9: Conclusion
  
 1.  The ability to read image content, query the database on that content extracted, create alerts and push notifications, detect fraud in real time, make instant decisions, and run it in a multi-cloud environment opens tremendous opportunities in the world of enterprise business and AI itself. Looking forward to more of these emerging AI and Database innovations. 
+   
+    > **Congratulations**, you have completed **Cash Withdrawal: Withdrawing Cash from an ATM** Lab. The subsequent labs are optional, however, please proceed to the next lab to learn more about **Statement Generation: Accessing Bank Statements**. 
  
 ## Acknowledgements
 
