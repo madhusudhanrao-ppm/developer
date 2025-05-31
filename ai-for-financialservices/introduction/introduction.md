@@ -71,7 +71,9 @@ By mastering these technologies, you will gain a competitive edge in the industr
  
 ### AI for Financial Services - Demo
 
-[Demo video on AI for Financial Services](youtube:xCXb7kOWdqo:large)  
+[Demo video on AI for Financial Services](youtube:5WNMDveb3no:large)  
+
+[Demo video on AI for Financial Services](youtube:TJuhfv8Elrw:large) 
  
 ---
 
@@ -124,12 +126,8 @@ By mastering these technologies, you will gain a competitive edge in the industr
 ---
 
 ![AI for Financial](images/AI-for-fc-usecases.png " ")  
- 
----
-
-### AI for Financial Services - Technology Architecture
-
-![AI for Financial](images/AI-for-fc-refarch.png " ")  
+  
+![AI for Financial](images/aiforfsmay31.png " ")  
 
 ---
 
@@ -171,7 +169,7 @@ By mastering these technologies, you will gain a competitive edge in the industr
 
 * **Architect, Author and Developer** - [Madhusudhan Rao B M](https://www.linkedin.com/in/madhusudhanraobm/), Principal Product Manager, Oracle Database
 * **Thanks to** - [Bo English-Wiczling](https://www.linkedin.com/in/boenglish/), Senior Director, Database Product Management
-* **Last Updated By/Date** - May 27th, 2025
+* **Last Updated By/Date** - May 31st, 2025
 * **Document version** - 1.0 
 
 ## Learn more
