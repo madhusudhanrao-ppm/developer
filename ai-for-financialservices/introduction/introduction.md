@@ -48,10 +48,12 @@ In this comprehensive learning journey, you will gain hands-on experience with t
 
 **AI and Machine Learning Services**
 
-* AI Services: Meta Llama Vision Instruct, Speech AI (TTS), and Anomaly Detection AI Service
+* AI Services: Meta Llama Vision Instruct, Speech AI (TTS) and Anomaly Detection AI Service
 * Auto Machine Learning and Oracle Database 23ai
 * Select AI & AI Vector Search
 * RAG with Gen AI (Cohere)
+* Document Understanding and Sentiment Analysis AI Service
+* Language AI and Translation Services
 
 **Data Management and Analytics**
 
@@ -64,11 +66,7 @@ In this comprehensive learning journey, you will gain hands-on experience with t
 * Oracle Integration Cloud (Gen 3)
 * Oracle Process Management and PL/SQL Scheduler Jobs
 * Property Graphs and Oracle Digital Assistant (FAQs)
-
-**Fraud Detection and Prevention**
-
-* Fraud Detection, Card Blocking, and Push Notifications
-
+ 
 By mastering these technologies, you will gain a competitive edge in the industry and be equipped to develop innovative solutions that drive business success.
 
 ---
