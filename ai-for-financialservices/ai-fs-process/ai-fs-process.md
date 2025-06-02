@@ -84,7 +84,7 @@ By completing these tasks, participants will be able to:
 ### Introduction to this Lab
  
 Business Process
-[Demo video on AI for Financial Services](youtube:xCXb7kOWdqo:large)  
+[Demo video on AI for Financial Services](youtube:0os68czbtYw:large)  
 
 Analytics
 [Demo video on AI for Financial Services](youtube:wGfyGYAtz8A:large)  

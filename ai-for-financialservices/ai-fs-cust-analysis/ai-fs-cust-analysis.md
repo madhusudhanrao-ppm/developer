@@ -25,6 +25,10 @@ These objectives clearly outline what participants can expect to learn and achie
 * A user with access to provision & manage core OCI services  
 * Having completed common labs
 
+### Sentiment Analysis - Demo
+
+[Demo video on AI for Financial Services](youtube:nOPn8Sueg9U:large)  
+
 ---
 
 ## Task 1: Database Schema Design

@@ -98,3 +98,7 @@ Please Note: Some of the source files will need to replaced with your compartmen
 
 * **Author** - Madhusudhan Rao B M, Principal Product Manager, Oracle Database
 * **Last Updated By/Date** - May 19th, 2025
+
+## Learn more
+ 
+* [Migrating Oracle APEX Applications Across Workspaces](https://www.linkedin.com/pulse/migrating-oracle-apex-applications-across-workspaces-madhusudhan-rao-qzssf)

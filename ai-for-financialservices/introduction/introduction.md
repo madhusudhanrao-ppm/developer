@@ -23,7 +23,11 @@ Estimated Workshop Time: 14 hours to 20 hours (Depends on use cases selected)
 This lab assumes you have the following:
 
 * An Oracle account
-* Intermediate developer knowledge of Oracle APEX and Oracle PL/SQL 
+* Intermediate development knowledge of Oracle APEX and Oracle PL/SQL 
+* Familiarity with AI concepts 
+* Familiarity of Cloud concepts
+* Familiarity with Oracle Cloud Infrastructure (OCI) 
+* Familiarity with Oracle databases and database terms
 
 ---
 
